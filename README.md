@@ -55,5 +55,5 @@ Felipe participa como apoyo técnico con 20 h al mes, que corresponden a las hor
 ## Herramientas
 
 - **Consensus** (MCP en `.mcp.json` del repo): búsqueda académica. Sin cuenta conectada devuelve 3 resultados por consulta.
-- **Gemini Notebook** (`nlm`): investigación web por capa del Leviatán.
+- **Gemini Notebook** (`nlm`): cuaderno [Leviatán · justicia restaurativa Bogotá](https://notebook.google.com/notebook/0d8f078d-4f14-43cc-9d68-d1d4487e226d), con las 6 investigaciones por capa (30-oct, 178 fuentes).
 - **Granola**: notas de las reuniones. Este plan no da acceso a las transcripciones.
