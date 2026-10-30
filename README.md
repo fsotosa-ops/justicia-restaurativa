@@ -44,6 +44,7 @@ Felipe participa como apoyo técnico con 20 h al mes, que corresponden a las hor
 - [`contexto/`](contexto/): propuesta técnica, entregables E1–E7 y cronograma, extraídos de los documentos de CAOBA. Los originales están en `contexto/originales/`, fuera de git.
 - [`reuniones/`](reuniones/): resúmenes de Granola del 22-sep, 23-sep, 7-oct y 28-oct.
 - [`marco-de-analisis.md`](marco-de-analisis.md): el marco del equipo (cinco dimensiones salidas de las reuniones), lo levantado leído desde él y dónde se cruza con la IA.
+- [`leviatan-estructura.md`](leviatan-estructura.md) y [`mapa/`](mapa/): la bajada del Leviatán a entidades, normas y etapas del proceso penal (33 entidades, 14 etapas en CSV).
 - [`leviatan.md`](leviatan.md): las seis capas del mapa, las consultas para Gemini Notebook y Consensus, y las fuentes con su criterio de consulta.
 - [`estado-del-arte/`](estado-del-arte/): el Doc del equipo, lo que falta leer y el [contraste de H1–H6](estado-del-arte/contraste-hipotesis.md) con literatura, casos aplicados y contexto.
 

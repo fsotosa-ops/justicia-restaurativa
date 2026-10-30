@@ -41,7 +41,7 @@ El [contraste del 30-oct](estado-del-arte/contraste-hipotesis.md) amarra cada hi
 | CAVIF / CAIVAS / CAPIV (Fiscalía) | VIF, delitos sexuales, atención integral a víctimas | Ley 906 de 2004 | La violencia sexual no se concilia; en el resto se deriva [sin cita] |
 
 **Cambios recientes en Bogotá que el equipo no tenía:**
-- Las 37 comisarías de familia pasan de Integración Social a la Secretaría de Seguridad, Convivencia y Justicia, en una transición de dos años anunciada en mayo de 2024 ([bogota.gov.co](https://bogota.gov.co/mi-ciudad/integracion-social/comisarias-de-familia-seran-trasladadas-secretaria-seguridad-bogota)) [abierto]. La Resolución 1598 de 2025 amplió ese periodo, y el Acuerdo 744 de 2025 amplía la red de 38 a 80 comisarías (búsqueda web, sin abrir).
+- **Corregido el 30-oct:** las comisarías de familia **siguen en Integración Social**. El traslado a la Secretaría de Seguridad, anunciado en mayo de 2024 y reglamentado en el D. 644 de 2025 (arts. 175–177), se revirtió el 4 de abril de 2026 ([bogota.gov.co](https://bogota.gov.co/mi-ciudad/integracion-social/comisarias-de-familia-de-bogota-continuaran-en-integracion-social)). Detalle en [`leviatan-estructura.md`](leviatan-estructura.md).
 - **[Decreto 225 de 2026](https://www.alcaldiabogota.gov.co/sisjur/normas/Norma1.jsp?i=193449)** (12-jun-2026), que reglamenta el **Sistema Distrital de Justicia** [abierto]:
   - Integra la justicia formal, la no formal y la comunitaria, con la justicia restaurativa como principio (art. 174.4) y como enfoque (art. 174.5).
   - Crea un Comité Distrital de Justicia y un Comité Local por localidad. En los locales se sientan la comisaría, la Personería, los jueces de pequeñas causas y la URI.
