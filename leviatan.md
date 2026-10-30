@@ -13,6 +13,19 @@
 
 La analogía del 28-oct es el sistema de salud, que tiene puertas de entrada, triaje, niveles de atención y salidas. Llevada a la justicia, una persona con un conflicto entra por alguna puerta, alguien clasifica su caso y esa clasificación abre o cierra rutas. La pregunta que ordena el mapa es **en qué punto de cada recorrido se ofrece la vía restaurativa, quién decide ofrecerla y qué pasa cuando no se ofrece**. Esos puntos son los que la PoC podría orientar, y los que no tienen una fuente oficial que los describa se convierten en brechas para E2.
 
+## Dónde se prueba cada hipótesis
+
+El [contraste del 30-oct](estado-del-arte/contraste-hipotesis.md) amarra cada hipótesis del Doc a una capa del mapa. Esta tabla muestra qué tiene que dibujar cada capa para que la hipótesis se pueda poner a prueba.
+
+| Capa | Hipótesis | Qué tiene que mostrar el mapa |
+|---|---|---|
+| 1. Puertas | H1, H2 | Qué mecanismo restaurativo se ofrece en cada puerta y quién orienta ahí. La gente conoce las puertas pero no los mecanismos |
+| 2. Triaje | H3 | Las reglas de elegibilidad (arts. 74, 524 y 534) como árbol de decisión, sin modelo predictivo |
+| 4. Quiebres | H3, H4 | Dónde decide el operador si ofrece la vía, y cuántos casos salen por cada mecanismo (la conciliación es el 1,37% de las salidas) |
+| 5. Referentes | H2 | El CRI de las casas de justicia y LegalApp, como las dos formas de orientar que ya existen |
+| 6. Recorridos | H5 | El filtro de riesgo antes de mediar en VIF |
+| Transversal | H6 | El agente informa sobre la ruta, no dice cómo se resolvería un caso (T-323 de 2024) |
+
 ## Las seis capas
 
 ### 1. Puertas de entrada

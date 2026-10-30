@@ -26,3 +26,7 @@ Son los 8 a 10 artículos clave, que se registran con las páginas leídas:
 ## Siguiente paso
 
 Reescribir las hipótesis sobre los puntos de bifurcación del [Leviatán](../leviatan.md), contrastadas con Consensus.
+
+## Contraste del 30-oct
+
+El contraste de H1–H6 con literatura, casos aplicados y contexto está en [`contraste-hipotesis.md`](contraste-hipotesis.md). Hay que reformular tres hipótesis: H2, H3 y H5.
