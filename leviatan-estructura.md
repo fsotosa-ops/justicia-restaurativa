@@ -90,3 +90,53 @@ Fuente de la tabla: Ley 906/2004 y Ley 1826/2017 [cita; la respuesta de Gemini n
 - **El PD-AJ-10 completo** (flujo del CRI) y el manual MA-AJ-08 de las UMC. Los dos están en el portal MIPG de la SDSCJ.
 - **Las relaciones entre entidades como grafo** (quién remite a quién). El CSV tiene las entidades y las etapas; las remisiones todavía hay que levantarlas.
 - **La Ley 2492 de 2025** (nombre de las inspecciones), sin verificar.
+
+## 6. Remisiones: quién manda el caso a quién
+
+Salen del cuaderno [Leviatán · remisiones y rutas](https://notebook.google.com/notebook/ced95367-b565-47fd-8465-bb83214e5e0e), con 5 investigaciones y unas 110 fuentes; tres de ellas se hicieron en modo rápido porque se agotó el cupo diario del modo a fondo. Son 24 remisiones, una por fila en [`mapa/remisiones.csv`](mapa/remisiones.csv), cada una con disparador, si es obligatoria, plazo, norma y cita. Verifiqué en el texto oficial la r01 (comisaría → Fiscalía) y las r21–r22 (fiscal o juez → mediación).
+
+```mermaid
+flowchart LR
+  CIU([Persona]) --> POL[Policía / CAI]
+  CIU --> COM[Comisaría de familia]
+  CIU --> CJ[Casa de justicia · CRI]
+  CIU --> LP[Línea Púrpura / CIOM]
+  CIU --> SAU[Fiscalía · SAU / URI]
+  CIU --> IPS[Salud · IPS]
+  POL -- flagrancia, de inmediato --> SAU
+  IPS -- reporte obligatorio --> COM
+  IPS -- reporte obligatorio --> SAU
+  COM == TODO caso VIF, Denuncia Fácil ==> SAU
+  COM -- niños y niñas, 3 días --> ICBF[ICBF]
+  COM -- dictamen --> ML[Medicina Legal]
+  SAU -. medida más expedita .-> COM
+  LP -. orienta .-> SAU
+  LP -. orienta .-> COM
+  LP -. con voluntad .-> CR[Casa refugio]
+  CJ -- mujeres: primero --> SAU
+  CJ -- según tipología --> UMC[UMC]
+  CJ -- según tipología --> COM
+  CJ -- según tipología --> INS[Inspección]
+  INS -- si es delito --> SAU
+  UMC -. no mediable .-> CON[Consultorio / centro de conciliación]
+  SAU -- tipifica y enruta --> FIS[Fiscal delegado]
+  FIS -. voluntad de ambas partes .-> MED[Programa de mediación con convenio]
+  MED -- acta o informe --> FIS
+  FIS --> JUEZ[Jueces: garantías y conocimiento]
+  COM -. alimentos incumplidos .-> JF[Juez de familia · ejecutivo]
+  COM -. alimentos, art. 233 .-> SAU
+  JF -- 3 cuotas en mora --> RED[REDAM]
+```
+
+Línea gruesa: remisión obligatoria que casi todo lo canaliza. Línea punteada: remisión opcional o que depende de la voluntad de alguien.
+
+**Lo que muestran las remisiones:**
+
+1. **Toda la violencia intrafamiliar termina en la Fiscalía.** La comisaría está obligada a remitir *todos* los casos (Ley 2126, art. 17, par. 3; Circular 089 de 2023), y la casa de justicia manda primero a la Fiscalía a toda mujer víctima (PD-AJ-24). En VIF no hay una puerta que se quede con el caso; la decisión sobre la vía restaurativa se concentra en el fiscal.
+2. **La única entrada formal a la mediación penal es el fiscal o el juez, y solo hacia un programa con convenio** (Res. 0383/2022, art. 14). Ni la comisaría, ni la casa de justicia, ni la UMC pueden mandar un caso penal a mediación. Esa flecha punteada **FIS → MED** es la bifurcación restaurativa del Leviatán, y depende de que el fiscal la ofrezca y de que exista un convenio.
+3. **La UMC excluye la violencia física** (MA-AJ-08): la mediación comunitaria del Distrito no recibe VIF con agresión física. Lo restaurativo en VIF solo puede entrar por la vía penal.
+4. **En alimentos hay dos caminos paralelos** desde el incumplimiento: el ejecutivo ante el juez de familia (cobrar) y la denuncia penal (sancionar). La conciliación queda antes del incumplimiento, en la comisaría, el ICBF o el consultorio, y es el punto restaurativo natural de esa ruta.
+5. **El sistema sanciona las remisiones injustificadas entre autoridades** (Ley 2126, art. 5, par. 2), pero solo para comisarías y defensorías.
+6. **Lo que se registra:** el CRI anota cada remisión en el sistema de información de casas de justicia (formato F-AJ-637), y la comisaría remite por «Denuncia Fácil». Esos son los dos puntos donde una remisión deja rastro de datos. Se conecta con la interoperabilidad que pide el Decreto 225 (art. 174.10).
+
+**Lo que falta:** los tiempos reales de cada remisión (casi ninguna fuente da plazos), las remisiones de vuelta (la Fiscalía casi nunca informa a la comisaría qué pasó con el caso) y las de la Defensoría y la Personería, que no aparecieron en las fuentes.
