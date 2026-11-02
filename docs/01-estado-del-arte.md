@@ -98,7 +98,7 @@ El mapa temático resume lo anterior. La justicia restaurativa es un tema de nic
 
 ## 5. Lo que sostiene la lectura completa
 
-La revisión partió de seis hipótesis de trabajo, que el autor formuló a partir de lo conversado en las reuniones con el equipo y con los expertos consultados. Los 51 textos leídos completos permitieron contrastarlas con los datos de cada estudio y no con sus resúmenes, y el resultado es que cuatro hay que reformularlas y dos se sostienen, una de ellas con un límite. La Tabla 3 resume cada hipótesis con su veredicto.
+La revisión partió de seis hipótesis de trabajo se formularon a partir de lo conversado en las reuniones con el equipo y con los expertos consultados. Los 51 textos leídos completos permitieron contrastarlas con los datos de cada estudio y no con sus resúmenes, y el resultado es que cuatro hay que reformularlas y dos se sostienen, una de ellas con un límite. La Tabla 3 resume cada hipótesis con su veredicto.
 
 **Tabla 3.** Hipótesis de trabajo y veredicto tras la lectura completa
 
