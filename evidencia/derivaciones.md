@@ -1,6 +1,6 @@
-# Remisiones de vuelta, Ministerio Público y plazos
+# Derivaciones de vuelta, Ministerio Público y plazos
 
-2 de noviembre de 2026. Complemento de [`remisiones.csv`](../datos/remisiones.csv) con fuentes primarias. Cada dato lleva norma, artículo, cita literal y enlace oficial. Donde no se encontró fuente primaria se indica, y «no se encontró» no equivale a «no existe».
+2 de noviembre de 2026. Complemento de [`derivaciones.csv`](../datos/derivaciones.csv) con fuentes primarias. Cada dato lleva norma, artículo, cita literal y enlace oficial. Donde no se encontró fuente primaria se indica, y «no se encontró» no equivale a «no existe».
 
 Grados de verificación: **verificado** si se abrió el texto oficial; **cita** si solo se vio citado; **sin cita** si es una inferencia propia.
 
@@ -24,7 +24,7 @@ Grados de verificación: **verificado** si se abrió el texto oficial; **cita** 
 
 No se pudieron abrir: el Manual de Justicia Restaurativa de la FGN (la única copia archivada está truncada en 1 MB), el Manual de Atención al Usuario FGN v06 (no hay copia archivada y el sitio bloquea la descarga), la Resolución FGN 2418 de 2017 (no aparece en línea), el procedimiento PD-AJ-24 de la SDSCJ (no aparece en línea) y la Circular MJD-CIR23-0000089. Los Lineamientos de MinJusticia para comisarías (Tomos III y IV) no los reabrí en esta pasada.
 
-## 1. Remisiones de vuelta
+## 1. Derivaciones de vuelta
 
 ### Fiscalía hacia la comisaría, la casa de justicia o el ICBF
 
@@ -46,7 +46,7 @@ La misma directiva advierte en el num. 31: «La violencia intrafamiliar no es de
 
 La Ley 906, art. 526, inc. 2 (F4), dice: «El mediador expedirá un informe de sus resultados y lo remitirá al fiscal o al juez, según el caso, para que lo valore y determine sus efectos en la actuación». No fija plazo. Los arts. 523, 524, 525 y 527 tampoco lo fijan.
 
-La Resolución FGN 0-0383 de 2022 (F10) detalla la vuelta, pero tampoco le pone plazo a la remisión del acta:
+La Resolución FGN 0-0383 de 2022 (F10) detalla la vuelta, pero tampoco le pone plazo al envío del acta:
 
 - Art. 19: «En el evento en que las partes no lleguen a un acuerdo, el mediador dará por terminado el proceso restaurativo y remitirá un informe al fiscal de conocimiento en el que expondrá las actividades adelantadas e informará el fracaso de la audiencia. Si las partes alcanzan un acuerdo, el mediador remitirá al fiscal de conocimiento el acta de mediación». De aquí sale la cita de r23, no del art. 526.
 - Art. 16, par. 1: si el mediador concluye que hay «riesgo alto de revictimización» o falta de voluntad, debe «declarar terminado el proceso restaurativo y remitir un informe al fiscal de conocimiento».
@@ -76,11 +76,11 @@ La resolución es nacional. Que haya mediadores de la Defensoría Regional Bogot
 
 ### Personería de Bogotá
 
-**Ministerio Público en el proceso penal.** La Ley 906, art. 109 (F4), dice: «los personeros distritales y municipales actuarán como agentes del Ministerio Público en el proceso penal y ejercerán sus competencias en los juzgados penales y promiscuos del circuito y municipales y ante sus fiscales delegados». En el parágrafo hay una remisión con plazo cualitativo: «los fiscales, jueces y la policía judicial enterarán oportunamente, por el medio más expedito, al Ministerio Público de las diligencias y actuaciones de su competencia». El Decreto Ley 1421, art. 99 (F7), le da al personero intervención «en los procesos civiles, contenciosos, laborales, de familia, penales». El art. 100, num. 3, le da una función de orientación: «Orientar a los ciudadanos en sus relaciones con la administración, indicándoles la autoridad a la que deben dirigirse».
+**Ministerio Público en el proceso penal.** La Ley 906, art. 109 (F4), dice: «los personeros distritales y municipales actuarán como agentes del Ministerio Público en el proceso penal y ejercerán sus competencias en los juzgados penales y promiscuos del circuito y municipales y ante sus fiscales delegados». En el parágrafo hay una derivación con plazo cualitativo: «los fiscales, jueces y la policía judicial enterarán oportunamente, por el medio más expedito, al Ministerio Público de las diligencias y actuaciones de su competencia». El Decreto Ley 1421, art. 99 (F7), le da al personero intervención «en los procesos civiles, contenciosos, laborales, de familia, penales». El art. 100, num. 3, le da una función de orientación: «Orientar a los ciudadanos en sus relaciones con la administración, indicándoles la autoridad a la que deben dirigirse».
 
 **URI.** El Acuerdo 978 de 2025, art. 32, num. 2 (F9, p. 23), asigna a la Personería Delegada para la Defensa y Protección de los Derechos Humanos I «Ejercer las funciones de agentes del Ministerio Público en los procesos y actuaciones de personas privadas de la libertad en el Distrito Capital (las URI, Estaciones de Policía y Centro de Traslado por Protección -C. T. P.-, entre otras)». Esto es vigilancia, no remisión.
 
-**Denuncia de oficio en VIF.** El Acuerdo 978, art. 38, num. 5 (F9, pp. 29 y 30), da a las Personerías Delegadas para Asuntos Penales I y II la función de «Presentar las denuncias ante las autoridades correspondientes por los hechos punibles que lleguen a su conocimiento, susceptibles de investigación oficiosa, casos de violencia intrafamiliar, cuando las víctimas sean niños, niñas y adolescentes, o cuando la víctima estuviere imposibilitada para formular la querella, o sea incapaz y carezca de representante legal». Esta es una remisión de la Personería a la Fiscalía que el mapa no tiene. El art. 26, num. 7 (p. 18), da a las personerías locales la función de «Remitir por competencia las solicitudes de investigaciones disciplinarias, fiscales y penales a las autoridades».
+**Denuncia de oficio en VIF.** El Acuerdo 978, art. 38, num. 5 (F9, pp. 29 y 30), da a las Personerías Delegadas para Asuntos Penales I y II la función de «Presentar las denuncias ante las autoridades correspondientes por los hechos punibles que lleguen a su conocimiento, susceptibles de investigación oficiosa, casos de violencia intrafamiliar, cuando las víctimas sean niños, niñas y adolescentes, o cuando la víctima estuviere imposibilitada para formular la querella, o sea incapaz y carezca de representante legal». Esta es una derivación de la Personería a la Fiscalía que el mapa no tiene. El art. 26, num. 7 (p. 18), da a las personerías locales la función de «Remitir por competencia las solicitudes de investigaciones disciplinarias, fiscales y penales a las autoridades».
 
 **Defensa pública.** Ley 941, art. 25 (F5): el personero debe «1. Recibir las solicitudes del servicio que presta el Sistema Nacional de Defensoría Pública en el municipio. 2. Solicitar la asignación de defensor público, previa verificación de la situación socioeconómica del solicitante». El artículo habla del «Personero Municipal». Que aplique a la Personería de Bogotá lo infiero del Decreto Ley 1421, art. 101, num. 1, que le asigna «Coordinar la defensoría pública en los términos que señale la ley».
 
@@ -96,10 +96,10 @@ La resolución es nacional. Que haya mediadores de la Defensoría Regional Bogot
 | r07 | La norma es la Ley 2126 art. 20 par. 2 inc. 2, no el art. 17. Fija «adopción inmediata» de la medida por el comisario; la solicitud de la Fiscalía no tiene plazo |
 | r11 | Sin cambio. El PD-AJ-24 de la SDSCJ no está en línea y no se encontró otra fuente primaria |
 | r20 | Sin plazo en las fuentes abiertas. La Res. FGN 2638 de 2016 (leída en el normograma de Colpensiones, que no es fuente oficial) no trae plazos de asignación; la Res. 2418 de 2017 no aparece en línea. La Ley 906 art. 205 fija 36 horas para el informe ejecutivo de policía judicial al fiscal, pero solo aplica si quien recibe la denuncia en la SAU ejerce funciones de policía judicial y hubo actos urgentes; aplicarlo a r20 sería una inferencia propia (**sin cita**) |
-| r21 | La norma no fija plazo. Res. 0383 art. 14 verificada: la remisión «se hará mediante una comunicación» con contenido mínimo, sin término |
+| r21 | La norma no fija plazo. Res. 0383 art. 14 verificada: la derivación, en palabras de la norma la remisión, «se hará mediante una comunicación» con contenido mínimo, sin término |
 | r23 | La norma no fija plazo para remitir el acta (Ley 906 art. 526; Res. 0383 arts. 16 y 19). Plazos intermedios: 15 días para las reuniones y 7 días hábiles para la audiencia (Res. 0383 art. 16) |
 
-## Filas agregadas a remisiones.csv
+## Filas agregadas a derivaciones.csv
 
 ### Correcciones a filas existentes
 

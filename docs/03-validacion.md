@@ -16,15 +16,15 @@ Esta versión se presenta al equipo para validarla. Una parte de lo que estaba p
 | ¿La T-323 de 2024 obliga a un agente que orienta a la ciudadanía? | No. Sus criterios se dirigen a la Rama Judicial, igual que el Acuerdo PCSJA24-12243, que admite orientar sin interpretar hechos ni resolver casos | T-323 de 2024, fundamento 423; Acuerdo PCSJA24-12243, art. 12.1.b |
 | ¿Qué está reservado a los abogados? | Ejercer la profesión, anunciarse como abogado y litigar. Ninguna norma define dónde termina orientar | Decreto 196 de 1971, arts. 4, 24 y 25; Ley 2113 de 2021, art. 6 |
 | ¿Qué exige el tratamiento de datos? | Autorización explícita para datos sensibles, ponderación, gestión de riesgos y estudio de impacto de privacidad si el riesgo es alto | Ley 1581 de 2012, art. 6; Circular Externa 002 de 2024 de la SIC, numerales I, III y IV |
-| ¿Hay remisiones de vuelta y plazos? | No hay norma que obligue a la Fiscalía a informar del resultado a la entidad que remitió, salvo en lo relativo a medidas de protección, que remite a la comisaría, y en la mediación, donde el programa informa al fiscal. Las remisiones clave no tienen plazo legal | Ley 2126 de 2021; Ley 906 de 2004, arts. 136 y 526; Resolución 0383 de 2022, arts. 14 y 19; Directiva FGN 0001 de 2021, num. 26 |
+| ¿Hay derivaciones de vuelta y plazos? | No hay norma que obligue a la Fiscalía a informar del resultado a la entidad que remitió, salvo en lo relativo a medidas de protección, que remite a la comisaría, y en la mediación, donde el programa informa al fiscal. Las derivaciones clave no tienen plazo legal | Ley 2126 de 2021; Ley 906 de 2004, arts. 136 y 526; Resolución 0383 de 2022, arts. 14 y 19; Directiva FGN 0001 de 2021, num. 26 |
 
-*Fuente:* Elaboración propia. El detalle, con citas y enlaces, está en [`normas-fiscalia.md`](../evidencia/normas-fiscalia.md), [`normas-ia.md`](../evidencia/normas-ia.md) y [`remisiones.md`](../evidencia/remisiones.md).
+*Fuente:* Elaboración propia. El detalle, con citas y enlaces, está en [`normas-fiscalia.md`](../evidencia/normas-fiscalia.md), [`normas-ia.md`](../evidencia/normas-ia.md) y [`derivaciones.md`](../evidencia/derivaciones.md).
 
 **Tabla 2.** Lo que sigue abierto
 
 | Qué | Quién | Cómo se resuelve |
 |---|---|---|
-| Revisar las láminas del [Leviatán](02-leviatan.md), las 38 remisiones y las reglas de elegibilidad | Lorena Vega y Jorge Salcedo | Sesión de validación con las láminas del mapa |
+| Revisar las láminas del [Leviatán](02-leviatan.md), las 38 derivaciones y las reglas de elegibilidad | Lorena Vega y Jorge Salcedo | Sesión de validación con las láminas del mapa |
 | Saber qué convenios de mediación siguen vigentes, qué pasó con el Grupo de Apoyo de la Resolución 0383, qué rutas emitió la Unidad de Justicia Restaurativa y cuál es el procedimiento interno de recepción de denuncias en las salas SAU y URI, que no está publicado y por eso no tiene lámina propia | Felipe Soto | Derecho de petición a la Unidad de Justicia Restaurativa de la Fiscalía |
 | Confirmar si la Directiva 0001 de 2021 sigue vigente y conseguir la versión oficial del manual de justicia restaurativa, que ya no está en el portal de la Fiscalía | Felipe Soto y Lorena Vega | Derecho de petición o consulta a la Fiscalía |
 | Definir quién opera el agente y quién es responsable del tratamiento de datos, porque de eso depende si los criterios de la Rama Judicial obligan o solo orientan | Equipo del proyecto con CAOBA | Decisión del equipo |

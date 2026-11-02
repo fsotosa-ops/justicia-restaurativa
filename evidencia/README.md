@@ -106,6 +106,6 @@ Las fichas guardan las citas literales de cada texto, en el idioma original y co
 | [`lecturas-complementarias.md`](lecturas-complementarias.md) | Cuatro textos complementarios: mediación penal en Chequia, prácticas restaurativas en Uzbekistán, análisis de casos de acceso a la justicia con modelos de tópicos y delitos sexuales juveniles en tribunales |
 | [`normas-fiscalia.md`](normas-fiscalia.md) | Normas de la Fiscalía sobre mediación y violencia intrafamiliar |
 | [`normas-ia.md`](normas-ia.md) | Lo que exigen las normas colombianas a un agente de IA que orienta sobre la justicia |
-| [`remisiones.md`](remisiones.md) | Remisiones de vuelta, Ministerio Público y plazos, con su norma |
+| [`derivaciones.md`](derivaciones.md) | Derivaciones de vuelta, Ministerio Público y plazos, con su norma |
 
 Los textos completos se consiguieron por acceso abierto o con el acceso institucional de la Javeriana y no se versionan. Los grados de verificación de los datos están en el [diccionario de datos](../datos/DICCIONARIO.md).

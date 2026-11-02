@@ -10,7 +10,7 @@ Una fila por entidad del sistema de justicia que interviene en las rutas del pro
 
 | Columna | Descripción |
 |---|---|
-| `id` | Identificador corto de la entidad, usado en `remisiones.csv` |
+| `id` | Identificador corto de la entidad, usado en `derivaciones.csv` |
 | `entidad` | Nombre oficial |
 | `bloque` | Rama o sector del Estado: Rama Judicial, Fiscalía, Ministerio Público, Ejecutivo nacional, Distrito o No formal |
 | `nivel` | Alcance territorial u orgánico: nacional, distrital, local, comunitario, universitario o mixto |
@@ -22,16 +22,16 @@ Una fila por entidad del sistema de justicia que interviene en las rutas del pro
 | `presencia_bogota` | Sedes o cobertura en Bogotá |
 | `verificacion` | Grado de verificación del dato (ver abajo) |
 
-### `remisiones.csv`
+### `derivaciones.csv`
 
-Una fila por remisión, es decir, por envío de un caso de una entidad a otra porque la norma lo obliga o lo permite (38 filas).
+Una fila por derivación, es decir, por envío de un caso de una entidad a otra porque una norma lo obliga o lo permite (38 filas).
 
 | Columna | Descripción |
 |---|---|
-| `id` | Identificador de la remisión (r01 a r39) |
+| `id` | Identificador de la derivación (r01 a r39) |
 | `ruta` | Ruta a la que pertenece: `vif` (violencia intrafamiliar), `mujeres`, `casas_justicia`, `alimentos` o `fiscalia` |
 | `origen`, `destino` | `id` de las entidades que remiten y reciben |
-| `cuando` | Disparador de la remisión |
+| `cuando` | Qué dispara la derivación |
 | `tipo` | Obligatoria, opcional u orientativa, con su matiz entre paréntesis |
 | `plazo` | Plazo legal, si existe |
 | `norma` | Norma que la establece, con artículo |
