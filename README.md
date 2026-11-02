@@ -27,5 +27,3 @@ El proyecto 21871, del programa Atenea, explora cómo un agente de inteligencia 
 | [`referencias.bib`](referencias.bib) | Las referencias de los documentos en BibTeX, para importarlas en Zotero u otro gestor |
 
 Los textos completos de terceros y las exportaciones de Scopus no se versionan, porque sus licencias no permiten redistribuirlos, pero se reproducen con el protocolo.
-
-Los metadatos están en [`CITATION.cff`](CITATION.cff).
