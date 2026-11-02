@@ -4,7 +4,7 @@ Esta carpeta reúne la evidencia que sostiene los [documentos](../docs/): qué e
 
 ## Cómo se conecta la evidencia
 
-La Figura 1 muestra el recorrido de la evidencia. Los cuatro campos de estudio de la búsqueda y las normas colombianas aportan textos a las seis hipótesis de trabajo, y cada flecha indica cuántos textos de ese campo aportan a esa hipótesis. Las normas, además, son la base del mapa del Leviatán. En cambio, el lenguaje judicial no aporta a ninguna hipótesis y sustenta lo que la sección 6 del estado del arte describe como no cubierto.
+En la Figura 1, los cuatro campos de estudio de la búsqueda y las normas colombianas aportan textos a las seis hipótesis de trabajo, y cada flecha indica cuántos. Las normas, además, son la base del mapa del Leviatán. En cambio, el lenguaje judicial no aporta a ninguna hipótesis y sustenta lo que la sección 6 del estado del arte describe como no cubierto.
 
 **Figura 1.** Mapa conceptual de la evidencia
 
@@ -66,13 +66,13 @@ flowchart LR
 
 ## Cuánta evidencia hay para cada hipótesis
 
-La Figura 2 es un mapa de brechas de evidencia, en la forma que usan la Colaboración Campbell y 3ie. Cada fila es una hipótesis y cada columna un nivel de evidencia; el tamaño del círculo indica cuántos textos aportan, y el color, si respaldan, matizan o contradicen la hipótesis tal como está formulada. Así, H3 es la que más evidencia reúne, aunque casi toda de nivel bajo, y solo H5 tiene evidencia de nivel alto, que viene de metaanálisis y revisiones sistemáticas. En cambio, H2 y H4, que sostienen la propuesta del agente, descansan en pocos estudios, de nivel medio o bajo, y ninguna hipótesis tiene evidencia colombiana de nivel alto.
+La Figura 2 es un mapa de brechas de evidencia. H3 es la hipótesis que más evidencia reúne, aunque casi toda de nivel bajo, y solo H5 tiene evidencia de nivel alto, que viene de metaanálisis y revisiones sistemáticas. En cambio, H2 y H4, que sostienen la propuesta del agente, descansan en pocos estudios, de nivel medio o bajo, y ninguna hipótesis tiene evidencia colombiana de nivel alto.
 
 **Figura 2.** Mapa de evidencia por hipótesis y nivel de evidencia
 
 ![Mapa de evidencia](../figuras/mapa-evidencia.svg)
 
-*Nota:* nivel alto, ensayo aleatorio o metaanálisis; medio, estudio cuasiexperimental u observacional con datos; bajo, estudio cualitativo, caso o evaluación técnica de un sistema; normativo, norma o sentencia. Los textos que solo dan contexto no se dibujan. *Fuente:* Elaboración propia con datos de [`matriz.csv`](matriz.csv).
+*Nota:* el tamaño del círculo indica cuántos textos aportan, y el color, si respaldan, matizan o contradicen la hipótesis tal como está formulada. Nivel alto, ensayo aleatorio o metaanálisis; medio, estudio cuasiexperimental u observacional con datos; bajo, estudio cualitativo, caso o evaluación técnica de un sistema; normativo, norma o sentencia. Los textos que solo dan contexto no se dibujan. *Fuente:* Elaboración propia con datos de [`matriz.csv`](matriz.csv).
 
 ## Matriz de extracción
 
@@ -80,7 +80,7 @@ La matriz tiene una fila por cada uno de los 68 estudios y normas citados en los
 
 ## Verificación contra las fuentes
 
-Cada afirmación con fuente de los documentos, de las fichas, de las tablas de fuentes de los diagramas y de los datos del Leviatán se cotejó contra el texto original: el PDF del estudio, mirando como imagen las tablas y los gráficos, o el texto oficial de la norma. La Tabla 1 resume el resultado, y el registro completo, con la cita de la fuente y la corrección aplicada, está en [`verificacion.csv`](verificacion.csv).
+Cada afirmación con fuente de los documentos, de las fichas, de las tablas de fuentes de los diagramas y de los datos del Leviatán se cotejó contra el texto original del estudio o de la norma. La Tabla 1 resume el resultado, y el registro completo, con la cita de la fuente y la corrección aplicada, está en [`verificacion.csv`](verificacion.csv).
 
 **Tabla 1.** Resultado de la verificación de 411 afirmaciones
 
@@ -108,4 +108,4 @@ Las fichas guardan las citas literales de cada texto, en el idioma original y co
 | [`normas-ia.md`](normas-ia.md) | Lo que exigen las normas colombianas a un agente de IA que orienta sobre la justicia |
 | [`derivaciones.md`](derivaciones.md) | Derivaciones de vuelta, Ministerio Público y plazos, con su norma |
 
-Los textos completos se consiguieron por acceso abierto o con el acceso institucional de la Javeriana y no se versionan. Los grados de verificación de los datos están en el [diccionario de datos](../datos/DICCIONARIO.md).
+Los textos completos no se suben al repositorio, porque sus licencias no permiten redistribuirlos. Los grados de verificación de los datos están en el [diccionario de datos](../datos/DICCIONARIO.md).
