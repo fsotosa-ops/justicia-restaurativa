@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<bpmn:definitions xmlns:bpmn="http://www.omg.org/spec/BPMN/20100524/MODEL" xmlns:bpmndi="http://www.omg.org/spec/BPMN/20100524/DI" xmlns:dc="http://www.omg.org/spec/DD/20100524/DC" xmlns:di="http://www.omg.org/spec/DD/20100524/DI" xmlns:bioc="http://bpmn.io/schema/bpmn/biocolor/1.0" xmlns:color="http://www.omg.org/spec/BPMN/non-normative/color/1.0" id="def_p_comisaria_2" targetNamespace="https://github.com/fsotosa-ops/justicia-restaurativa" exporter="justicia-restaurativa/mapa/procesos/bpmn.py" exporterVersion="1">
+  <bpmn:collaboration id="col_p_comisaria_2">
+    <bpmn:participant id="pool_p_comisaria_2" name="Comisaría de familia, hoja 2 de 3" processRef="p_comisaria_2"/>
+  </bpmn:collaboration>
+  <bpmn:process id="p_comisaria_2" name="Comisaría de familia, hoja 2 de 3" isExecutable="false">
+    <bpmn:laneSet id="ls_p_comisaria_2">
+      <bpmn:lane id="lane_pro" name="Profesional de recepción">
+        <bpmn:flowNodeRef>de_hoja1</bpmn:flowNodeRef>
+        <bpmn:flowNodeRef>t5</bpmn:flowNodeRef>
+        <bpmn:flowNodeRef>t6</bpmn:flowNodeRef>
+        <bpmn:flowNodeRef>t7</bpmn:flowNodeRef>
+        <bpmn:flowNodeRef>t8</bpmn:flowNodeRef>
+        <bpmn:flowNodeRef>t9</bpmn:flowNodeRef>
+        <bpmn:flowNodeRef>t10</bpmn:flowNodeRef>
+        <bpmn:flowNodeRef>a_hoja3</bpmn:flowNodeRef>
+      </bpmn:lane>
+    </bpmn:laneSet>
+    <bpmn:intermediateCatchEvent id="de_hoja1" name="Viene de la hoja 1">
+      <bpmn:outgoing>f0</bpmn:outgoing>
+      <bpmn:linkEventDefinition id="led_de_hoja1" name="Valoración"/>
+    </bpmn:intermediateCatchEvent>
+    <bpmn:task id="t5" name="5. Valoración inicial psicológica y emocional">
+      <bpmn:documentation>Fuente: MinJusticia (2022), Tomo V, fase 1, act. 5, p. 19</bpmn:documentation>
+      <bpmn:incoming>f0</bpmn:incoming>
+      <bpmn:outgoing>f1</bpmn:outgoing>
+    </bpmn:task>
+    <bpmn:task id="t6" name="6. Identificar el riesgo">
+      <bpmn:documentation>Fuente: MinJusticia (2022), Tomo V, fase 1, act. 6, p. 19</bpmn:documentation>
+      <bpmn:incoming>f1</bpmn:incoming>
+      <bpmn:outgoing>f2</bpmn:outgoing>
+    </bpmn:task>
+    <bpmn:task id="t7" name="7. Iniciar la solicitud de medida de protección">
+      <bpmn:documentation>Fuente: MinJusticia (2022), Tomo V, fase 1, act. 7, p. 19</bpmn:documentation>
+      <bpmn:incoming>f2</bpmn:incoming>
+      <bpmn:outgoing>f3</bpmn:outgoing>
+    </bpmn:task>
+    <bpmn:task id="t8" name="8. Abrir el trámite en el sistema">
+      <bpmn:documentation>Fuente: MinJusticia (2022), Tomo V, fase 1, act. 10, p. 21</bpmn:documentation>
+      <bpmn:incoming>f3</bpmn:incoming>
+      <bpmn:outgoing>f4</bpmn:outgoing>
+    </bpmn:task>
+    <bpmn:task id="t9" name="9. Verificar el nivel del riesgo">
+      <bpmn:documentation>Fuente: MinJusticia (2022), Tomo V, fase 1, act. 13, p. 22</bpmn:documentation>
+      <bpmn:incoming>f4</bpmn:incoming>
+      <bpmn:outgoing>f5</bpmn:outgoing>
+    </bpmn:task>
+    <bpmn:task id="t10" name="10. Elaborar el informe de la entrevista">
+      <bpmn:documentation>Fuente: MinJusticia (2022), Tomo V, fase 1, act. 14, p. 22</bpmn:documentation>
+      <bpmn:incoming>f5</bpmn:incoming>
+      <bpmn:outgoing>f6</bpmn:outgoing>
+    </bpmn:task>
+    <bpmn:intermediateThrowEvent id="a_hoja3" name="Continúa en la hoja 3">
+      <bpmn:incoming>f6</bpmn:incoming>
+      <bpmn:linkEventDefinition id="led_a_hoja3" name="Medidas provisionales"/>
+    </bpmn:intermediateThrowEvent>
+    <bpmn:sequenceFlow id="f0" sourceRef="de_hoja1" targetRef="t5"/>
+    <bpmn:sequenceFlow id="f1" sourceRef="t5" targetRef="t6"/>
+    <bpmn:sequenceFlow id="f2" sourceRef="t6" targetRef="t7"/>
+    <bpmn:sequenceFlow id="f3" sourceRef="t7" targetRef="t8"/>
+    <bpmn:sequenceFlow id="f4" sourceRef="t8" targetRef="t9"/>
+    <bpmn:sequenceFlow id="f5" sourceRef="t9" targetRef="t10"/>
+    <bpmn:sequenceFlow id="f6" sourceRef="t10" targetRef="a_hoja3"/>
+  </bpmn:process>
+  <bpmndi:BPMNDiagram id="dia_p_comisaria_2">
+    <bpmndi:BPMNPlane id="pl_p_comisaria_2" bpmnElement="col_p_comisaria_2">
+      <bpmndi:BPMNShape id="s_pool" bpmnElement="pool_p_comisaria_2" isHorizontal="true"><dc:Bounds x="0" y="0" width="1305" height="160"/></bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="s_lane_pro" bpmnElement="lane_pro" isHorizontal="true"><dc:Bounds x="30" y="0" width="1275" height="160"/></bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="s_de_hoja1" bpmnElement="de_hoja1"><dc:Bounds x="102" y="62" width="36" height="36"/>
+        <bpmndi:BPMNLabel><dc:Bounds x="65" y="104" width="110" height="28"/></bpmndi:BPMNLabel>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="s_t5" bpmnElement="t5"><dc:Bounds x="214" y="40" width="112" height="80"/>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="s_t6" bpmnElement="t6"><dc:Bounds x="364" y="40" width="112" height="80"/>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="s_t7" bpmnElement="t7"><dc:Bounds x="514" y="40" width="112" height="80"/>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="s_t8" bpmnElement="t8"><dc:Bounds x="664" y="40" width="112" height="80"/>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="s_t9" bpmnElement="t9"><dc:Bounds x="814" y="40" width="112" height="80"/>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="s_t10" bpmnElement="t10"><dc:Bounds x="964" y="40" width="112" height="80"/>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="s_a_hoja3" bpmnElement="a_hoja3"><dc:Bounds x="1152" y="62" width="36" height="36"/>
+        <bpmndi:BPMNLabel><dc:Bounds x="1115" y="104" width="110" height="28"/></bpmndi:BPMNLabel>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNEdge id="e_f0" bpmnElement="f0"><di:waypoint x="138" y="80"/><di:waypoint x="214" y="80"/></bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="e_f1" bpmnElement="f1"><di:waypoint x="326" y="80"/><di:waypoint x="364" y="80"/></bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="e_f2" bpmnElement="f2"><di:waypoint x="476" y="80"/><di:waypoint x="514" y="80"/></bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="e_f3" bpmnElement="f3"><di:waypoint x="626" y="80"/><di:waypoint x="664" y="80"/></bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="e_f4" bpmnElement="f4"><di:waypoint x="776" y="80"/><di:waypoint x="814" y="80"/></bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="e_f5" bpmnElement="f5"><di:waypoint x="926" y="80"/><di:waypoint x="964" y="80"/></bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="e_f6" bpmnElement="f6"><di:waypoint x="1076" y="80"/><di:waypoint x="1152" y="80"/></bpmndi:BPMNEdge>
+    </bpmndi:BPMNPlane>
+  </bpmndi:BPMNDiagram>
+</bpmn:definitions>

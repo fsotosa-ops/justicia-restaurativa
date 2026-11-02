@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<bpmn:definitions xmlns:bpmn="http://www.omg.org/spec/BPMN/20100524/MODEL" xmlns:bpmndi="http://www.omg.org/spec/BPMN/20100524/DI" xmlns:dc="http://www.omg.org/spec/DD/20100524/DC" xmlns:di="http://www.omg.org/spec/DD/20100524/DI" xmlns:bioc="http://bpmn.io/schema/bpmn/biocolor/1.0" xmlns:color="http://www.omg.org/spec/BPMN/non-normative/color/1.0" id="def_p_comisaria_1" targetNamespace="https://github.com/fsotosa-ops/justicia-restaurativa" exporter="justicia-restaurativa/mapa/procesos/bpmn.py" exporterVersion="1">
+  <bpmn:collaboration id="col_p_comisaria_1">
+    <bpmn:participant id="pool_p_comisaria_1" name="Comisaría de familia, hoja 1 de 3" processRef="p_comisaria_1"/>
+    <bpmn:participant id="persona" name="Persona usuaria"/>
+    <bpmn:messageFlow id="mf0" sourceRef="persona" targetRef="inicio" name="Solicita atención"/>
+    <bpmn:messageFlow id="mf1" sourceRef="t4" targetRef="persona" name="Oficio remisorio"/>
+  </bpmn:collaboration>
+  <bpmn:process id="p_comisaria_1" name="Comisaría de familia, hoja 1 de 3" isExecutable="false">
+    <bpmn:laneSet id="ls_p_comisaria_1">
+      <bpmn:lane id="lane_com" name="Comisario(a) de familia">
+        <bpmn:flowNodeRef>t4</bpmn:flowNodeRef>
+        <bpmn:flowNodeRef>fin_remitido</bpmn:flowNodeRef>
+      </bpmn:lane>
+      <bpmn:lane id="lane_seg" name="Personal de seguridad">
+        <bpmn:flowNodeRef>inicio</bpmn:flowNodeRef>
+        <bpmn:flowNodeRef>t1</bpmn:flowNodeRef>
+      </bpmn:lane>
+      <bpmn:lane id="lane_pro" name="Profesional de recepción">
+        <bpmn:flowNodeRef>t2</bpmn:flowNodeRef>
+        <bpmn:flowNodeRef>t3</bpmn:flowNodeRef>
+        <bpmn:flowNodeRef>g1</bpmn:flowNodeRef>
+        <bpmn:flowNodeRef>a_hoja2</bpmn:flowNodeRef>
+      </bpmn:lane>
+    </bpmn:laneSet>
+    <bpmn:startEvent id="inicio" name="Llega una persona a la comisaría">
+      <bpmn:outgoing>f0</bpmn:outgoing>
+      <bpmn:messageEventDefinition id="med_inicio"/>
+    </bpmn:startEvent>
+    <bpmn:task id="t1" name="1. Registrar el ingreso">
+      <bpmn:documentation>Fuente: MinJusticia (2022), Tomo V, fase 1, act. 1, p. 17</bpmn:documentation>
+      <bpmn:incoming>f0</bpmn:incoming>
+      <bpmn:outgoing>f1</bpmn:outgoing>
+    </bpmn:task>
+    <bpmn:task id="t2" name="2. Registrar la información básica">
+      <bpmn:documentation>Fuente: MinJusticia (2022), Tomo V, fase 1, act. 2, p. 18</bpmn:documentation>
+      <bpmn:incoming>f1</bpmn:incoming>
+      <bpmn:outgoing>f2</bpmn:outgoing>
+    </bpmn:task>
+    <bpmn:task id="t3" name="3. Indagar el motivo de consulta">
+      <bpmn:documentation>Fuente: MinJusticia (2022), Tomo V, fase 1, act. 3, p. 18</bpmn:documentation>
+      <bpmn:incoming>f2</bpmn:incoming>
+      <bpmn:outgoing>f3</bpmn:outgoing>
+    </bpmn:task>
+    <bpmn:exclusiveGateway id="g1" name="¿Es competencia de la comisaría?">
+      <bpmn:incoming>f3</bpmn:incoming>
+      <bpmn:outgoing>f4</bpmn:outgoing>
+      <bpmn:outgoing>f6</bpmn:outgoing>
+    </bpmn:exclusiveGateway>
+    <bpmn:task id="t4" name="4. Remitir por oficio a la entidad competente">
+      <bpmn:documentation>Fuente: MinJusticia (2022), Tomo V, fase 1, act. 4, pp. 18-19</bpmn:documentation>
+      <bpmn:incoming>f4</bpmn:incoming>
+      <bpmn:outgoing>f5</bpmn:outgoing>
+    </bpmn:task>
+    <bpmn:endEvent id="fin_remitido" name="Caso remitido">
+      <bpmn:incoming>f5</bpmn:incoming>
+    </bpmn:endEvent>
+    <bpmn:intermediateThrowEvent id="a_hoja2" name="Continúa en la hoja 2">
+      <bpmn:incoming>f6</bpmn:incoming>
+      <bpmn:linkEventDefinition id="led_a_hoja2" name="Valoración"/>
+    </bpmn:intermediateThrowEvent>
+    <bpmn:sequenceFlow id="f0" sourceRef="inicio" targetRef="t1"/>
+    <bpmn:sequenceFlow id="f1" sourceRef="t1" targetRef="t2"/>
+    <bpmn:sequenceFlow id="f2" sourceRef="t2" targetRef="t3"/>
+    <bpmn:sequenceFlow id="f3" sourceRef="t3" targetRef="g1"/>
+    <bpmn:sequenceFlow id="f4" sourceRef="g1" targetRef="t4" name="No"/>
+    <bpmn:sequenceFlow id="f5" sourceRef="t4" targetRef="fin_remitido"/>
+    <bpmn:sequenceFlow id="f6" sourceRef="g1" targetRef="a_hoja2" name="Sí"/>
+  </bpmn:process>
+  <bpmndi:BPMNDiagram id="dia_p_comisaria_1">
+    <bpmndi:BPMNPlane id="pl_p_comisaria_1" bpmnElement="col_p_comisaria_1">
+      <bpmndi:BPMNShape id="s_pool" bpmnElement="pool_p_comisaria_1" isHorizontal="true"><dc:Bounds x="0" y="110" width="1155" height="480"/></bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="s_persona" bpmnElement="persona" isHorizontal="true"><dc:Bounds x="0" y="0" width="1155" height="60"/></bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="s_lane_com" bpmnElement="lane_com" isHorizontal="true"><dc:Bounds x="30" y="110" width="1125" height="160"/></bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="s_lane_seg" bpmnElement="lane_seg" isHorizontal="true"><dc:Bounds x="30" y="270" width="1125" height="160"/></bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="s_lane_pro" bpmnElement="lane_pro" isHorizontal="true"><dc:Bounds x="30" y="430" width="1125" height="160"/></bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="s_inicio" bpmnElement="inicio"><dc:Bounds x="102" y="332" width="36" height="36"/>
+        <bpmndi:BPMNLabel><dc:Bounds x="65" y="374" width="110" height="28"/></bpmndi:BPMNLabel>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="s_t1" bpmnElement="t1"><dc:Bounds x="214" y="310" width="112" height="80"/>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="s_t2" bpmnElement="t2"><dc:Bounds x="364" y="470" width="112" height="80"/>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="s_t3" bpmnElement="t3"><dc:Bounds x="514" y="470" width="112" height="80"/>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="s_g1" bpmnElement="g1"><dc:Bounds x="695" y="485" width="50" height="50"/>
+        <bpmndi:BPMNLabel><dc:Bounds x="665" y="541" width="110" height="28"/></bpmndi:BPMNLabel>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="s_t4" bpmnElement="t4"><dc:Bounds x="814" y="150" width="112" height="80"/>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="s_fin_remitido" bpmnElement="fin_remitido"><dc:Bounds x="1002" y="172" width="36" height="36"/>
+        <bpmndi:BPMNLabel><dc:Bounds x="965" y="214" width="110" height="28"/></bpmndi:BPMNLabel>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="s_a_hoja2" bpmnElement="a_hoja2"><dc:Bounds x="852" y="492" width="36" height="36"/>
+        <bpmndi:BPMNLabel><dc:Bounds x="815" y="534" width="110" height="28"/></bpmndi:BPMNLabel>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNEdge id="e_f0" bpmnElement="f0"><di:waypoint x="138" y="350"/><di:waypoint x="214" y="350"/></bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="e_f1" bpmnElement="f1"><di:waypoint x="270" y="390"/><di:waypoint x="270" y="510"/><di:waypoint x="364" y="510"/></bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="e_f2" bpmnElement="f2"><di:waypoint x="476" y="510"/><di:waypoint x="514" y="510"/></bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="e_f3" bpmnElement="f3"><di:waypoint x="626" y="510"/><di:waypoint x="695" y="510"/></bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="e_f4" bpmnElement="f4"><di:waypoint x="720" y="485"/><di:waypoint x="720" y="190"/><di:waypoint x="814" y="190"/><bpmndi:BPMNLabel><dc:Bounds x="725" y="330" width="70" height="14"/></bpmndi:BPMNLabel></bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="e_f5" bpmnElement="f5"><di:waypoint x="926" y="190"/><di:waypoint x="1002" y="190"/></bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="e_f6" bpmnElement="f6"><di:waypoint x="745" y="510"/><di:waypoint x="852" y="510"/><bpmndi:BPMNLabel><dc:Bounds x="768" y="492" width="60" height="14"/></bpmndi:BPMNLabel></bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="e_mf0" bpmnElement="mf0"><di:waypoint x="120" y="60"/><di:waypoint x="120" y="332"/><bpmndi:BPMNLabel><dc:Bounds x="126" y="189" width="90" height="14"/></bpmndi:BPMNLabel></bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="e_mf1" bpmnElement="mf1"><di:waypoint x="870" y="150"/><di:waypoint x="870" y="60"/><bpmndi:BPMNLabel><dc:Bounds x="876" y="98" width="90" height="14"/></bpmndi:BPMNLabel></bpmndi:BPMNEdge>
+    </bpmndi:BPMNPlane>
+  </bpmndi:BPMNDiagram>
+</bpmn:definitions>

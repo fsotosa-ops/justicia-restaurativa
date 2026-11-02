@@ -1,16 +1,13 @@
-# Material de terceros: no se versiona.
-estado-del-arte/pdfs/
-contexto/originales/
-
-# Entornos
-__pycache__/
-.venv/
-.DS_Store
+# Textos completos de terceros: su licencia no permite redistribuirlos.
+evidencia/pdfs/
 
 # Exportaciones de Scopus: pesadas y con licencia que no permite redistribuirlas.
-estado-del-arte/busqueda/scopus/
-estado-del-arte/busqueda/corpus.csv
-Rplots.pdf
+metodo/scopus/
+metodo/corpus.csv
 
-# Dependencias de node para generar las láminas BPMN
+# Entornos y residuos
+__pycache__/
+.venv/
 node_modules/
+.DS_Store
+Rplots.pdf
