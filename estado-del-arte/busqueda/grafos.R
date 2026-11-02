@@ -4,7 +4,7 @@
 #   Rscript estado-del-arte/busqueda/grafos.R
 #
 # Entrada: estado-del-arte/busqueda/corpus.csv (lo escribe corpus.py)
-# Salida:  estado-del-arte/busqueda/grafos/*.png y *-grupos.csv
+# Salida:  estado-del-arte/busqueda/grafos/*.png a 300 ppp (el dispositivo SVG de R necesita XQuartz) y *-grupos.csv
 #
 # bibliometrix se toma de R_LIBS o, si no está, de la biblioteca de minta-puj.
 
@@ -19,7 +19,7 @@ M <- convert2df(file.path(base, "corpus.csv"), dbsource = "scopus", format = "cs
 cat("documentos:", nrow(M), "| periodo:", min(M$PY, na.rm = TRUE), "-", max(M$PY, na.rm = TRUE), "\n")
 
 figura <- function(nombre, expr, w = 2600, h = 1800) {
-  png(file.path(salida, paste0(nombre, ".png")), width = w, height = h, res = 200)
+  png(file.path(salida, paste0(nombre, ".png")), width = w / 200, height = h / 200, units = "in", res = 300, type = "quartz")
   on.exit(dev.off())
   force(expr)
 }
@@ -94,7 +94,7 @@ col_tm <- ifelse(nombres %in% names(TEMA), PALETA[TEMA[nombres]], GRIS)
 cat("temas:", paste(nombres, collapse = " | "), "\n")
 assignInNamespace("colorlist", function() unname(col_tm), "bibliometrix")
 tm <- thematicMap(M, field = "DE", n = 250, minfreq = 4, size = 0.4, repel = TRUE)
-png(file.path(salida, "03-mapa-tematico.png"), width = 2400, height = 1800, res = 200)
+png(file.path(salida, "03-mapa-tematico.png"), width = 12, height = 9, units = "in", res = 300, type = "quartz")
 print(tm$map); dev.off()
 write.csv(tm$words, file.path(salida, "03-mapa-tematico-terminos.csv"), row.names = FALSE)
 

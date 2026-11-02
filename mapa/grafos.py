@@ -7,8 +7,8 @@
     uv run mapa/grafos.py
 
 Escribe en mapa/grafos/:
-  remisiones.png            quién manda el caso a quién, por bloque del Estado
-  remisiones-por-ruta.png   la misma red, una ruta por panel
+  remisiones.svg            quién manda el caso a quién, por bloque del Estado
+  remisiones-por-ruta.svg   la misma red, una ruta por panel
 
 Antes de dibujar valida los ids: si una remisión o una dependencia apunta a una
 entidad que no está en entidades.csv, se detiene y dice cuál.
@@ -110,12 +110,12 @@ FRANJAS = [
 POS = {
     "sdmujer_casas_refugio": (0.6, 5), "sdmujer": (2.6, 5), "comisarias": (4.8, 5),
     "casas_justicia": (7.2, 5), "umc": (9.4, 5), "inspecciones": (11.4, 5),
-    "pon_cai": (0.6, 4), "salud_ips": (2.6, 4), "icbf": (5.8, 4), "redam": (11.4, 4),
-    "personeria_bogota": (9.4, 3), "dp_defensa": (11.4, 3),
+    "pon_cai": (0.6, 4), "salud_ips": (2.6, 4), "icbf": (5.8, 4), "pon_sijin": (8.4, 4), "redam": (11.4, 4),
+    "pgn": (7.2, 3), "personeria_bogota": (9.4, 3), "dp_defensa": (11.4, 3),
     "programa_mediacion": (3.4, 2), "centros_conciliacion": (7.2, 2), "consultorios": (9.4, 2),
-    "fgn_uri": (0.6, 1), "fgn_sau": (2.4, 1), "fgn_seccional_bogota": (4.8, 1),
-    "fgn_grupo_apoyo_jr": (7.2, 1), "inmlcf": (11.4, 1),
-    "rj_garantias": (2.4, 0), "rj_conocimiento": (4.8, 0), "rj_juez_familia": (7.2, 0),
+    "fgn_uri": (0.6, 1), "fgn_sau": (2.4, 1), "fgn_cavif": (4.2, 1), "fgn_seccional_bogota": (6.0, 1),
+    "fgn_grupo_apoyo_jr": (7.8, 1), "fgn_cti": (9.6, 1), "inmlcf": (11.4, 1),
+    "rj_garantias": (3.6, 0), "rj_conocimiento": (6.0, 0), "rj_juez_familia": (8.4, 0),
 }
 ETIQUETA = {
     "sdmujer_casas_refugio": "Casa refugio", "sdmujer": "Sec. de la Mujer\nCIOM · Línea Púrpura",
@@ -125,8 +125,9 @@ ETIQUETA = {
     "personeria_bogota": "Personería", "dp_defensa": "Defensoría\n(defensa pública)",
     "programa_mediacion": "Programa de mediación\ncon convenio",
     "centros_conciliacion": "Centro de\nconciliación", "consultorios": "Consultorio\njurídico",
-    "fgn_uri": "URI", "fgn_sau": "SAU", "fgn_seccional_bogota": "Fiscal delegado\n(Seccional Bogotá)",
-    "fgn_grupo_apoyo_jr": "Grupo de apoyo JR\n(Res. 0383)", "inmlcf": "Medicina Legal",
+    "fgn_uri": "URI", "fgn_sau": "SAU", "fgn_cavif": "CAVIF", "fgn_cti": "CTI",
+    "pon_sijin": "Policía judicial\n(SIJIN)", "pgn": "Procuraduría", "fgn_seccional_bogota": "Fiscal delegado\n(Seccional Bogotá)",
+    "fgn_grupo_apoyo_jr": "Grupo de apoyo\nJR (Res. 0383)", "inmlcf": "Medicina Legal",
     "rj_garantias": "Juez de garantías", "rj_conocimiento": "Juez de\nconocimiento",
     "rj_juez_familia": "Juez de familia",
 }
@@ -221,7 +222,7 @@ def figura_remisiones():
         flecha(ax, a)
     leyenda(ax, loc="lower right", bbox=(1.0, -0.02))
     fig.subplots_adjust(left=0.01, right=0.99, top=0.99, bottom=0.01)
-    fig.savefig(SALIDA / "remisiones.png", dpi=200)
+    fig.savefig(SALIDA / "remisiones.svg")
     plt.close(fig)
 
 
@@ -253,7 +254,7 @@ def figura_por_ruta():
     ult.axis("off")
     leyenda(ult, loc="center")
     fig.subplots_adjust(left=0.01, right=0.99, top=0.97, bottom=0.01, hspace=0.12, wspace=0.03)
-    fig.savefig(SALIDA / "remisiones-por-ruta.png", dpi=170)
+    fig.savefig(SALIDA / "remisiones-por-ruta.svg")
     plt.close(fig)
 
 
