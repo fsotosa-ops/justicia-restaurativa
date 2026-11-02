@@ -46,7 +46,8 @@ Las fichas de lectura de cada texto, con sus hallazgos citados con página, est�
 
 ## 3. Cuánto se citan entre sí los campos
 
-Para saber si estos campos dialogan, se tomaron todos los pares posibles de documentos y se contó en cuántos los dos citan al menos una misma fuente, dentro de cada campo y entre campos. Es lo que en bibliometría se llama acoplamiento bibliográfico, y su ventaja es que no depende de cómo se nombra cada tema, sino de a quién se cita. La Tabla 2 presenta el resultado.
+Para saber si estos campos dialogan, se tomaron todos los pares posibles de documentos y se contó en cuántos los dos citan al menos una misma fuente, dentro de cada campo y entre campos. 
+La Tabla 2 presenta el resultado.
 
 **Tabla 2.** Pares de documentos que citan al menos una misma fuente
 
