@@ -33,7 +33,7 @@
       <bpmn:messageEventDefinition id="med_inicio"/>
     </bpmn:startEvent>
     <bpmn:task id="a1" name="1. Preguntar por el conflicto, el rol y si hay un proceso abierto">
-      <bpmn:documentation>Fuente: Propuesta del equipo, por validar</bpmn:documentation>
+      <bpmn:documentation>Fuente: Propuesta del proyecto, por validar</bpmn:documentation>
       <bpmn:incoming>f0</bpmn:incoming>
       <bpmn:outgoing>f1</bpmn:outgoing>
     </bpmn:task>

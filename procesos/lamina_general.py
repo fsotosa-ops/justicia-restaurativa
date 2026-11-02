@@ -4,7 +4,7 @@ Es la lámina base para validar con el equipo. En gris va lo que propone el proy
 sus preguntas, tomadas de las reuniones de octubre de 2026); en naranja, la vía restaurativa.
 Cada actividad con el marcador de llamada se detalla en su propia lámina.
 """
-PROPUESTA = "Propuesta del equipo, por validar"
+PROPUESTA = "Propuesta del proyecto, por validar"
 
 MODELO = {
     "carriles": [

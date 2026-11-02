@@ -1,6 +1,6 @@
 # Matriz de extracción
 
-Una fila por estudio o norma citado en los documentos. Las columnas completas, con el resultado medido y el nivel de evidencia, están en [`matriz.csv`](matriz.csv). «Aporta a» dice a qué hipótesis del equipo aporta cada texto y en qué dirección respecto de la hipótesis tal como la formuló el equipo: *respalda*, *matiza*, *contradice* o *contexto* (da el marco sin probar ni refutar). Los textos marcados con † solo se conocen por su resumen.
+Una fila por estudio o norma citado en los documentos. Las columnas completas, con el resultado medido y el nivel de evidencia, están en [`matriz.csv`](matriz.csv). «Aporta a» dice a qué hipótesis de trabajo aporta cada texto y en qué dirección respecto de la hipótesis tal como está formulada: *respalda*, *matiza*, *contradice* o *contexto* (da el marco sin probar ni refutar). Los textos marcados con † solo se conocen por su resumen.
 
 **Tabla 1.** Acceso a la justicia (8)
 

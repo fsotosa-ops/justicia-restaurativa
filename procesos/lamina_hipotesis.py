@@ -1,6 +1,6 @@
-"""Hipótesis del equipo sobre el recorrido de la vista general.
+"""Hipótesis de trabajo sobre el recorrido de la vista general.
 
-Cada anotación ubica una hipótesis (H1 a H6, documento de estado del arte del equipo, sección 4)
+Cada anotación ubica una hipótesis de trabajo (H1 a H6, formuladas a partir de las reuniones con el equipo y los expertos)
 en el paso del recorrido donde actúa, con su veredicto tras la lectura completa (docs/01-estado-del-arte.md, Tabla 3).
 """
 MODELO = {

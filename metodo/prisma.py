@@ -115,7 +115,7 @@ caja(6, 8, 30, 12, f"Leídos en texto completo\ncon registro de páginas\n(n = {
 flecha(21, 26, 21, 20)
 
 # Columna otros métodos
-caja(78, 64, 30, 30, f"Textos identificados en\nuna búsqueda\ncomplementaria para\ncontrastar las hipótesis\ndel equipo (30 de\noctubre de 2026)")
+caja(78, 64, 30, 30, f"Textos identificados en\nuna búsqueda\ncomplementaria para\ncontrastar las hipótesis\nde trabajo (30 de\noctubre de 2026)")
 caja(78, 26, 30, 14, f"Leídos en texto completo\ncon registro de páginas\n(n = {LECTURA['otros_metodos']})")
 flecha(93, 64, 93, 40)
 

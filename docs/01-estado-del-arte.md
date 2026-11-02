@@ -12,7 +12,7 @@ Por otra parte, la vía restaurativa no depende solo de la ciudadanía. En Colom
 
 ## 2. Qué se buscó y qué se leyó
 
-La revisión se hizo en tres pasos. Primero, una búsqueda complementaria en bases académicas sirvió para contrastar las seis hipótesis del equipo con los estudios publicados e identificar los trabajos que las respaldan o las discuten. Después, trece búsquedas en Scopus, numeradas de E1 a E13, cada una escrita como una ecuación de búsqueda, es decir, una combinación de términos, permitieron ampliar la búsqueda de forma sistemática y comprobar que se recuperaran artículos conocidos de antemano. Por último, los 374 documentos de las búsquedas que combinan dos campos (E10 a E12) se revisaron por título y resumen con criterios explícitos, y los textos más cercanos a las preguntas del proyecto se leyeron completos: 22 en una primera ronda, centrada en las hipótesis, y 29 en una segunda, que cubrió la IA aplicada al derecho, los documentos que combinan campos y el lenguaje judicial. La Figura 1 presenta ese recorrido.
+La revisión se hizo en tres pasos. Primero, una búsqueda complementaria en bases académicas sirvió para contrastar las seis hipótesis de trabajo con los estudios publicados e identificar los trabajos que las respaldan o las discuten. Después, trece búsquedas en Scopus, numeradas de E1 a E13, cada una escrita como una ecuación de búsqueda, es decir, una combinación de términos, permitieron ampliar la búsqueda de forma sistemática y comprobar que se recuperaran artículos conocidos de antemano. Por último, los 374 documentos de las búsquedas que combinan dos campos (E10 a E12) se revisaron por título y resumen con criterios explícitos, y los textos más cercanos a las preguntas del proyecto se leyeron completos: 22 en una primera ronda, centrada en las hipótesis, y 29 en una segunda, que cubrió la IA aplicada al derecho, los documentos que combinan campos y el lenguaje judicial. La Figura 1 presenta ese recorrido.
 
 **Figura 1.** Diagrama de flujo de la búsqueda
 
@@ -100,9 +100,9 @@ El mapa temático resume lo anterior. La justicia restaurativa es un tema de nic
 
 ## 5. Lo que sostiene la lectura completa
 
-El equipo partió de seis hipótesis, formuladas en el documento de estado del arte del 28 de octubre. Los 51 textos leídos completos permitieron contrastarlas con los datos de cada estudio y no con sus resúmenes, y el resultado es que cuatro hay que reformularlas y dos se sostienen, una de ellas con un límite. La Tabla 3 resume cada hipótesis con su veredicto.
+La revisión partió de seis hipótesis de trabajo, que el autor formuló a partir de lo conversado en las reuniones con el equipo y con los expertos consultados. Los 51 textos leídos completos permitieron contrastarlas con los datos de cada estudio y no con sus resúmenes, y el resultado es que cuatro hay que reformularlas y dos se sostienen, una de ellas con un límite. La Tabla 3 resume cada hipótesis con su veredicto.
 
-**Tabla 3.** Hipótesis del equipo y veredicto tras la lectura completa
+**Tabla 3.** Hipótesis de trabajo y veredicto tras la lectura completa
 
 | Hipótesis | Veredicto | Qué muestra la lectura | Sección |
 |---|---|---|---|
@@ -113,11 +113,11 @@ El equipo partió de seis hipótesis, formuladas en el documento de estado del a
 | **H5. Resultados.** Los casos resueltos por vía restaurativa muestran menor reincidencia y mayor satisfacción | Reformular | La satisfacción de la víctima es robusta, pero la reducción de la reincidencia es pequeña y depende del diseño del estudio (Fulham y colegas, 2025; Strang y colegas, 2013). En la violencia intrafamiliar no hay datos sobre el bienestar de la víctima (Kettrey y Reynolds, 2026) | 5.4 y 5.5 |
 | **H6. Gobernanza.** El sistema solo es legítimo si la IA orienta y deriva, y la decisión queda en manos de facilitadores y operadores humanos | Se sostiene | Las herramientas jurídicas comerciales dieron respuestas falsas o mal respaldadas entre el 17% y el 33% de las veces (Magesh y colegas, 2025), y la sentencia T-323 de 2024, dirigida a los jueces, recomienda que la IA no especializada solo dé información descriptiva y no normativa. Además de un límite, la hipótesis da una regla de diseño: el agente informa y no resuelve | 5.6 |
 
-*Fuente:* Elaboración propia. Los enunciados son los del documento de estado del arte del equipo (sección 4); el contraste detallado, con citas y páginas, está en [`hipotesis.md`](../evidencia/hipotesis.md).
+*Fuente:* Elaboración propia. Los enunciados de las hipótesis son del autor, a partir de las reuniones con el equipo y con los expertos consultados; el contraste detallado, con citas y páginas, está en [`hipotesis.md`](../evidencia/hipotesis.md).
 
 La Figura 5 ubica cada hipótesis en el paso del recorrido donde actúa, sobre la misma vista general del [Leviatán](02-leviatan.md). Cuatro de ellas (H1, H2, H3 y H6) actúan en la puerta o en la tarea del agente, y tres de esas cuatro hay que reformularlas. En cambio, H4 y H5 actúan cuando el caso ya llegó a la mediación.
 
-**Figura 5.** Hipótesis del equipo sobre el recorrido de una persona
+**Figura 5.** Hipótesis de trabajo sobre el recorrido de una persona
 
 ![Hipótesis sobre el recorrido en BPMN](../figuras/hipotesis.svg)
 

@@ -1,10 +1,10 @@
 # Evidencia
 
-Esta carpeta reúne la evidencia que sostiene los [documentos](../docs/): qué estudios y normas se leyeron, a qué hipótesis del equipo aporta cada uno y cómo se verificó cada afirmación contra su fuente.
+Esta carpeta reúne la evidencia que sostiene los [documentos](../docs/): qué estudios y normas se leyeron, a qué hipótesis de trabajo aporta cada uno y cómo se verificó cada afirmación contra su fuente.
 
 ## Cómo se conecta la evidencia
 
-La Figura 1 muestra el recorrido de la evidencia. Los cuatro campos de estudio de la búsqueda y las normas colombianas aportan textos a las seis hipótesis del equipo, y cada flecha indica cuántos textos de ese campo aportan a esa hipótesis. Las normas, además, son la base del mapa del Leviatán. En cambio, el lenguaje judicial no aporta a ninguna hipótesis y sustenta lo que la sección 6 del estado del arte describe como no cubierto.
+La Figura 1 muestra el recorrido de la evidencia. Los cuatro campos de estudio de la búsqueda y las normas colombianas aportan textos a las seis hipótesis de trabajo, y cada flecha indica cuántos textos de ese campo aportan a esa hipótesis. Las normas, además, son la base del mapa del Leviatán. En cambio, el lenguaje judicial no aporta a ninguna hipótesis y sustenta lo que la sección 6 del estado del arte describe como no cubierto.
 
 **Figura 1.** Mapa conceptual de la evidencia
 
@@ -18,7 +18,7 @@ flowchart LR
     NC["Normas colombianas<br/>14 normas"]
     LJ["Lenguaje judicial<br/>3 estudios"]
   end
-  subgraph HIP["Hipótesis del equipo y veredicto"]
+  subgraph HIP["Hipótesis de trabajo y veredicto"]
     direction TB
     H1["H1. Comprensión<br/>reformular"]
     H2["H2. Orientación<br/>reformular"]
@@ -66,7 +66,7 @@ flowchart LR
 
 ## Cuánta evidencia hay para cada hipótesis
 
-La Figura 2 es un mapa de brechas de evidencia, en la forma que usan la Colaboración Campbell y 3ie. Cada fila es una hipótesis y cada columna un nivel de evidencia; el tamaño del círculo indica cuántos textos aportan, y el color, si respaldan, matizan o contradicen la hipótesis tal como la formuló el equipo. Así, H3 es la que más evidencia reúne, aunque casi toda de nivel bajo, y solo H5 tiene evidencia de nivel alto, que viene de metaanálisis y revisiones sistemáticas. En cambio, H2 y H4, que sostienen la propuesta del agente, descansan en pocos estudios, de nivel medio o bajo, y ninguna hipótesis tiene evidencia colombiana de nivel alto.
+La Figura 2 es un mapa de brechas de evidencia, en la forma que usan la Colaboración Campbell y 3ie. Cada fila es una hipótesis y cada columna un nivel de evidencia; el tamaño del círculo indica cuántos textos aportan, y el color, si respaldan, matizan o contradicen la hipótesis tal como está formulada. Así, H3 es la que más evidencia reúne, aunque casi toda de nivel bajo, y solo H5 tiene evidencia de nivel alto, que viene de metaanálisis y revisiones sistemáticas. En cambio, H2 y H4, que sostienen la propuesta del agente, descansan en pocos estudios, de nivel medio o bajo, y ninguna hipótesis tiene evidencia colombiana de nivel alto.
 
 **Figura 2.** Mapa de evidencia por hipótesis y nivel de evidencia
 
@@ -99,7 +99,7 @@ Las fichas guardan las citas literales de cada texto, en el idioma original y co
 
 | Ficha | Qué contiene |
 |---|---|
-| [`hipotesis.md`](hipotesis.md) | Evidencia de cada una de las seis hipótesis del equipo |
+| [`hipotesis.md`](hipotesis.md) | Evidencia de cada una de las seis hipótesis de trabajo |
 | [`acceso-restaurativo-y-lenguaje.md`](acceso-restaurativo-y-lenguaje.md) | Diez textos sobre el acceso a la justicia restaurativa y a la mediación penal, y sobre el lenguaje judicial acerca de las víctimas |
 | [`ia-juridica.md`](ia-juridica.md) | Seis textos sobre la fiabilidad y los límites de la IA aplicada al derecho |
 | [`ia-que-orienta.md`](ia-que-orienta.md) | Once textos sobre IA que orienta, clasifica o deriva, y sobre IA en procesos restaurativos |

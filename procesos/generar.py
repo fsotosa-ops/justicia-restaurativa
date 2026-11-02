@@ -19,7 +19,7 @@ import bpmn  # noqa: E402
 # (módulo, hojas, título del pool)
 LAMINAS = [
     ("lamina_general", [("MODELO", "vista-general")], "Vista general tentativa de las rutas de acceso"),
-    ("lamina_hipotesis", [("MODELO", "hipotesis")], "Hipótesis del equipo sobre el recorrido"),
+    ("lamina_hipotesis", [("MODELO", "hipotesis")], "Hipótesis de trabajo sobre el recorrido"),
     ("lamina_comisaria", [("HOJA_1", "comisaria-1"), ("HOJA_2", "comisaria-2"), ("HOJA_3", "comisaria-3")],
      "Comisaría de familia"),
     ("lamina_penal", [("HOJA_1", "proceso-penal-1"), ("HOJA_2", "proceso-penal-2")], "Proceso penal (Ley 906 de 2004)"),
