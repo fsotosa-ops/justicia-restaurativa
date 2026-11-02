@@ -28,20 +28,4 @@ El proyecto 21871, del programa Atenea, explora cómo un agente de inteligencia 
 
 Los textos completos de terceros y las exportaciones de Scopus no se versionan, porque sus licencias no permiten redistribuirlos, pero se reproducen con el protocolo.
 
-## Cómo reproducir las figuras
-
-```bash
-python3 metodo/ecuaciones.py                        # ecuaciones y URL de cada una en Scopus
-python3 metodo/corpus.py                            # corpus unificado y medida de conexión (requiere metodo/scopus/)
-Rscript metodo/grafos.R                             # cocitación, palabras clave y mapa temático (bibliometrix)
-uv run metodo/prisma.py                             # diagrama PRISMA 2020
-(cd procesos && npm install && python3 generar.py)  # láminas BPMN
-```
-
-Las láminas se pueden abrir y editar en [Bizagi Modeler](https://www.bizagi.com/es/plataforma/modeler), [Camunda Modeler](https://camunda.com/download/modeler/) o [demo.bpmn.io](https://demo.bpmn.io). Si alguien corrige un `.bpmn`, el cambio se lleva al modelo de la lámina en `procesos/` para que la figura se regenere.
-
-## Cómo citar
-
-Soto, F. (2026). *Justicia restaurativa e inteligencia artificial en Bogotá: estado del arte y mapa del Leviatán* (Versión 1) [Repositorio]. Proyecto 21871, Alianza CAOBA y Pontificia Universidad Javeriana.
-
 Los metadatos están en [`CITATION.cff`](CITATION.cff).
