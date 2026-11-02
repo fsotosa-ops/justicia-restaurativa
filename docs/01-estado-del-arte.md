@@ -46,8 +46,7 @@ Las fichas de lectura de cada texto, con sus hallazgos citados con página, est�
 
 ## 3. Cuánto se citan entre sí los campos
 
-Para saber si estos campos dialogan, se tomaron todos los pares posibles de documentos y se contó en cuántos los dos citan al menos una misma fuente, dentro de cada campo y entre campos. 
-La Tabla 2 presenta el resultado.
+Para saber si estos campos dialogan, se tomaron todos los pares posibles de documentos y se contó en cuántos los dos citan al menos una misma fuente, dentro de cada campo y entre campos (Tabla 2).
 
 **Tabla 2.** Pares de documentos que citan al menos una misma fuente
 
@@ -65,9 +64,9 @@ La Tabla 2 presenta el resultado.
 | Lenguaje judicial × IA | 756 | 1.442.244 | 0,05% |
 | **Restaurativa × IA** | **1.032** | **4.004.941** | **0,03%** |
 
-*Nota:* las referencias se comparan por sus primeros 60 caracteres normalizados, y se descartan las de menos de 25. Cada documento se asigna a un solo campo, de modo que los 374 documentos de las búsquedas combinadas E10 a E13 no entran en estos pares: el 0,03% entre la justicia restaurativa y la IA se mide sin los documentos que tratan ambas. Entre la justicia restaurativa y la IA, las fuentes comunes más citadas son manuales de método (Braun y Clarke, PRISMA, Cohen, Creswell) y clásicos de teoría (Rawls, Hart, Crenshaw, Tyler). El cálculo está en [`corpus.py`](../metodo/corpus.py) y su salida completa en [`conexion.txt`](../datos/bibliometria/conexion.txt). *Fuente:* Elaboración propia con datos de Scopus.
+*Nota:* los 374 documentos de las búsquedas combinadas (E10 a E13) no entran en estos pares, porque cada documento se asigna a un solo campo. Entre la justicia restaurativa y la IA, las fuentes comunes más citadas son manuales de método (Braun y Clarke, PRISMA, Cohen, Creswell) y clásicos de teoría (Rawls, Hart, Crenshaw, Tyler). El cálculo está en [`corpus.py`](../metodo/corpus.py) y su salida completa en [`conexion.txt`](../datos/bibliometria/conexion.txt). *Fuente:* Elaboración propia con datos de Scopus.
 
-La justicia restaurativa es el campo más cohesionado, ya que en casi el 8% de sus pares de documentos los dos citan alguna fuente en común, mientras que el acceso a la justicia es el más disperso, con menos del 0,5%. Entre campos, en cambio, los vínculos caen a fracciones mínimas, y el más débil es justamente el que interesa al proyecto: entre la justicia restaurativa y la inteligencia artificial, menos de 3 de cada 10.000 pares citan una misma fuente. Además, lo poco que comparten son manuales de método y clásicos de teoría, no hallazgos sobre el tema.
+La justicia restaurativa es el campo más cohesionado y el acceso a la justicia, el más disperso. Entre campos, en cambio, los vínculos caen a fracciones mínimas, y el más débil es justamente el que interesa al proyecto: entre la justicia restaurativa y la inteligencia artificial, menos de 3 de cada 10.000 pares citan una misma fuente. Además, lo poco que comparten son manuales de método y clásicos de teoría, no hallazgos sobre el tema.
 
 ## 4. Cómo se organiza cada campo
 
