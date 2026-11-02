@@ -70,7 +70,7 @@ La justicia restaurativa es el campo más cohesionado y el acceso a la justicia,
 
 ## 4. Cómo se organiza cada campo
 
-Las figuras de esta sección se construyeron con el paquete bibliometrix de R sobre los 7.930 documentos. La red de cocitación muestra qué fuentes se citan juntas en un mismo documento y, por lo tanto, en qué autores se apoya cada campo; las palabras clave muestran de qué hablan los documentos; y el mapa temático ubica cada tema según cuánto se conecta con los demás y cuánto se trabaja por dentro.
+Las tres figuras de esta sección se construyeron con el paquete bibliometrix de R sobre los 7.930 documentos. La primera muestra en qué autores se apoya cada campo, la segunda de qué hablan los documentos y la tercera qué tan conectado y desarrollado está cada tema.
 
 **Figura 2.** Fuentes que se citan juntas: las 40 con más vínculos entre las 300 más citadas
 
@@ -78,7 +78,7 @@ Las figuras de esta sección se construyeron con el paquete bibliometrix de R so
 
 *Nota:* dos fuentes se unen cuando un mismo documento las cita juntas; el tamaño de cada círculo es el número de veces que se cita junto a otras, y los grupos los forma un algoritmo de agrupación (walktrap). Naranja, el canon de la justicia restaurativa; violeta, la crítica feminista a su uso en la violencia de género; aguamarina, la IA jurídica; azul, la conciencia jurídica; en gris, referencias que no forman grupo. *Fuente:* Elaboración propia con datos de Scopus.
 
-La Figura 2 muestra dos islas. Abajo está la justicia restaurativa, que se divide en dos grupos muy unidos entre sí: el canon, con Braithwaite (1989), Zehr (1990), Strang (2002) y McCold (1998), al que se suma la justicia procedimental de Tyler (1990), y la crítica feminista a su uso en la violencia de género, con Stubbs, Daly, Coker y Acorn. Arriba, lejos, está la IA jurídica, que cita modelos de lenguaje adaptados al derecho (Chalkidis, Xiao, Beltagy) y el manual de razonamiento jurídico computacional de Ashley (2017); cerca de ella, aunque sin formar grupo, aparecen el informe técnico de GPT-4 y un reglamento de la Unión Europea cuya referencia abreviada no permite saber si es el de IA o el de protección de datos. Entre ambas quedan nodos sueltos, como la conciencia jurídica de Ewick y Silbey (1998) y el manual de análisis temático de Braun y Clarke (2006), y las líneas que las cruzan son pocas y tenues. Cabe notar que el campo del acceso a la justicia, aunque aporta 2.274 documentos, no alcanza a formar un grupo propio entre las referencias más citadas, lo que coincide con su baja cohesión en la Tabla 2.
+La Figura 2 muestra dos islas. Abajo está la justicia restaurativa, que se divide en dos grupos muy unidos entre sí: el canon, con Braithwaite (1989), Zehr (1990), Strang (2002) y McCold (1998), al que se suma la justicia procedimental de Tyler (1990), y la crítica feminista a su uso en la violencia de género, con Stubbs, Daly, Coker y Acorn. Arriba, lejos, está la IA jurídica, que cita modelos de lenguaje adaptados al derecho (Chalkidis, Xiao, Beltagy) y el manual de razonamiento jurídico computacional de Ashley (2017). Entre ambas islas, las líneas son pocas y tenues. Cabe notar que el campo del acceso a la justicia, aunque aporta 2.274 documentos, no alcanza a formar un grupo propio entre las referencias más citadas, lo que coincide con su baja cohesión en la Tabla 2.
 
 **Figura 3.** Palabras clave que aparecen juntas: las 35 con más vínculos entre las 300 más frecuentes
 
@@ -94,7 +94,7 @@ En las palabras clave la separación se repite, aunque con matices. El acceso a 
 
 *Nota:* el eje horizontal es la centralidad, es decir, cuánto se conecta el tema con los demás, y el vertical es la densidad, es decir, cuánto se trabaja por dentro. Arriba a la izquierda están los temas de nicho, arriba a la derecha los motores, abajo a la derecha los básicos y abajo a la izquierda los emergentes o en declive. *Fuente:* Elaboración propia con datos de Scopus.
 
-El mapa temático resume lo anterior. La justicia restaurativa es un tema de nicho, desarrollado por dentro pero desconectado del resto. La inteligencia artificial es un tema motor, mientras que los modelos de lenguaje son un tema básico, con una centralidad apenas superior a la media y una densidad baja. El acceso a la justicia, por su parte, aparece con baja centralidad y baja densidad, lo que sugiere un campo amplio que no se articula alrededor de un vocabulario común. El agente que propone el proyecto trabaja precisamente entre el nicho restaurativo y el tema básico de los modelos de lenguaje.
+El mapa temático resume lo anterior. La justicia restaurativa es un tema de nicho, desarrollado por dentro pero desconectado del resto. La inteligencia artificial es un tema motor, mientras que los modelos de lenguaje son un tema básico. El acceso a la justicia, por su parte, aparece con baja centralidad y baja densidad, lo que sugiere un campo amplio que no se articula alrededor de un vocabulario común. El agente que propone el proyecto trabaja precisamente entre el nicho restaurativo y el tema básico de los modelos de lenguaje.
 
 ## 5. Lo que sostiene la lectura completa
 
