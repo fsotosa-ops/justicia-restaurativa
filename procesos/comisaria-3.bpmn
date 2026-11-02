@@ -6,7 +6,7 @@
     <bpmn:participant id="entidades" name="Entidades de la ruta (Fiscalía, Policía, Medicina Legal, Secretaría de la Mujer)"/>
     <bpmn:messageFlow id="mf0" sourceRef="t12" targetRef="entidades" name="Denuncia"/>
     <bpmn:messageFlow id="mf1" sourceRef="t13" targetRef="entidades" name="Oficios"/>
-    <bpmn:messageFlow id="mf2" sourceRef="t14" targetRef="persona" name="Notificación"/>
+    <bpmn:messageFlow id="mf2" sourceRef="t14" targetRef="persona" name="Notificación (act. 8)"/>
     <bpmn:association id="asoc0" sourceRef="n_med" targetRef="entidades"/>
   </bpmn:collaboration>
   <bpmn:process id="p_comisaria_3" name="Comisaría de familia, hoja 3 de 3" isExecutable="false">
@@ -29,7 +29,7 @@
       <bpmn:linkEventDefinition id="led_de_hoja2" name="Medidas provisionales"/>
     </bpmn:intermediateCatchEvent>
     <bpmn:task id="t11" name="11. Proyectar auto que avoca conocimiento y decreta medidas provisionales">
-      <bpmn:documentation>Fuente: MinJusticia (2022), Tomo V, fase 2, act. 1, p. 23</bpmn:documentation>
+      <bpmn:documentation>Fuente: MinJusticia y PNUD (2022), Tomo V, fase 2, act. 1, p. 23</bpmn:documentation>
       <bpmn:incoming>f0</bpmn:incoming>
       <bpmn:incoming>f2</bpmn:incoming>
       <bpmn:outgoing>f1</bpmn:outgoing>
@@ -40,22 +40,22 @@
       <bpmn:outgoing>f3</bpmn:outgoing>
     </bpmn:exclusiveGateway>
     <bpmn:task id="t12" name="12. Diligenciar el formato de denuncia">
-      <bpmn:documentation>Fuente: MinJusticia (2022), Tomo V, fase 2, act. 4, p. 24</bpmn:documentation>
+      <bpmn:documentation>Fuente: MinJusticia y PNUD (2022), Tomo V, fase 2, act. 4, p. 24</bpmn:documentation>
       <bpmn:incoming>f3</bpmn:incoming>
       <bpmn:outgoing>f4</bpmn:outgoing>
     </bpmn:task>
     <bpmn:task id="t13" name="13. Elaborar los oficios de la medida">
-      <bpmn:documentation>Fuente: MinJusticia (2022), Tomo V, fase 2, act. 5, p. 24</bpmn:documentation>
+      <bpmn:documentation>Fuente: MinJusticia y PNUD (2022), Tomo V, fase 2, act. 5, p. 24</bpmn:documentation>
       <bpmn:incoming>f4</bpmn:incoming>
       <bpmn:outgoing>f5</bpmn:outgoing>
     </bpmn:task>
-    <bpmn:task id="t14" name="14. Notificar a las partes">
-      <bpmn:documentation>Fuente: MinJusticia (2022), Tomo V, fase 2, act. 7 y 8, p. 24</bpmn:documentation>
+    <bpmn:task id="t14" name="14. Elaborar las notificaciones">
+      <bpmn:documentation>Fuente: MinJusticia y PNUD (2022), Tomo V, fase 2, act. 7, p. 24</bpmn:documentation>
       <bpmn:incoming>f5</bpmn:incoming>
       <bpmn:outgoing>f6</bpmn:outgoing>
     </bpmn:task>
-    <bpmn:callActivity id="sp" name="15. Atención, audiencia, medida definitiva y seguimiento">
-      <bpmn:documentation>Fuente: MinJusticia (2022), Tomo V, fases 3 a 8, desde p. 26</bpmn:documentation>
+    <bpmn:callActivity id="sp" name="15. Pruebas, audiencia, medida definitiva y seguimiento">
+      <bpmn:documentation>Fuente: MinJusticia y PNUD (2022), Tomo V, fase 2 (acts. 9 a 19) y fases 3 a 8, desde p. 24</bpmn:documentation>
       <bpmn:incoming>f6</bpmn:incoming>
       <bpmn:outgoing>f7</bpmn:outgoing>
     </bpmn:callActivity>
@@ -98,7 +98,7 @@
       <bpmndi:BPMNShape id="s_fin" bpmnElement="fin"><dc:Bounds x="1152" y="172" width="36" height="36"/>
         <bpmndi:BPMNLabel><dc:Bounds x="1115" y="214" width="110" height="28"/></bpmndi:BPMNLabel>
       </bpmndi:BPMNShape>
-      <bpmndi:BPMNShape id="s_n_med" bpmnElement="n_med"><dc:Bounds x="1025" y="313" width="170" height="74"/>
+      <bpmndi:BPMNShape id="s_n_med" bpmnElement="n_med"><dc:Bounds x="1025" y="302" width="170" height="96"/>
       </bpmndi:BPMNShape>
       <bpmndi:BPMNEdge id="e_f0" bpmnElement="f0"><di:waypoint x="138" y="350"/><di:waypoint x="214" y="350"/></bpmndi:BPMNEdge>
       <bpmndi:BPMNEdge id="e_f1" bpmnElement="f1"><di:waypoint x="326" y="350"/><di:waypoint x="420" y="350"/><di:waypoint x="420" y="215"/></bpmndi:BPMNEdge>
@@ -111,7 +111,7 @@
       <bpmndi:BPMNEdge id="e_mf0" bpmnElement="mf0"><di:waypoint x="570" y="390"/><di:waypoint x="570" y="480"/><bpmndi:BPMNLabel><dc:Bounds x="576" y="428" width="90" height="14"/></bpmndi:BPMNLabel></bpmndi:BPMNEdge>
       <bpmndi:BPMNEdge id="e_mf1" bpmnElement="mf1"><di:waypoint x="720" y="390"/><di:waypoint x="720" y="480"/><bpmndi:BPMNLabel><dc:Bounds x="726" y="428" width="90" height="14"/></bpmndi:BPMNLabel></bpmndi:BPMNEdge>
       <bpmndi:BPMNEdge id="e_mf2" bpmnElement="mf2"><di:waypoint x="840" y="310"/><di:waypoint x="840" y="60"/><bpmndi:BPMNLabel><dc:Bounds x="846" y="178" width="90" height="14"/></bpmndi:BPMNLabel></bpmndi:BPMNEdge>
-      <bpmndi:BPMNEdge id="e_asoc0" bpmnElement="asoc0"><di:waypoint x="1110" y="387"/><di:waypoint x="1110" y="480"/></bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="e_asoc0" bpmnElement="asoc0"><di:waypoint x="1110" y="398"/><di:waypoint x="1110" y="480"/></bpmndi:BPMNEdge>
     </bpmndi:BPMNPlane>
   </bpmndi:BPMNDiagram>
 </bpmn:definitions>

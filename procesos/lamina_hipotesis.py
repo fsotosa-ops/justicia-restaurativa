@@ -23,10 +23,10 @@ MODELO = {
         "cM": ("subprocess", "con", 6.2, "Mediación penal", ""),
         "fin_m": ("end", "con", 7.4, "Acuerdo restaurativo", ""),
         "h1": ("note", "pue", 1.3, "H1 Comprensión: reformular. En los delitos, solo el 4% no actuó por no saber a dónde ir", ""),
-        "h2": ("note", "pue", 2.6, "H2 Orientación: reformular. Rinde con acompañamiento: 80% frente a 17% sin ayuda", ""),
+        "h2": ("note", "pue", 2.6, "H2 Orientación: reformular. Con acompañamiento, el 80% recibió la ayuda que necesitaba; sin él, el 17%", ""),
         "h3": ("note", "pue", 3.9, "H3 Derivación: reformular. Triaje con las reglas de la Ley 906, no un modelo predictivo", ""),
         "h6": ("note", "com", 1, "H6 Gobernanza: se sostiene. El agente informa; deciden las personas", ""),
-        "h4": ("note", "fis", 5.8, "H4 Eficiencia: se sostiene, pero no se extiende a la violencia intrafamiliar", ""),
+        "h4": ("note", "fis", 5.8, "H4 Eficiencia: se sostiene, pero el estudio casi no incluyó violencia intrafamiliar", ""),
         "h5": ("note", "fis", 7.6, "H5 Resultados: reformular. Satisfacción robusta; la reincidencia baja poco", ""),
     },
     "flujos": [

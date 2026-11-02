@@ -29,7 +29,7 @@ X0 = POOL_LABEL + 90
 TASK_W, TASK_H = 112, 80
 GW = 50
 EV = 36
-NOTE_W, NOTE_H = 170, 74
+NOTE_W, NOTE_H = 170, 96
 
 EXT_H, EXT_GAP = 60, 50  # pools externos colapsados
 
@@ -291,12 +291,16 @@ def exportar(m, ruta, pid, nombre):
 
 
 def tabla_fuentes(m):
-    """Tabla en Markdown: número, actividad, responsable y fuente."""
+    """Tabla en Markdown: número, actividad, responsable y fuente.
+
+    El responsable es el nombre del carril, salvo que m["responsable"] lo precise por actividad.
+    """
     num = numerar(m)
     carril = dict(m["carriles"])
+    responsable = m.get("responsable", {})
     filas = ["| N.º | Actividad | Responsable | Fuente |", "|---|---|---|---|"]
     for nid, n in m["nodos"].items():
         if nid in num:
             fuente = n[4] or "Sin fuente oficial; pendiente de validar"
-            filas.append(f"| {num[nid]} | {n[3].replace(chr(10), ' ')} | {carril[n[1]]} | {fuente} |")
+            filas.append(f"| {num[nid]} | {n[3].replace(chr(10), ' ')} | {responsable.get(nid, carril[n[1]])} | {fuente} |")
     return "\n".join(filas)

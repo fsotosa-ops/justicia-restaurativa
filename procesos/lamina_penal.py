@@ -55,7 +55,7 @@ HOJA_2 = {
         "t9": ("task", "jue", 5, "Juicio oral y sentencia", f"{L906}, libro III"),
         "t10": ("task", "jue", 6, "Incidente de reparación integral", f"{L906}, arts. 102 a 108"),
         "fin": ("end", "jue", 7, "Proceso terminado", ""),
-        "n_med": ("note", "jue", 1, "Mediación: ordinario, desde la imputación hasta antes del juicio y con pena mínima de hasta 5 años; abreviado, hasta antes del fallo (arts. 524 y 547)", ""),
+        "n_med": ("note", "jue", 1, "Mediación: en el ordinario, desde la imputación hasta antes del juicio, con pena mínima de hasta 5 años, bien jurídico personal y aceptación expresa de ambas partes; en el abreviado, hasta antes del fallo (arts. 524 y 547)", ""),
     },
     "flujos": [
         ("de_hoja1", "t5"), ("t5", "g4"),
@@ -69,5 +69,7 @@ HOJA_2 = {
         ("t5", "n_med"),
     ],
     "restaurativos": {"cm", "g5", "t6", "fin_med"},
+    "responsable": {"t5": "Fiscal delegado, ante el juez de control de garantías", "t7": "Juez de control de garantías",
+                    "t9": "Juez de conocimiento", "t10": "Juez de conocimiento"},
     "enlace": {"de_hoja1": "Imputación"},
 }

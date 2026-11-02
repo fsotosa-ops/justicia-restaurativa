@@ -2,7 +2,7 @@
 
 Verificación en fuente primaria, 2 de noviembre de 2026, para el documento de validación ([`03-validacion.md`](../docs/03-validacion.md)). El agente del proyecto 21871 informa sobre rutas, entidades y la vía restaurativa en Bogotá y no asesora.
 
-Convenciones. «Dice la norma» va entre comillas y con su numeral, fundamento o artículo. «Lectura propia» marca una inferencia mía a partir del texto, y «Dice un tercero» marca lo que afirma un autor o un medio.
+Convenciones. «Dice la norma» va entre comillas y con su numeral, fundamento o artículo. «Lectura propia» marca una inferencia hecha a partir del texto, y «Dice un tercero» marca lo que afirma un autor o un medio.
 
 ## Fuentes leídas
 
@@ -41,7 +41,7 @@ Convenciones. «Dice la norma» va entre comillas y con su numeral, fundamento o
 
 **Lo que la sentencia dice sobre chatbots para la ciudadanía.** Solo los menciona al describir instrumentos extranjeros. En el fundamento 164 resume la Carta Ética de la CEPEJ, que pone entre los «usos que deben ser fomentados» el «acceso a la ley a través de sistemas de IA, como chatbots que faciliten el acceso a fuentes de información». En el fundamento 176, al describir el Reglamento europeo, dice que «al utilizar sistemas de IA como los chatbots, los usuarios deben ser conscientes de que están interactuando con una máquina». En ambos casos la Corte reseña y no ordena.
 
-**Sin resolver.** La sentencia no dice si sus criterios alcanzan a un particular o a una entidad distrital que despliega un agente informativo. Tampoco encontré pronunciamiento posterior de la Corte que lo extienda. Que la aplicación analógica sea exigible es, por ahora, una lectura de Londoño Villarreal (2025) y no una regla.
+**Sin resolver.** La sentencia no dice si sus criterios alcanzan a un particular o a una entidad distrital que despliega un agente informativo. Tampoco se encontró un pronunciamiento posterior de la Corte que lo extienda. Que la aplicación analógica sea exigible es, por ahora, una lectura de Londoño Villarreal (2025) y no una regla.
 
 ## 2. Circular Externa 002 de 2024 de la SIC
 
@@ -82,7 +82,7 @@ Convenciones. «Dice la norma» va entre comillas y con su numeral, fundamento o
 - Art. 11 (pp. 12 y 13), para soluciones institucionales con IA generativa: numeral 1, análisis de impacto algorítmico; numeral 5, «No usar datos personales y/o confidenciales en los procesos de entrenamiento»; numeral 6, análisis de impacto de privacidad «cuando requieran la incorporación y uso de este tipo de datos por parte de los usuarios finales»; numeral 10, herramientas accesibles «evitando el uso de tecnologías y sistemas que tengan barreras económicas y técnicas sustanciales».
 - Art. 12, numeral 1, literal b (p. 14): entre los usos de apoyo a priorizar, «orientar el acceso a servicios y trámites e interacción con usuarios, sin que estos usos supongan una labor de creación de contenido, interpretación de hechos o textos, ni solución de casos».
 
-**Sin resolver.** Si el agente lo opera una entidad de la Rama Judicial, el Acuerdo lo obliga; si lo opera la universidad, CAOBA o la Secretaría Distrital de Seguridad, Convivencia y Justicia, solo lo orienta (art. 1). Los documentos del proyecto no definen todavía quién lo operará. Tampoco verifiqué si la Fiscalía, que en el mapa del Leviatán es la entrada a la vía restaurativa, adoptó lineamientos propios de IA; el artículo 1 del Acuerdo no la nombra.
+**Sin resolver.** Si el agente lo opera una entidad de la Rama Judicial, el Acuerdo lo obliga; si lo opera la universidad, CAOBA o la Secretaría Distrital de Seguridad, Convivencia y Justicia, solo lo orienta (art. 1). Los documentos del proyecto no definen todavía quién lo operará. Tampoco se verificó si la Fiscalía, que en el mapa del Leviatán es la entrada a la vía restaurativa, adoptó lineamientos propios de IA; el artículo 1 del Acuerdo no la nombra.
 
 ## 4. Abogacía, consultorios jurídicos y la línea entre orientar y asesorar
 
@@ -103,7 +103,7 @@ Convenciones. «Dice la norma» va entre comillas y con su numeral, fundamento o
 
 **Dice un tercero.** Londoño Villarreal (2025, p. 81) afirma que la asesoría jurídica «está regulada en Colombia y su ejercicio profesional está limitado a los abogados» y que los chatbots jurídicos «se limitan a la provisión de información y orientación básica». La única cita que sostiene esa frase es «(Consejo Superior de la Judicatura, 2012)», y en la lista de referencias no hay ninguna entrada de 2012 de esa entidad: solo aparecen el Plan Sectorial de 2022 y el Acuerdo PCSJA24-12243 de 2024. El artículo no cita el Decreto 196 de 1971, la Ley 1123 de 2007 ni la Ley 2113 de 2021 en ninguna página. La afirmación es, entonces, del autor y no está anclada en una norma identificable.
 
-**Sin resolver.** No busqué jurisprudencia de la Corte Constitucional ni de la Comisión Nacional de Disciplina Judicial sobre qué cuenta como ejercicio ilegal de la abogacía fuera del litigio. Tampoco verifiqué la sanción a la que remite el art. 25 del Decreto 196 («las sanciones señaladas para el ejercicio ilegal de la abogacía»). La Función Pública advierte que no responde por la vigencia del texto del Decreto 196.
+**Sin resolver.** No busqué jurisprudencia de la Corte Constitucional ni de la Comisión Nacional de Disciplina Judicial sobre qué cuenta como ejercicio ilegal de la abogacía fuera del litigio. Tampoco se verificó la sanción a la que remite el art. 25 del Decreto 196 («las sanciones señaladas para el ejercicio ilegal de la abogacía»). La Función Pública advierte que no responde por la vigencia del texto del Decreto 196.
 
 ## 5. Proyectos de ley de IA en trámite
 
@@ -116,9 +116,9 @@ Convenciones. «Dice la norma» va entre comillas y con su numeral, fundamento o
 - Texto propuesto para primer debate, art. 5 (pp. 76 y 77 del PDF): son de alto impacto los sistemas «utilizados de manera determinante para», entre otros, «g. apoyar decisiones en la administración de justicia cuando puedan incidir directamente en derechos o situaciones jurídicas individuales». En la categoría de transparencia: «a. Sistemas de IA destinados a interactuar directamente con personas físicas, los cuales deberán informar claramente que están interactuando con un sistema de IA, de forma accesible y a más tardar al inicio de la interacción».
 - Texto radicado, art. 6 (p. 68 y 69 del PDF): la evaluación de impacto se exige a los sistemas de alto riesgo, y «Todos los sistemas de IA no considerados de alto riesgo están exentos de este requisito».
 
-**Dice un tercero.** Semana (28 de agosto de 2026) recoge que el PL 043 de 2025 quedó «archivado por tránsito de legislatura». Una guía de terceros (colombia.com.co, corte del 17 de octubre de 2026) menciona además un PL 065 de 2026 Senado sobre IA; no lo verifiqué en fuente oficial.
+**Dice un tercero.** Semana (28 de agosto de 2026) recoge que el PL 043 de 2025 quedó «archivado por tránsito de legislatura». Una guía de terceros (colombia.com.co, corte del 17 de octubre de 2026) menciona además un PL 065 de 2026 Senado sobre IA; no se verificó en fuente oficial.
 
-**Sin resolver.** No encontré en la Cámara un registro de que el PL 025 de 2026 haya sido votado en primer debate después de la ponencia. Tampoco verifiqué el PL 065 de 2026 Senado ni otros proyectos sectoriales (por ejemplo, IA en PQRSD). La clasificación definitiva quedaría en manos de la autoridad que el proyecto cree, por lo que hoy no se puede afirmar en qué categoría caería el agente.
+**Sin resolver.** No se encontró en la Cámara un registro de que el PL 025 de 2026 haya sido votado en primer debate después de la ponencia. Tampoco se verificó el PL 065 de 2026 Senado ni otros proyectos sectoriales (por ejemplo, IA en PQRSD). La clasificación definitiva quedaría en manos de la autoridad que el proyecto cree, por lo que hoy no se puede afirmar en qué categoría caería el agente.
 
 ## Requisitos para el agente del proyecto
 

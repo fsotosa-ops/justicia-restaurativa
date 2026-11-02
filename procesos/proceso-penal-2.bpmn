@@ -92,7 +92,7 @@
     <bpmn:endEvent id="fin" name="Proceso terminado">
       <bpmn:incoming>f13</bpmn:incoming>
     </bpmn:endEvent>
-    <bpmn:textAnnotation id="n_med"><bpmn:text>Mediación: ordinario, desde la imputación hasta antes del juicio y con pena mínima de hasta 5 años; abreviado, hasta antes del fallo (arts. 524 y 547)</bpmn:text></bpmn:textAnnotation>
+    <bpmn:textAnnotation id="n_med"><bpmn:text>Mediación: en el ordinario, desde la imputación hasta antes del juicio, con pena mínima de hasta 5 años, bien jurídico personal y aceptación expresa de ambas partes; en el abreviado, hasta antes del fallo (arts. 524 y 547)</bpmn:text></bpmn:textAnnotation>
     <bpmn:sequenceFlow id="f0" sourceRef="de_hoja1" targetRef="t5"/>
     <bpmn:sequenceFlow id="f1" sourceRef="t5" targetRef="g4"/>
     <bpmn:sequenceFlow id="f2" sourceRef="g4" targetRef="cm" name="Mediación"/>
@@ -151,7 +151,7 @@
       <bpmndi:BPMNShape id="s_fin" bpmnElement="fin"><dc:Bounds x="1152" y="492" width="36" height="36"/>
         <bpmndi:BPMNLabel><dc:Bounds x="1115" y="534" width="110" height="28"/></bpmndi:BPMNLabel>
       </bpmndi:BPMNShape>
-      <bpmndi:BPMNShape id="s_n_med" bpmnElement="n_med"><dc:Bounds x="185" y="473" width="170" height="74"/>
+      <bpmndi:BPMNShape id="s_n_med" bpmnElement="n_med"><dc:Bounds x="185" y="462" width="170" height="96"/>
       </bpmndi:BPMNShape>
       <bpmndi:BPMNEdge id="e_f0" bpmnElement="f0"><di:waypoint x="138" y="350"/><di:waypoint x="214" y="350"/></bpmndi:BPMNEdge>
       <bpmndi:BPMNEdge id="e_f1" bpmnElement="f1"><di:waypoint x="326" y="350"/><di:waypoint x="395" y="350"/></bpmndi:BPMNEdge>
@@ -168,7 +168,7 @@
       <bpmndi:BPMNEdge id="e_f12" bpmnElement="f12"><di:waypoint x="926" y="510"/><di:waypoint x="964" y="510"/></bpmndi:BPMNEdge>
       <bpmndi:BPMNEdge id="e_f13" bpmnElement="f13"><di:waypoint x="1076" y="510"/><di:waypoint x="1152" y="510"/></bpmndi:BPMNEdge>
       <bpmndi:BPMNEdge id="e_mf0" bpmnElement="mf0"><di:waypoint x="570" y="60"/><di:waypoint x="570" y="150"/><bpmndi:BPMNLabel><dc:Bounds x="576" y="98" width="90" height="14"/></bpmndi:BPMNLabel></bpmndi:BPMNEdge>
-      <bpmndi:BPMNEdge id="e_asoc0" bpmnElement="asoc0"><di:waypoint x="270" y="390"/><di:waypoint x="270" y="473"/></bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="e_asoc0" bpmnElement="asoc0"><di:waypoint x="270" y="390"/><di:waypoint x="270" y="462"/></bpmndi:BPMNEdge>
     </bpmndi:BPMNPlane>
   </bpmndi:BPMNDiagram>
 </bpmn:definitions>

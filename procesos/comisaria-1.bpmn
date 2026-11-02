@@ -8,7 +8,7 @@
   </bpmn:collaboration>
   <bpmn:process id="p_comisaria_1" name="Comisaría de familia, hoja 1 de 3" isExecutable="false">
     <bpmn:laneSet id="ls_p_comisaria_1">
-      <bpmn:lane id="lane_com" name="Comisario(a) de familia">
+      <bpmn:lane id="lane_com" name="Comisario(a) y sustanciador">
         <bpmn:flowNodeRef>t4</bpmn:flowNodeRef>
         <bpmn:flowNodeRef>fin_remitido</bpmn:flowNodeRef>
       </bpmn:lane>
@@ -28,17 +28,17 @@
       <bpmn:messageEventDefinition id="med_inicio"/>
     </bpmn:startEvent>
     <bpmn:task id="t1" name="1. Registrar el ingreso">
-      <bpmn:documentation>Fuente: MinJusticia (2022), Tomo V, fase 1, act. 1, p. 17</bpmn:documentation>
+      <bpmn:documentation>Fuente: MinJusticia y PNUD (2022), Tomo V, fase 1, act. 1, p. 17</bpmn:documentation>
       <bpmn:incoming>f0</bpmn:incoming>
       <bpmn:outgoing>f1</bpmn:outgoing>
     </bpmn:task>
     <bpmn:task id="t2" name="2. Registrar la información básica">
-      <bpmn:documentation>Fuente: MinJusticia (2022), Tomo V, fase 1, act. 2, p. 18</bpmn:documentation>
+      <bpmn:documentation>Fuente: MinJusticia y PNUD (2022), Tomo V, fase 1, act. 2, p. 18</bpmn:documentation>
       <bpmn:incoming>f1</bpmn:incoming>
       <bpmn:outgoing>f2</bpmn:outgoing>
     </bpmn:task>
     <bpmn:task id="t3" name="3. Indagar el motivo de consulta">
-      <bpmn:documentation>Fuente: MinJusticia (2022), Tomo V, fase 1, act. 3, p. 18</bpmn:documentation>
+      <bpmn:documentation>Fuente: MinJusticia y PNUD (2022), Tomo V, fase 1, act. 3, p. 18</bpmn:documentation>
       <bpmn:incoming>f2</bpmn:incoming>
       <bpmn:outgoing>f3</bpmn:outgoing>
     </bpmn:task>
@@ -48,7 +48,7 @@
       <bpmn:outgoing>f6</bpmn:outgoing>
     </bpmn:exclusiveGateway>
     <bpmn:task id="t4" name="4. Remitir por oficio a la entidad competente">
-      <bpmn:documentation>Fuente: MinJusticia (2022), Tomo V, fase 1, act. 4, pp. 18-19</bpmn:documentation>
+      <bpmn:documentation>Fuente: MinJusticia y PNUD (2022), Tomo V, fase 1, act. 4, pp. 18-19</bpmn:documentation>
       <bpmn:incoming>f4</bpmn:incoming>
       <bpmn:outgoing>f5</bpmn:outgoing>
     </bpmn:task>

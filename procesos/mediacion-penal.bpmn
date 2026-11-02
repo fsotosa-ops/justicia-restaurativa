@@ -49,7 +49,7 @@
       <bpmn:outgoing>f4</bpmn:outgoing>
     </bpmn:task>
     <bpmn:task id="t3" name="3. Reuniones previas por separado (hasta 15 días)">
-      <bpmn:documentation>Fuente: Resolución FGN 0383 de 2022, art. 16</bpmn:documentation>
+      <bpmn:documentation>Fuente: Resolución FGN 0383 de 2022, art. 16, inc. 1</bpmn:documentation>
       <bpmn:incoming>f4</bpmn:incoming>
       <bpmn:outgoing>f5</bpmn:outgoing>
     </bpmn:task>
@@ -79,7 +79,7 @@
     <bpmn:endEvent id="fin" name="Acta ante el juez">
       <bpmn:incoming>f10</bpmn:incoming>
     </bpmn:endEvent>
-    <bpmn:textAnnotation id="n_vif"><bpmn:text>Violencia intrafamiliar: no procede con riesgo grave o extremo, y las reuniones previas van por separado (art. 16, par. 1)</bpmn:text></bpmn:textAnnotation>
+    <bpmn:textAnnotation id="n_vif"><bpmn:text>Violencia de género: no procede si el riesgo es grave o extremo (art. 12). Las reuniones previas van por separado en todos los casos (art. 16)</bpmn:text></bpmn:textAnnotation>
     <bpmn:sequenceFlow id="f0" sourceRef="inicio" targetRef="t1"/>
     <bpmn:sequenceFlow id="f1" sourceRef="t1" targetRef="g1"/>
     <bpmn:sequenceFlow id="f2" sourceRef="g1" targetRef="fin_no" name="No"/>
@@ -129,7 +129,7 @@
       <bpmndi:BPMNShape id="s_fin" bpmnElement="fin" bioc:stroke="#c4501c" bioc:fill="#fde6dc" color:border-color="#c4501c" color:background-color="#fde6dc"><dc:Bounds x="1152" y="332" width="36" height="36"/>
         <bpmndi:BPMNLabel><dc:Bounds x="1115" y="374" width="110" height="28"/></bpmndi:BPMNLabel>
       </bpmndi:BPMNShape>
-      <bpmndi:BPMNShape id="s_n_vif" bpmnElement="n_vif"><dc:Bounds x="275" y="153" width="170" height="74"/>
+      <bpmndi:BPMNShape id="s_n_vif" bpmnElement="n_vif"><dc:Bounds x="275" y="142" width="170" height="96"/>
       </bpmndi:BPMNShape>
       <bpmndi:BPMNEdge id="e_f0" bpmnElement="f0"><di:waypoint x="138" y="350"/><di:waypoint x="214" y="350"/></bpmndi:BPMNEdge>
       <bpmndi:BPMNEdge id="e_f1" bpmnElement="f1"><di:waypoint x="326" y="350"/><di:waypoint x="395" y="350"/></bpmndi:BPMNEdge>
@@ -145,7 +145,7 @@
       <bpmndi:BPMNEdge id="e_mf0" bpmnElement="mf0"><di:waypoint x="120" y="60"/><di:waypoint x="120" y="332"/><bpmndi:BPMNLabel><dc:Bounds x="126" y="189" width="90" height="14"/></bpmndi:BPMNLabel></bpmndi:BPMNEdge>
       <bpmndi:BPMNEdge id="e_mf1" bpmnElement="mf1"><di:waypoint x="570" y="150"/><di:waypoint x="570" y="60"/><bpmndi:BPMNLabel><dc:Bounds x="576" y="98" width="90" height="14"/></bpmndi:BPMNLabel></bpmndi:BPMNEdge>
       <bpmndi:BPMNEdge id="e_mf2" bpmnElement="mf2"><di:waypoint x="720" y="150"/><di:waypoint x="720" y="60"/><bpmndi:BPMNLabel><dc:Bounds x="726" y="98" width="90" height="14"/></bpmndi:BPMNLabel></bpmndi:BPMNEdge>
-      <bpmndi:BPMNEdge id="e_asoc0" bpmnElement="asoc0"><di:waypoint x="420" y="325"/><di:waypoint x="360" y="227"/></bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="e_asoc0" bpmnElement="asoc0"><di:waypoint x="420" y="325"/><di:waypoint x="360" y="238"/></bpmndi:BPMNEdge>
     </bpmndi:BPMNPlane>
   </bpmndi:BPMNDiagram>
 </bpmn:definitions>

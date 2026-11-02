@@ -50,19 +50,19 @@
     <bpmn:endEvent id="fin_o" name="Orientado a otra entidad">
       <bpmn:incoming>f4</bpmn:incoming>
     </bpmn:endEvent>
-    <bpmn:callActivity id="cC" name="2. Comisaría de familia (lámina 2)">
-      <bpmn:documentation>Fuente: MinJusticia (2022), Tomo V</bpmn:documentation>
+    <bpmn:callActivity id="cC" name="2. Comisaría de familia (Figura 2)">
+      <bpmn:documentation>Fuente: MinJusticia y PNUD (2022), Tomo V</bpmn:documentation>
       <bpmn:incoming>f2</bpmn:incoming>
       <bpmn:outgoing>f6</bpmn:outgoing>
     </bpmn:callActivity>
-    <bpmn:callActivity id="cP" name="3. Proceso penal (lámina 3)">
+    <bpmn:callActivity id="cP" name="3. Proceso penal (Figura 3)">
       <bpmn:documentation>Fuente: Ley 906 de 2004</bpmn:documentation>
       <bpmn:incoming>f5</bpmn:incoming>
       <bpmn:incoming>f6</bpmn:incoming>
       <bpmn:outgoing>f7</bpmn:outgoing>
       <bpmn:outgoing>f8</bpmn:outgoing>
     </bpmn:callActivity>
-    <bpmn:callActivity id="cM" name="4. Mediación penal (lámina 4)">
+    <bpmn:callActivity id="cM" name="4. Mediación penal (Figura 4)">
       <bpmn:documentation>Fuente: Resolución FGN 0383 de 2022</bpmn:documentation>
       <bpmn:incoming>f7</bpmn:incoming>
       <bpmn:outgoing>f9</bpmn:outgoing>
@@ -123,9 +123,9 @@
       <bpmndi:BPMNShape id="s_fin_m" bpmnElement="fin_m" bioc:stroke="#c4501c" bioc:fill="#fde6dc" color:border-color="#c4501c" color:background-color="#fde6dc"><dc:Bounds x="1002" y="812" width="36" height="36"/>
         <bpmndi:BPMNLabel><dc:Bounds x="965" y="854" width="110" height="28"/></bpmndi:BPMNLabel>
       </bpmndi:BPMNShape>
-      <bpmndi:BPMNShape id="s_n_q" bpmnElement="n_q"><dc:Bounds x="485" y="793" width="170" height="74"/>
+      <bpmndi:BPMNShape id="s_n_q" bpmnElement="n_q"><dc:Bounds x="485" y="782" width="170" height="96"/>
       </bpmndi:BPMNShape>
-      <bpmndi:BPMNShape id="s_n_a" bpmnElement="n_a"><dc:Bounds x="335" y="153" width="170" height="74"/>
+      <bpmndi:BPMNShape id="s_n_a" bpmnElement="n_a"><dc:Bounds x="335" y="142" width="170" height="96"/>
       </bpmndi:BPMNShape>
       <bpmndi:BPMNEdge id="e_f0" bpmnElement="f0"><di:waypoint x="120" y="208"/><di:waypoint x="120" y="350"/><di:waypoint x="214" y="350"/></bpmndi:BPMNEdge>
       <bpmndi:BPMNEdge id="e_f1" bpmnElement="f1"><di:waypoint x="326" y="350"/><di:waypoint x="395" y="350"/></bpmndi:BPMNEdge>
@@ -138,8 +138,8 @@
       <bpmndi:BPMNEdge id="e_f8" bpmnElement="f8"><di:waypoint x="776" y="670"/><di:waypoint x="1002" y="670"/></bpmndi:BPMNEdge>
       <bpmndi:BPMNEdge id="e_f9" bpmnElement="f9" bioc:stroke="#c4501c" color:border-color="#c4501c"><di:waypoint x="926" y="830"/><di:waypoint x="1002" y="830"/></bpmndi:BPMNEdge>
       <bpmndi:BPMNEdge id="e_mf0" bpmnElement="mf0"><di:waypoint x="120" y="60"/><di:waypoint x="120" y="172"/><bpmndi:BPMNLabel><dc:Bounds x="126" y="109" width="90" height="14"/></bpmndi:BPMNLabel></bpmndi:BPMNEdge>
-      <bpmndi:BPMNEdge id="e_asoc0" bpmnElement="asoc0"><di:waypoint x="720" y="710"/><di:waypoint x="570" y="793"/></bpmndi:BPMNEdge>
-      <bpmndi:BPMNEdge id="e_asoc1" bpmnElement="asoc1"><di:waypoint x="270" y="310"/><di:waypoint x="420" y="227"/></bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="e_asoc0" bpmnElement="asoc0"><di:waypoint x="720" y="710"/><di:waypoint x="570" y="782"/></bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="e_asoc1" bpmnElement="asoc1"><di:waypoint x="270" y="310"/><di:waypoint x="420" y="238"/></bpmndi:BPMNEdge>
     </bpmndi:BPMNPlane>
   </bpmndi:BPMNDiagram>
 </bpmn:definitions>
