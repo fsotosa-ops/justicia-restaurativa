@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<bpmn:definitions xmlns:bpmn="http://www.omg.org/spec/BPMN/20100524/MODEL" xmlns:bpmndi="http://www.omg.org/spec/BPMN/20100524/DI" xmlns:dc="http://www.omg.org/spec/DD/20100524/DC" xmlns:di="http://www.omg.org/spec/DD/20100524/DI" xmlns:bioc="http://bpmn.io/schema/bpmn/biocolor/1.0" xmlns:color="http://www.omg.org/spec/BPMN/non-normative/color/1.0" id="def_p_hipotesis" targetNamespace="https://github.com/fsotosa-ops/justicia-restaurativa" exporter="justicia-restaurativa/mapa/procesos/bpmn.py" exporterVersion="1">
+  <bpmn:collaboration id="col_p_hipotesis">
+    <bpmn:participant id="pool_p_hipotesis" name="Hipótesis del equipo sobre el recorrido" processRef="p_hipotesis"/>
+  </bpmn:collaboration>
+  <bpmn:process id="p_hipotesis" name="Hipótesis del equipo sobre el recorrido" isExecutable="false">
+    <bpmn:laneSet id="ls_p_hipotesis">
+      <bpmn:lane id="lane_pue" name="Puerta de entrada">
+        <bpmn:flowNodeRef>inicio</bpmn:flowNodeRef>
+      </bpmn:lane>
+      <bpmn:lane id="lane_age" name="Agente de orientación (propuesta)">
+        <bpmn:flowNodeRef>a1</bpmn:flowNodeRef>
+        <bpmn:flowNodeRef>gB</bpmn:flowNodeRef>
+        <bpmn:flowNodeRef>gC</bpmn:flowNodeRef>
+        <bpmn:flowNodeRef>fin_o</bpmn:flowNodeRef>
+      </bpmn:lane>
+      <bpmn:lane id="lane_com" name="Comisaría de familia">
+        <bpmn:flowNodeRef>cC</bpmn:flowNodeRef>
+      </bpmn:lane>
+      <bpmn:lane id="lane_fis" name="Fiscalía y jueces">
+        <bpmn:flowNodeRef>cP</bpmn:flowNodeRef>
+        <bpmn:flowNodeRef>fin_p</bpmn:flowNodeRef>
+      </bpmn:lane>
+      <bpmn:lane id="lane_con" name="Conciliación y mediación">
+        <bpmn:flowNodeRef>cM</bpmn:flowNodeRef>
+        <bpmn:flowNodeRef>fin_m</bpmn:flowNodeRef>
+      </bpmn:lane>
+    </bpmn:laneSet>
+    <bpmn:startEvent id="inicio" name="Consulta en consultorio jurídico o casa de justicia">
+      <bpmn:outgoing>f0</bpmn:outgoing>
+    </bpmn:startEvent>
+    <bpmn:task id="a1" name="1. Preguntar por el conflicto, el rol y si hay un proceso abierto">
+      <bpmn:incoming>f0</bpmn:incoming>
+      <bpmn:outgoing>f1</bpmn:outgoing>
+    </bpmn:task>
+    <bpmn:exclusiveGateway id="gB" name="¿Violencia intrafamiliar?">
+      <bpmn:incoming>f1</bpmn:incoming>
+      <bpmn:outgoing>f2</bpmn:outgoing>
+      <bpmn:outgoing>f3</bpmn:outgoing>
+    </bpmn:exclusiveGateway>
+    <bpmn:exclusiveGateway id="gC" name="¿Es un delito?">
+      <bpmn:incoming>f3</bpmn:incoming>
+      <bpmn:outgoing>f4</bpmn:outgoing>
+      <bpmn:outgoing>f5</bpmn:outgoing>
+    </bpmn:exclusiveGateway>
+    <bpmn:endEvent id="fin_o" name="Orientado a otra entidad">
+      <bpmn:incoming>f4</bpmn:incoming>
+    </bpmn:endEvent>
+    <bpmn:callActivity id="cC" name="2. Comisaría de familia">
+      <bpmn:incoming>f2</bpmn:incoming>
+      <bpmn:outgoing>f6</bpmn:outgoing>
+    </bpmn:callActivity>
+    <bpmn:callActivity id="cP" name="3. Proceso penal">
+      <bpmn:incoming>f5</bpmn:incoming>
+      <bpmn:incoming>f6</bpmn:incoming>
+      <bpmn:outgoing>f7</bpmn:outgoing>
+      <bpmn:outgoing>f8</bpmn:outgoing>
+    </bpmn:callActivity>
+    <bpmn:endEvent id="fin_p" name="Sentencia o archivo">
+      <bpmn:incoming>f8</bpmn:incoming>
+    </bpmn:endEvent>
+    <bpmn:callActivity id="cM" name="4. Mediación penal">
+      <bpmn:incoming>f7</bpmn:incoming>
+      <bpmn:outgoing>f9</bpmn:outgoing>
+    </bpmn:callActivity>
+    <bpmn:endEvent id="fin_m" name="Acuerdo restaurativo">
+      <bpmn:incoming>f9</bpmn:incoming>
+    </bpmn:endEvent>
+    <bpmn:textAnnotation id="h1"><bpmn:text>H1 Comprensión: reformular. En los delitos, solo el 4% no actuó por no saber a dónde ir</bpmn:text></bpmn:textAnnotation>
+    <bpmn:textAnnotation id="h2"><bpmn:text>H2 Orientación: reformular. Rinde con acompañamiento: 80% frente a 17% sin ayuda</bpmn:text></bpmn:textAnnotation>
+    <bpmn:textAnnotation id="h3"><bpmn:text>H3 Derivación: reformular. Triaje con las reglas de la Ley 906, no un modelo predictivo</bpmn:text></bpmn:textAnnotation>
+    <bpmn:textAnnotation id="h6"><bpmn:text>H6 Gobernanza: se sostiene. El agente informa; deciden las personas</bpmn:text></bpmn:textAnnotation>
+    <bpmn:textAnnotation id="h4"><bpmn:text>H4 Eficiencia: se sostiene, pero no se extiende a la violencia intrafamiliar</bpmn:text></bpmn:textAnnotation>
+    <bpmn:textAnnotation id="h5"><bpmn:text>H5 Resultados: reformular. Satisfacción robusta; la reincidencia baja poco</bpmn:text></bpmn:textAnnotation>
+    <bpmn:sequenceFlow id="f0" sourceRef="inicio" targetRef="a1"/>
+    <bpmn:sequenceFlow id="f1" sourceRef="a1" targetRef="gB"/>
+    <bpmn:sequenceFlow id="f2" sourceRef="gB" targetRef="cC" name="Sí"/>
+    <bpmn:sequenceFlow id="f3" sourceRef="gB" targetRef="gC" name="No"/>
+    <bpmn:sequenceFlow id="f4" sourceRef="gC" targetRef="fin_o" name="No"/>
+    <bpmn:sequenceFlow id="f5" sourceRef="gC" targetRef="cP" name="Sí"/>
+    <bpmn:sequenceFlow id="f6" sourceRef="cC" targetRef="cP" name="Denuncia"/>
+    <bpmn:sequenceFlow id="f7" sourceRef="cP" targetRef="cM" name="Remisión del fiscal o el juez"/>
+    <bpmn:sequenceFlow id="f8" sourceRef="cP" targetRef="fin_p"/>
+    <bpmn:sequenceFlow id="f9" sourceRef="cM" targetRef="fin_m"/>
+    <bpmn:association id="asoc0" sourceRef="inicio" targetRef="h1"/>
+    <bpmn:association id="asoc1" sourceRef="a1" targetRef="h2"/>
+    <bpmn:association id="asoc2" sourceRef="gB" targetRef="h3"/>
+    <bpmn:association id="asoc3" sourceRef="a1" targetRef="h6"/>
+    <bpmn:association id="asoc4" sourceRef="cM" targetRef="h4"/>
+    <bpmn:association id="asoc5" sourceRef="fin_m" targetRef="h5"/>
+  </bpmn:process>
+  <bpmndi:BPMNDiagram id="dia_p_hipotesis">
+    <bpmndi:BPMNPlane id="pl_p_hipotesis" bpmnElement="col_p_hipotesis">
+      <bpmndi:BPMNShape id="s_pool" bpmnElement="pool_p_hipotesis" isHorizontal="true"><dc:Bounds x="0" y="0" width="1744" height="800"/></bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="s_lane_pue" bpmnElement="lane_pue" isHorizontal="true"><dc:Bounds x="30" y="0" width="1714" height="160"/></bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="s_lane_age" bpmnElement="lane_age" isHorizontal="true"><dc:Bounds x="30" y="160" width="1714" height="160"/></bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="s_lane_com" bpmnElement="lane_com" isHorizontal="true"><dc:Bounds x="30" y="320" width="1714" height="160"/></bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="s_lane_fis" bpmnElement="lane_fis" isHorizontal="true"><dc:Bounds x="30" y="480" width="1714" height="160"/></bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="s_lane_con" bpmnElement="lane_con" isHorizontal="true"><dc:Bounds x="30" y="640" width="1714" height="160"/></bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="s_inicio" bpmnElement="inicio"><dc:Bounds x="102" y="74" width="36" height="36"/>
+        <bpmndi:BPMNLabel><dc:Bounds x="65" y="32" width="110" height="28"/></bpmndi:BPMNLabel>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="s_a1" bpmnElement="a1" bioc:stroke="#8a8984" bioc:fill="#f1f0ec" color:border-color="#8a8984" color:background-color="#f1f0ec"><dc:Bounds x="230" y="200" width="120" height="80"/>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="s_gB" bpmnElement="gB" bioc:stroke="#8a8984" bioc:fill="#f1f0ec" color:border-color="#8a8984" color:background-color="#f1f0ec"><dc:Bounds x="503" y="215" width="50" height="50"/>
+        <bpmndi:BPMNLabel><dc:Bounds x="414" y="185" width="110" height="28"/></bpmndi:BPMNLabel>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="s_gC" bpmnElement="gC" bioc:stroke="#8a8984" bioc:fill="#f1f0ec" color:border-color="#8a8984" color:background-color="#f1f0ec"><dc:Bounds x="707" y="215" width="50" height="50"/>
+        <bpmndi:BPMNLabel><dc:Bounds x="677" y="271" width="110" height="28"/></bpmndi:BPMNLabel>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="s_fin_o" bpmnElement="fin_o" bioc:stroke="#8a8984" bioc:fill="#f1f0ec" color:border-color="#8a8984" color:background-color="#f1f0ec"><dc:Bounds x="918" y="170" width="36" height="36"/>
+        <bpmndi:BPMNLabel><dc:Bounds x="960" y="174" width="90" height="28"/></bpmndi:BPMNLabel>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="s_cC" bpmnElement="cC"><dc:Bounds x="468" y="360" width="120" height="80"/>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="s_cP" bpmnElement="cP"><dc:Bounds x="876" y="520" width="120" height="80"/>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="s_fin_p" bpmnElement="fin_p"><dc:Bounds x="1156" y="542" width="36" height="36"/>
+        <bpmndi:BPMNLabel><dc:Bounds x="1119" y="584" width="110" height="28"/></bpmndi:BPMNLabel>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="s_cM" bpmnElement="cM" bioc:stroke="#c4501c" bioc:fill="#fde6dc" color:border-color="#c4501c" color:background-color="#fde6dc"><dc:Bounds x="1114" y="680" width="120" height="80"/>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="s_fin_m" bpmnElement="fin_m" bioc:stroke="#c4501c" bioc:fill="#fde6dc" color:border-color="#c4501c" color:background-color="#fde6dc"><dc:Bounds x="1360" y="702" width="36" height="36"/>
+        <bpmndi:BPMNLabel><dc:Bounds x="1323" y="744" width="110" height="28"/></bpmndi:BPMNLabel>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="s_h1" bpmnElement="h1"><dc:Bounds x="246" y="55" width="190" height="74"/>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="s_h2" bpmnElement="h2"><dc:Bounds x="467" y="43" width="190" height="74"/>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="s_h3" bpmnElement="h3"><dc:Bounds x="688" y="43" width="190" height="74"/>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="s_h6" bpmnElement="h6"><dc:Bounds x="195" y="363" width="190" height="74"/>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="s_h4" bpmnElement="h4"><dc:Bounds x="1317" y="523" width="190" height="74"/>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="s_h5" bpmnElement="h5"><dc:Bounds x="1504" y="683" width="190" height="74"/>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNEdge id="e_f0" bpmnElement="f0"><di:waypoint x="120" y="110"/><di:waypoint x="120" y="240"/><di:waypoint x="230" y="240"/></bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="e_f1" bpmnElement="f1"><di:waypoint x="350" y="240"/><di:waypoint x="503" y="240"/></bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="e_f2" bpmnElement="f2"><di:waypoint x="528" y="265"/><di:waypoint x="528" y="360"/><bpmndi:BPMNLabel><dc:Bounds x="533" y="304" width="70" height="14"/></bpmndi:BPMNLabel></bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="e_f3" bpmnElement="f3"><di:waypoint x="553" y="240"/><di:waypoint x="707" y="240"/><bpmndi:BPMNLabel><dc:Bounds x="600" y="222" width="60" height="14"/></bpmndi:BPMNLabel></bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="e_f4" bpmnElement="f4"><di:waypoint x="732" y="215"/><di:waypoint x="732" y="188"/><di:waypoint x="918" y="188"/><bpmndi:BPMNLabel><dc:Bounds x="737" y="194" width="70" height="14"/></bpmndi:BPMNLabel></bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="e_f5" bpmnElement="f5"><di:waypoint x="757" y="240"/><di:waypoint x="936" y="240"/><di:waypoint x="936" y="520"/><bpmndi:BPMNLabel><dc:Bounds x="816" y="222" width="60" height="14"/></bpmndi:BPMNLabel></bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="e_f6" bpmnElement="f6"><di:waypoint x="528" y="440"/><di:waypoint x="528" y="560"/><di:waypoint x="876" y="560"/><bpmndi:BPMNLabel><dc:Bounds x="533" y="492" width="70" height="14"/></bpmndi:BPMNLabel></bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="e_f7" bpmnElement="f7" bioc:stroke="#c4501c" color:border-color="#c4501c"><di:waypoint x="936" y="600"/><di:waypoint x="936" y="720"/><di:waypoint x="1114" y="720"/><bpmndi:BPMNLabel><dc:Bounds x="941" y="652" width="70" height="14"/></bpmndi:BPMNLabel></bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="e_f8" bpmnElement="f8"><di:waypoint x="996" y="560"/><di:waypoint x="1156" y="560"/></bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="e_f9" bpmnElement="f9" bioc:stroke="#c4501c" color:border-color="#c4501c"><di:waypoint x="1234" y="720"/><di:waypoint x="1360" y="720"/></bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="e_asoc0" bpmnElement="asoc0"><di:waypoint x="138" y="92"/><di:waypoint x="246" y="92"/></bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="e_asoc1" bpmnElement="asoc1"><di:waypoint x="290" y="200"/><di:waypoint x="562" y="117"/></bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="e_asoc2" bpmnElement="asoc2"><di:waypoint x="528" y="215"/><di:waypoint x="783" y="117"/></bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="e_asoc3" bpmnElement="asoc3"><di:waypoint x="290" y="280"/><di:waypoint x="290" y="363"/></bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="e_asoc4" bpmnElement="asoc4"><di:waypoint x="1174" y="680"/><di:waypoint x="1412" y="597"/></bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="e_asoc5" bpmnElement="asoc5"><di:waypoint x="1396" y="720"/><di:waypoint x="1504" y="720"/></bpmndi:BPMNEdge>
+    </bpmndi:BPMNPlane>
+  </bpmndi:BPMNDiagram>
+</bpmn:definitions>

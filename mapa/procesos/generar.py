@@ -17,6 +17,7 @@ import bpmn  # noqa: E402
 
 LAMINAS = [
     ("lamina_general", "vista-general", "Leviatán: vista general tentativa de las rutas de acceso"),
+    ("lamina_hipotesis", "hipotesis", "Hipótesis del equipo sobre el recorrido"),
     ("lamina_comisaria", "comisaria", "Comisaría de familia: recepción de un caso de violencia en el contexto familiar"),
     ("lamina_penal", "proceso-penal", "Proceso penal (Ley 906 de 2004) y salidas restaurativas"),
     ("lamina_mediacion", "mediacion-penal", "Mediación penal (Resolución FGN 0383 de 2022)"),

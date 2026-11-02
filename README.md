@@ -115,7 +115,30 @@ El mapa temático resume lo anterior. La justicia restaurativa es un tema de nic
 
 ## 5. Lo que sostiene la lectura completa
 
-Los 51 textos leídos completos permitieron contrastar las hipótesis del equipo con los datos de cada estudio y no con sus resúmenes. Lo que sostienen se ordena en seis movimientos. El contraste detallado, hipótesis por hipótesis, está en [`contraste-hipotesis.md`](estado-del-arte/contraste-hipotesis.md).
+El equipo partió de seis hipótesis, formuladas en el documento de estado del arte del 28 de octubre. Los 51 textos leídos completos permitieron contrastarlas con los datos de cada estudio y no con sus resúmenes, y el resultado es que cuatro hay que reformularlas y dos se sostienen, una de ellas con un límite. La Tabla 3 resume cada hipótesis con su veredicto.
+
+**Tabla 3.** Hipótesis del equipo y veredicto tras la lectura completa
+
+| Hipótesis | Veredicto | Qué muestra la lectura | Sección |
+|---|---|---|---|
+| **H1. Comprensión.** El bajo uso de la justicia restaurativa se explica, en parte, por desconocimiento de las rutas y del modelo, y no solo por falta de oferta institucional | Reformular | En los delitos, solo el 4% de quienes no actuaron dijo no saber a dónde acudir; pesan más creer que no vale la pena, la desconfianza y la falta de pruebas (PNUD y DNP, 2023; Pleasence y colegas, 2003). El agente tendría que explicar qué se puede lograr y qué hace falta, y no solo indicar la puerta | 5.1 |
+| **H2. Orientación.** Un agente que explique el modelo en lenguaje simple y oriente a la entidad competente aumenta la llegada efectiva de casos a los mecanismos restaurativos | Reformular | La orientación rinde cuando alguien acompaña: 80% de casos resueltos con ayuda frente a 17% sin ella (Sykes y colegas, 2020). El usuario principal pasaría del ciudadano solo a la puerta con un orientador | 5.2 |
+| **H3. Derivación.** El triaje asistido en el ingreso identifica antes los casos aptos para la vía restaurativa | Reformular | Quien deriva decide por intuición (Hoekstra, 2022; Sandbye y colegas, 2024), y en Colombia la elegibilidad la fijan reglas de la Ley 906. El triaje se plantea por reglas que dejen visible al elegible, y no como un modelo predictivo | 5.3 |
+| **H4. Eficiencia.** La derivación temprana reduce los tiempos de resolución y la carga de la vía ordinaria | Se sostiene, con un límite | Los casos mediados volvieron menos al tribunal penal (1,7% frente a 8,2%) y costaron 97% menos (Charkoudian y colegas, 2021; Lounkaew, 2026). En cambio, la violencia doméstica estaba excluida del estudio de Maryland, y el resultado no se extiende a ella | 5.4 |
+| **H5. Resultados.** Los casos resueltos por vía restaurativa muestran menor reincidencia y mayor satisfacción | Reformular | La satisfacción de la víctima es robusta, pero la reducción de la reincidencia es pequeña y depende del diseño del estudio (Fulham y colegas, 2025; Strang y colegas, 2013). En la violencia intrafamiliar no hay datos sobre el bienestar de la víctima (Kettrey y Reynolds, 2026) | 5.4 y 5.5 |
+| **H6. Gobernanza.** El sistema solo es legítimo si la IA orienta y deriva, y la decisión queda en manos de facilitadores y operadores humanos | Se sostiene | Las herramientas jurídicas comerciales dieron respuestas falsas o mal respaldadas entre el 17% y el 33% de las veces (Magesh y colegas, 2025), y la sentencia T-323 de 2024 limita la IA a información descriptiva. Además de un límite, la hipótesis da una regla de diseño: el agente informa y no resuelve | 5.6 |
+
+*Fuente:* Elaboración propia. Los enunciados son los del documento de estado del arte del equipo (sección 4); el contraste detallado, con citas y páginas, está en [`contraste-hipotesis.md`](estado-del-arte/contraste-hipotesis.md).
+
+La Figura 5 ubica cada hipótesis en el paso del recorrido donde actúa, sobre la misma vista general del Leviatán de la sección 7. Cuatro de ellas (H1, H2, H3 y H6) actúan en la puerta y en el agente, y tres de esas cuatro hay que reformularlas. En cambio, H4 y H5 actúan cuando el caso ya llegó a la mediación.
+
+**Figura 5.** Hipótesis del equipo sobre el recorrido de una persona
+
+![Hipótesis sobre el recorrido en BPMN](mapa/procesos/hipotesis.svg)
+
+*Nota:* cada anotación lleva la hipótesis y su veredicto. En gris, la propuesta del proyecto por validar; en naranja, la vía restaurativa. Para ver la figura a tamaño completo, haz clic en ella. *Fuente:* Elaboración propia. Archivo editable: [`hipotesis.bpmn`](mapa/procesos/hipotesis.bpmn).
+
+Lo que sostiene la lectura se ordena en seis movimientos, que las secciones 5.1 a 5.6 desarrollan.
 
 ### 5.1 La barrera no está en la puerta
 
@@ -153,9 +176,9 @@ Por último, de los 57 documentos que cruzan IA y justicia restaurativa, solo cu
 
 ## 6. Vacío en la literatura
 
-La literatura revisada tiene las piezas del proyecto por separado. Por un lado, la literatura de acceso a la justicia explica por qué las personas no llegan y muestra que orientar rinde con acompañamiento, pero no trata la vía restaurativa. Por otro lado, la literatura restaurativa muestra quién decide derivar y dónde están los límites en la violencia intrafamiliar, pero no habla de inteligencia artificial. Por último, la IA jurídica construye asistentes y clasificadores para la puerta de entrada, pero los evalúa con textos y no con personas, casi no mide la equidad entre grupos y, aunque en lo civil y lo laboral apunta al arreglo directo o a la mediación, en lo penal no conecta con las rutas restaurativas. La Figura 5 contrasta lo que cubre cada literatura con lo que el proyecto necesita reunir.
+La literatura revisada tiene las piezas del proyecto por separado. Por un lado, la literatura de acceso a la justicia explica por qué las personas no llegan y muestra que orientar rinde con acompañamiento, pero no trata la vía restaurativa. Por otro lado, la literatura restaurativa muestra quién decide derivar y dónde están los límites en la violencia intrafamiliar, pero no habla de inteligencia artificial. Por último, la IA jurídica construye asistentes y clasificadores para la puerta de entrada, pero los evalúa con textos y no con personas, casi no mide la equidad entre grupos y, aunque en lo civil y lo laboral apunta al arreglo directo o a la mediación, en lo penal no conecta con las rutas restaurativas. La Figura 6 contrasta lo que cubre cada literatura con lo que el proyecto necesita reunir.
 
-**Figura 5.** Lo que cubre cada literatura frente a lo que el proyecto necesita reunir
+**Figura 6.** Lo que cubre cada literatura frente a lo que el proyecto necesita reunir
 
 | Literatura | Explica por qué la gente no llega | Muestra quién decide la vía restaurativa | Fija límites en violencia intrafamiliar | Orienta con IA fiable | Representa el conocimiento jurídico para una máquina |
 |---|:---:|:---:|:---:|:---:|:---:|
@@ -192,33 +215,33 @@ Cada lámina tiene un carril por actor, numera sus actividades y asocia a cada u
 
 ### 7.3 Las láminas del Leviatán
 
-La Figura 6 es la vista general. Una persona consulta en una puerta de entrada, el agente que propone el proyecto le pregunta por su conflicto, su rol y si ya hay un proceso abierto, y según la respuesta el caso va a la comisaría, al proceso penal o a otra entidad. Las preguntas salen de las reuniones del equipo de octubre y por eso van en gris. En cambio, lo que sigue está en la norma: la comisaría denuncia ante la Fiscalía, y solo desde el proceso penal se llega a la mediación.
+La Figura 7 es la vista general. Una persona consulta en una puerta de entrada, el agente que propone el proyecto le pregunta por su conflicto, su rol y si ya hay un proceso abierto, y según la respuesta el caso va a la comisaría, al proceso penal o a otra entidad. Las preguntas salen de las reuniones del equipo de octubre y por eso van en gris. En cambio, lo que sigue está en la norma: la comisaría denuncia ante la Fiscalía, y solo desde el proceso penal se llega a la mediación.
 
-**Figura 6.** Vista general tentativa de las rutas de acceso
+**Figura 7.** Vista general tentativa de las rutas de acceso
 
 ![Vista general del Leviatán en BPMN](mapa/procesos/vista-general.svg)
 
-*Nota:* las actividades con el signo + se detallan en las Figuras 7 a 9. En gris, la propuesta del proyecto por validar; en naranja, la vía restaurativa. *Fuente:* Elaboración propia a partir de las reuniones del equipo de octubre de 2026, la Ley 906 de 2004 y la Resolución FGN 0383 de 2022. Archivo editable: [`vista-general.bpmn`](mapa/procesos/vista-general.bpmn).
+*Nota:* las actividades con el signo + se detallan en las Figuras 8 a 10, y un clic en la figura la abre a tamaño completo. En gris, la propuesta del proyecto por validar; en naranja, la vía restaurativa. *Fuente:* Elaboración propia a partir de las reuniones del equipo de octubre de 2026, la Ley 906 de 2004 y la Resolución FGN 0383 de 2022. Archivo editable: [`vista-general.bpmn`](mapa/procesos/vista-general.bpmn).
 
-La Figura 7 detalla una de las puertas de la violencia intrafamiliar, la comisaría de familia, con las actividades principales de las dos primeras fases del Tomo V y el responsable de cada una. La comisaría valora el riesgo, decreta medidas provisionales y diligencia la denuncia para la Fiscalía, pero no tiene una salida restaurativa propia en lo penal, porque solo el fiscal o el juez remiten a mediación.
+La Figura 8 detalla una de las puertas de la violencia intrafamiliar, la comisaría de familia, con las actividades principales de las dos primeras fases del Tomo V y el responsable de cada una. La comisaría valora el riesgo, decreta medidas provisionales y diligencia la denuncia para la Fiscalía, pero no tiene una salida restaurativa propia en lo penal, porque solo el fiscal o el juez remiten a mediación.
 
-**Figura 7.** Recepción de un caso de violencia en el contexto familiar en una comisaría de familia
+**Figura 8.** Recepción de un caso de violencia en el contexto familiar en una comisaría de familia
 
 ![Proceso de la comisaría de familia en BPMN](mapa/procesos/comisaria.svg)
 
 *Nota:* las fases 3 a 8 del Tomo V quedan como subprocesos. *Fuente:* Elaboración propia a partir de Ministerio de Justicia y del Derecho (2022), fases 1 y 2, pp. 17-24. Fuente de cada actividad en [`comisaria-fuentes.md`](mapa/procesos/comisaria-fuentes.md); archivo editable: [`comisaria.bpmn`](mapa/procesos/comisaria.bpmn).
 
-La Figura 8 dibuja el proceso penal con sus bifurcaciones, que son las que Salcedo pidió mirar. Si el delito es querellable, el proceso empieza por la conciliación preprocesal, y si hay acuerdo se archiva. Si no lo hay, o si el delito se persigue de oficio, el fiscal indaga y, tras la imputación, decide entre la mediación, el principio de oportunidad o la acusación. Cuando nadie ofrece la vía restaurativa, el caso sigue a juicio y la reparación se discute en el incidente de reparación integral.
+La Figura 9 dibuja el proceso penal con sus bifurcaciones, que son las que Salcedo pidió mirar. Si el delito es querellable, el proceso empieza por la conciliación preprocesal, y si hay acuerdo se archiva. Si no lo hay, o si el delito se persigue de oficio, el fiscal indaga y, tras la imputación, decide entre la mediación, el principio de oportunidad o la acusación. Cuando nadie ofrece la vía restaurativa, el caso sigue a juicio y la reparación se discute en el incidente de reparación integral.
 
-**Figura 8.** Proceso penal y salidas restaurativas
+**Figura 9.** Proceso penal y salidas restaurativas
 
 ![Proceso penal en BPMN](mapa/procesos/proceso-penal.svg)
 
 *Nota:* en naranja, las dos salidas restaurativas: la conciliación preprocesal y la mediación. *Fuente:* Elaboración propia a partir de la Ley 906 de 2004 y la Resolución FGN 0383 de 2022. Fuente de cada actividad en [`proceso-penal-fuentes.md`](mapa/procesos/proceso-penal-fuentes.md); archivo editable: [`proceso-penal.bpmn`](mapa/procesos/proceso-penal.bpmn).
 
-Por último, la Figura 9 abre la mediación penal. La piden la víctima o el imputado, el fiscal o el juez evalúa si procede y la remite a un programa con convenio, que hace reuniones previas por separado y luego la audiencia. Si hay acuerdo, el acta vuelve al fiscal y de ahí al juez; si no, el mediador informa el fracaso y el proceso sigue.
+Por último, la Figura 10 abre la mediación penal. La piden la víctima o el imputado, el fiscal o el juez evalúa si procede y la remite a un programa con convenio, que hace reuniones previas por separado y luego la audiencia. Si hay acuerdo, el acta vuelve al fiscal y de ahí al juez; si no, el mediador informa el fracaso y el proceso sigue.
 
-**Figura 9.** Mediación penal
+**Figura 10.** Mediación penal
 
 ![Mediación penal en BPMN](mapa/procesos/mediacion-penal.svg)
 
@@ -226,9 +249,9 @@ Por último, la Figura 9 abre la mediación penal. La piden la víctima o el imp
 
 ### 7.4 Remisiones entre entidades
 
-Una remisión es el envío de un caso de una entidad a otra porque la norma lo obliga o lo permite. Se levantaron 38 remisiones, cada una con su disparador, su plazo, su norma y su grado de verificación, que la Tabla 3 resume por ruta.
+Una remisión es el envío de un caso de una entidad a otra porque la norma lo obliga o lo permite. Se levantaron 38 remisiones, cada una con su disparador, su plazo, su norma y su grado de verificación, que la Tabla 4 resume por ruta.
 
-**Tabla 3.** Remisiones levantadas por ruta
+**Tabla 4.** Remisiones levantadas por ruta
 
 | Ruta | Remisiones | Obligatorias | Verificadas en la norma | Remisión que condiciona la vía restaurativa |
 |---|---:|---:|---:|---|
@@ -244,9 +267,9 @@ Las remisiones confirman lo que muestran las láminas. En la violencia intrafami
 
 ## 8. Lo que falta validar
 
-Esta versión se presenta al equipo para validarla. Una parte de lo que estaba pendiente ya se resolvió con fuentes primarias, y la Tabla 4 resume esas respuestas. El resto requiere a personas con experticia jurídica o información que solo tienen las entidades, y la Tabla 5 lo ordena por responsable.
+Esta versión se presenta al equipo para validarla. Una parte de lo que estaba pendiente ya se resolvió con fuentes primarias, y la Tabla 5 resume esas respuestas. El resto requiere a personas con experticia jurídica o información que solo tienen las entidades, y la Tabla 6 lo ordena por responsable.
 
-**Tabla 4.** Preguntas resueltas con fuentes primarias
+**Tabla 5.** Preguntas resueltas con fuentes primarias
 
 | Pregunta | Respuesta | Fuente |
 |---|---|---|
@@ -260,12 +283,12 @@ Esta versión se presenta al equipo para validarla. Una parte de lo que estaba p
 
 *Fuente:* Elaboración propia. El detalle, con citas y enlaces, está en [`normas-fiscalia-2026-11-02.md`](estado-del-arte/lectura/normas-fiscalia-2026-11-02.md), [`normas-ia-2026-11-02.md`](estado-del-arte/lectura/normas-ia-2026-11-02.md) y [`remisiones-2026-11-02.md`](estado-del-arte/lectura/remisiones-2026-11-02.md).
 
-**Tabla 5.** Lo que sigue abierto
+**Tabla 6.** Lo que sigue abierto
 
 | Qué | Quién | Cómo se resuelve |
 |---|---|---|
 | Revisar el mapa del Leviatán, las 38 remisiones y las reglas de elegibilidad | Lorena Vega y Jorge Salcedo | Sesión de validación con las láminas del mapa |
-| Saber qué convenios de mediación siguen vigentes, qué pasó con el Grupo de Apoyo de la Resolución 0383 y qué rutas emitió la Unidad de Justicia Restaurativa | Felipe Soto | Derecho de petición a la Unidad de Justicia Restaurativa de la Fiscalía |
+| Saber qué convenios de mediación siguen vigentes, qué pasó con el Grupo de Apoyo de la Resolución 0383, qué rutas emitió la Unidad de Justicia Restaurativa y cuál es el procedimiento interno de recepción de denuncias en las salas SAU y URI, que no está publicado y por eso no tiene lámina propia | Felipe Soto | Derecho de petición a la Unidad de Justicia Restaurativa de la Fiscalía |
 | Confirmar si la Directiva 0001 de 2021 sigue vigente y conseguir la versión oficial del manual de justicia restaurativa, que ya no está en el portal de la Fiscalía | Felipe Soto y Lorena Vega | Derecho de petición o consulta a la Fiscalía |
 | Definir quién opera el agente y quién es responsable del tratamiento de datos, porque de eso depende si los criterios de la Rama Judicial obligan o solo orientan | Equipo del proyecto con CAOBA | Decisión del equipo |
 | Decidir si el agente se ubica en la puerta, con un orientador, o con el operador que deriva, a la luz de las secciones 5.1 a 5.3 | Equipo del proyecto | Próxima sesión |
@@ -291,7 +314,7 @@ python3 estado-del-arte/busqueda/ecuaciones.py     # ecuaciones y URL de cada un
 python3 estado-del-arte/busqueda/corpus.py         # corpus unificado y medida de conexión
 Rscript estado-del-arte/busqueda/grafos.R          # cocitación, palabras clave y mapa temático
 uv run estado-del-arte/busqueda/prisma.py          # Figura 1
-(cd mapa/procesos && npm install && python3 generar.py)  # Figuras 6 a 9
+(cd mapa/procesos && npm install && python3 generar.py)  # Figuras 5 y 7 a 10
 ```
 
 ## 10. Referencias
@@ -305,6 +328,8 @@ Beetar Bechara, B. y Martínez Montenegro, I. (2026). Implementación de la medi
 Bouhours, B. y Daly, K. (2007). Youth sex offenders in court: An analysis of judicial sentencing remarks. *Punishment & Society, 9*(4), 371–394. https://doi.org/10.1177/1462474507080473
 
 Chaara, I., Falisse, J.-B. y Moriceau, J. (2022). Does legal aid improve access to justice in 'fragile' settings? Evidence from Burundi. *Journal of Peace Research, 59*(6), 810–827. https://doi.org/10.1177/00223433211055633
+
+Charkoudian, L., Walter, J., Harmon-Darrow, C. y Bernstein, J. (2021). Mediation in criminal misdemeanor cases. *Criminology, Criminal Justice, Law & Society, 22*(3), 14–29.
 
 Dahl, M., Magesh, V., Suzgun, M. y Ho, D. E. (2024). *Large legal fictions: Profiling legal hallucinations in large language models* (arXiv:2401.01301v2) [Preprint]. arXiv. https://doi.org/10.48550/arXiv.2401.01301. Publicado en *Journal of Legal Analysis, 16*(1), 64–93.
 
@@ -333,6 +358,8 @@ Jauhiainen, A. y Obstbaum, Y. (2026). Police and prosecutors' views on victim–
 Kettrey, H. H. y Reynolds, N. S. (2026). Is restorative justice appropriate for sexual assault and domestic violence? A systematic review and meta-analysis of the "empirical vacuum". *Journal of Experimental Criminology, 22*(1), 229–247. https://doi.org/10.1007/s11292-024-09651-8
 
 Londoño Villarreal, L. F. (2025). Guía de cumplimiento: regulación de IA generativa en asesoría jurídica por chatbot en Colombia. *Revista Criminalidad, 67*(2), 77–88. https://doi.org/10.47741/17943108.731
+
+Lounkaew, K. (2026). Beyond diversion: The economic and institutional impact of criminal mediation in Thailand. *Frontiers in Sociology, 11*, 1857910. https://doi.org/10.3389/fsoc.2026.1857910
 
 Lu, Y. (2025). Optimization study of artificial intelligence on dispute resolution models in criminal proceedings. *Cadernos de Dereito Actual*, (28), 14–27.
 

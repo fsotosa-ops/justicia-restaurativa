@@ -102,6 +102,9 @@ def _ruta(m, a, b):
     ax, ay, _ = _centro(m, a)
     bx, by, tb = _centro(m, b)
     if tb == "note":
+        if abs(ay - by) < 1:  # misma altura: asociación horizontal
+            d = 1 if bx > ax else -1
+            return [_borde(m, a, d, 0), _borde(m, b, -d, 0)]
         return [_borde(m, a, 0, -1 if by < ay else 1), _borde(m, b, 0, 1 if by < ay else -1)]
     if m.get("rutas", {}).get((a, b)) == "hv":
         p0 = _borde(m, a, 1 if bx > ax else -1, 0)
@@ -132,7 +135,7 @@ def exportar(m, ruta, pid, nombre):
     num = numerar(m)
     carriles = m["carriles"]
     ncol = max(n[2] for n in m["nodos"].values()) + 1
-    W = X0 + (ncol - 1) * COL + TASK_W / 2 + 50
+    W = X0 + (ncol - 1) * COL + max(TASK_W, NOTE_W) / 2 + 50
     H = len(carriles) * LANE_H
     Y0 = _y0(m)
     notas = {k for k, n in m["nodos"].items() if n[0] == "note"}
@@ -220,6 +223,10 @@ def exportar(m, ruta, pid, nombre):
         if tipo in ("start", "end", "gateway"):
             # etiqueta externa: bajo los eventos, sobre las compuertas
             lw = 110
+            if nid in m.get("etiqueta_arriba", ()):
+                L.append(f'        <bpmndi:BPMNLabel><dc:Bounds x="{x - lw / 2:.0f}" y="{y - h / 2 - 42:.0f}" width="{lw}" height="28"/></bpmndi:BPMNLabel>')
+                L.append('      </bpmndi:BPMNShape>')
+                continue
             if nid in m.get("etiqueta_derecha", ()):
                 L.append(f'        <bpmndi:BPMNLabel><dc:Bounds x="{x + w / 2 + 6:.0f}" y="{y - 14:.0f}" width="90" height="28"/></bpmndi:BPMNLabel>')
                 L.append('      </bpmndi:BPMNShape>')

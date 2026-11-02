@@ -168,12 +168,12 @@
   </bpmn:process>
   <bpmndi:BPMNDiagram id="dia_p_proceso-penal">
     <bpmndi:BPMNPlane id="pl_p_proceso-penal" bpmnElement="col_p_proceso-penal">
-      <bpmndi:BPMNShape id="s_pool" bpmnElement="pool_p_proceso-penal" isHorizontal="true"><dc:Bounds x="0" y="110" width="2780" height="640"/></bpmndi:BPMNShape>
-      <bpmndi:BPMNShape id="s_victima" bpmnElement="victima" isHorizontal="true"><dc:Bounds x="0" y="0" width="2780" height="60"/></bpmndi:BPMNShape>
-      <bpmndi:BPMNShape id="s_lane_rec" bpmnElement="lane_rec" isHorizontal="true"><dc:Bounds x="30" y="110" width="2750" height="160"/></bpmndi:BPMNShape>
-      <bpmndi:BPMNShape id="s_lane_con" bpmnElement="lane_con" isHorizontal="true"><dc:Bounds x="30" y="270" width="2750" height="160"/></bpmndi:BPMNShape>
-      <bpmndi:BPMNShape id="s_lane_fis" bpmnElement="lane_fis" isHorizontal="true"><dc:Bounds x="30" y="430" width="2750" height="160"/></bpmndi:BPMNShape>
-      <bpmndi:BPMNShape id="s_lane_jue" bpmnElement="lane_jue" isHorizontal="true"><dc:Bounds x="30" y="590" width="2750" height="160"/></bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="s_pool" bpmnElement="pool_p_proceso-penal" isHorizontal="true"><dc:Bounds x="0" y="110" width="2815" height="640"/></bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="s_victima" bpmnElement="victima" isHorizontal="true"><dc:Bounds x="0" y="0" width="2815" height="60"/></bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="s_lane_rec" bpmnElement="lane_rec" isHorizontal="true"><dc:Bounds x="30" y="110" width="2785" height="160"/></bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="s_lane_con" bpmnElement="lane_con" isHorizontal="true"><dc:Bounds x="30" y="270" width="2785" height="160"/></bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="s_lane_fis" bpmnElement="lane_fis" isHorizontal="true"><dc:Bounds x="30" y="430" width="2785" height="160"/></bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="s_lane_jue" bpmnElement="lane_jue" isHorizontal="true"><dc:Bounds x="30" y="590" width="2785" height="160"/></bpmndi:BPMNShape>
       <bpmndi:BPMNShape id="s_inicio" bpmnElement="inicio"><dc:Bounds x="102" y="172" width="36" height="36"/>
         <bpmndi:BPMNLabel><dc:Bounds x="65" y="214" width="110" height="28"/></bpmndi:BPMNLabel>
       </bpmndi:BPMNShape>

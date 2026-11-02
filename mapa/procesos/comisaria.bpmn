@@ -171,13 +171,13 @@
   </bpmn:process>
   <bpmndi:BPMNDiagram id="dia_p_comisaria">
     <bpmndi:BPMNPlane id="pl_p_comisaria" bpmnElement="col_p_comisaria">
-      <bpmndi:BPMNShape id="s_pool" bpmnElement="pool_p_comisaria" isHorizontal="true"><dc:Bounds x="0" y="110" width="3290" height="640"/></bpmndi:BPMNShape>
-      <bpmndi:BPMNShape id="s_persona" bpmnElement="persona" isHorizontal="true"><dc:Bounds x="0" y="0" width="3290" height="60"/></bpmndi:BPMNShape>
-      <bpmndi:BPMNShape id="s_entidades" bpmnElement="entidades" isHorizontal="true"><dc:Bounds x="0" y="800" width="3290" height="60"/></bpmndi:BPMNShape>
-      <bpmndi:BPMNShape id="s_lane_com" bpmnElement="lane_com" isHorizontal="true"><dc:Bounds x="30" y="110" width="3260" height="160"/></bpmndi:BPMNShape>
-      <bpmndi:BPMNShape id="s_lane_seg" bpmnElement="lane_seg" isHorizontal="true"><dc:Bounds x="30" y="270" width="3260" height="160"/></bpmndi:BPMNShape>
-      <bpmndi:BPMNShape id="s_lane_pro" bpmnElement="lane_pro" isHorizontal="true"><dc:Bounds x="30" y="430" width="3260" height="160"/></bpmndi:BPMNShape>
-      <bpmndi:BPMNShape id="s_lane_sec" bpmnElement="lane_sec" isHorizontal="true"><dc:Bounds x="30" y="590" width="3260" height="160"/></bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="s_pool" bpmnElement="pool_p_comisaria" isHorizontal="true"><dc:Bounds x="0" y="110" width="3325" height="640"/></bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="s_persona" bpmnElement="persona" isHorizontal="true"><dc:Bounds x="0" y="0" width="3325" height="60"/></bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="s_entidades" bpmnElement="entidades" isHorizontal="true"><dc:Bounds x="0" y="800" width="3325" height="60"/></bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="s_lane_com" bpmnElement="lane_com" isHorizontal="true"><dc:Bounds x="30" y="110" width="3295" height="160"/></bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="s_lane_seg" bpmnElement="lane_seg" isHorizontal="true"><dc:Bounds x="30" y="270" width="3295" height="160"/></bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="s_lane_pro" bpmnElement="lane_pro" isHorizontal="true"><dc:Bounds x="30" y="430" width="3295" height="160"/></bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="s_lane_sec" bpmnElement="lane_sec" isHorizontal="true"><dc:Bounds x="30" y="590" width="3295" height="160"/></bpmndi:BPMNShape>
       <bpmndi:BPMNShape id="s_inicio" bpmnElement="inicio"><dc:Bounds x="102" y="332" width="36" height="36"/>
         <bpmndi:BPMNLabel><dc:Bounds x="65" y="374" width="110" height="28"/></bpmndi:BPMNLabel>
       </bpmndi:BPMNShape>

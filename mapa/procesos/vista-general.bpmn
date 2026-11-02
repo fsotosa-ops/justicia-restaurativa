@@ -90,13 +90,13 @@
   </bpmn:process>
   <bpmndi:BPMNDiagram id="dia_p_vista-general">
     <bpmndi:BPMNPlane id="pl_p_vista-general" bpmnElement="col_p_vista-general">
-      <bpmndi:BPMNShape id="s_pool" bpmnElement="pool_p_vista-general" isHorizontal="true"><dc:Bounds x="0" y="110" width="1250" height="800"/></bpmndi:BPMNShape>
-      <bpmndi:BPMNShape id="s_persona" bpmnElement="persona" isHorizontal="true"><dc:Bounds x="0" y="0" width="1250" height="60"/></bpmndi:BPMNShape>
-      <bpmndi:BPMNShape id="s_lane_pue" bpmnElement="lane_pue" isHorizontal="true"><dc:Bounds x="30" y="110" width="1220" height="160"/></bpmndi:BPMNShape>
-      <bpmndi:BPMNShape id="s_lane_age" bpmnElement="lane_age" isHorizontal="true"><dc:Bounds x="30" y="270" width="1220" height="160"/></bpmndi:BPMNShape>
-      <bpmndi:BPMNShape id="s_lane_com" bpmnElement="lane_com" isHorizontal="true"><dc:Bounds x="30" y="430" width="1220" height="160"/></bpmndi:BPMNShape>
-      <bpmndi:BPMNShape id="s_lane_fis" bpmnElement="lane_fis" isHorizontal="true"><dc:Bounds x="30" y="590" width="1220" height="160"/></bpmndi:BPMNShape>
-      <bpmndi:BPMNShape id="s_lane_con" bpmnElement="lane_con" isHorizontal="true"><dc:Bounds x="30" y="750" width="1220" height="160"/></bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="s_pool" bpmnElement="pool_p_vista-general" isHorizontal="true"><dc:Bounds x="0" y="110" width="1285" height="800"/></bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="s_persona" bpmnElement="persona" isHorizontal="true"><dc:Bounds x="0" y="0" width="1285" height="60"/></bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="s_lane_pue" bpmnElement="lane_pue" isHorizontal="true"><dc:Bounds x="30" y="110" width="1255" height="160"/></bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="s_lane_age" bpmnElement="lane_age" isHorizontal="true"><dc:Bounds x="30" y="270" width="1255" height="160"/></bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="s_lane_com" bpmnElement="lane_com" isHorizontal="true"><dc:Bounds x="30" y="430" width="1255" height="160"/></bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="s_lane_fis" bpmnElement="lane_fis" isHorizontal="true"><dc:Bounds x="30" y="590" width="1255" height="160"/></bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="s_lane_con" bpmnElement="lane_con" isHorizontal="true"><dc:Bounds x="30" y="750" width="1255" height="160"/></bpmndi:BPMNShape>
       <bpmndi:BPMNShape id="s_inicio" bpmnElement="inicio"><dc:Bounds x="102" y="172" width="36" height="36"/>
         <bpmndi:BPMNLabel><dc:Bounds x="144" y="176" width="90" height="28"/></bpmndi:BPMNLabel>
       </bpmndi:BPMNShape>
