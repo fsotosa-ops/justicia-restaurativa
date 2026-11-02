@@ -42,7 +42,7 @@ Las trece búsquedas devolvieron 9.268 resultados, que corresponden a 7.930 docu
 
 *Fuente:* Elaboración propia con datos de Scopus.
 
-Las fichas de cada texto, con su diseño, sus hallazgos citados con página y lo que aportan a este documento, están en [`evidencia/`](../evidencia/). Cuando una afirmación sale solo del resumen, el texto lo dice. La primera ronda de lectura cubrió el acceso a la justicia, la justicia restaurativa y dos estudios sobre la fiabilidad de la IA aplicada al derecho, y la segunda amplió ese campo y agregó las búsquedas combinadas y el lenguaje judicial. De los 51 textos, 29 salen de la búsqueda en Scopus y 22 de la búsqueda complementaria.
+Las fichas de cada texto, con su diseño, sus hallazgos citados con página y lo que aportan a este documento, están en [`evidencia/`](../evidencia/). La primera ronda de lectura cubrió el acceso a la justicia, la justicia restaurativa y dos estudios sobre la fiabilidad de la IA aplicada al derecho, y la segunda amplió ese campo y agregó las búsquedas combinadas y el lenguaje judicial. De los 51 textos, 29 salen de la búsqueda en Scopus y 22 de la búsqueda complementaria.
 
 **Declaración sobre el uso de inteligencia artificial.** La búsqueda complementaria se hizo con Consensus, y la extracción de los textos completos y el cotejo de las citas se hicieron con asistencia de Gemini Notebook y Claude (Anthropic). Todas las citas que se usan en estos documentos se verificaron en el texto original, con su página. Las preguntas, los campos de estudio, los criterios de inclusión y las conclusiones son del autor.
 
