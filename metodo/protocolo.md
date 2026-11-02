@@ -72,7 +72,7 @@ Con el corpus unificado y sin duplicados se calcula la fracción de pares de doc
 
 ## Registro de corridas
 
-Las dos corridas se hicieron el 2 de noviembre de 2026 en Scopus, con el acceso institucional de la Javeriana, por Playwright y con la sesión de Felipe Soto. La primera corrida mostró dos problemas. Por un lado, E1 perdía a Pleasence y colegas (2003) y a Chaara y colegas (2022), que están indexados, porque el bloque de rutas no reconocía «advice» a secas ni el uso de tribunales. Por otro lado, la literatura de IA traía demasiados documentos, porque «citizen*» en E6 y «reliab*» en E7 son términos genéricos. En la segunda corrida se amplió el bloque de rutas y se quitaron esos dos términos, de modo que la Tabla 3 muestra cómo cambió cada ecuación.
+Las dos corridas se hicieron el 2 de noviembre de 2026 en Scopus, con el acceso institucional de la Javeriana, con una sesión institucional. La primera corrida mostró dos problemas. Por un lado, E1 perdía a Pleasence y colegas (2003) y a Chaara y colegas (2022), que están indexados, porque el bloque de rutas no reconocía «advice» a secas ni el uso de tribunales. Por otro lado, la literatura de IA traía demasiados documentos, porque «citizen*» en E6 y «reliab*» en E7 son términos genéricos. En la segunda corrida se amplió el bloque de rutas y se quitaron esos dos términos, de modo que la Tabla 3 muestra cómo cambió cada ecuación.
 
 **Tabla 3.** Documentos por ecuación en las dos corridas.
 
