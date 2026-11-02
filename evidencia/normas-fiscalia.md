@@ -1,19 +1,19 @@
 # Normas de la Fiscalía sobre mediación y violencia intrafamiliar
 
-Lectura del 2 de noviembre de 2026 para el documento de validación ([`03-validacion.md`](../docs/03-validacion.md)). Cada cita lleva la fuente oficial y el artículo o la página. Se separa lo que dice la norma de lo que interpretan terceros.
+Respaldo normativo del documento de validación ([`03-validacion.md`](../docs/03-validacion.md)), leído el 2 de noviembre de 2026. Cada cita lleva su fuente y el artículo o la página, y lo que dice la norma se separa de lo que interpretan terceros.
 
 ## Advertencia sobre las fuentes
 
-El sitio de la Fiscalía cambió de estructura. Las URL `fiscalia.gov.co/colombia/wp-content/uploads/...` responden hoy con una redirección a una página 404, también para la Resolución 0383, el Manual, la Resolución 0447 y la Directiva 0001 de 2021. Por eso usé copias del Internet Archive del archivo oficial:
+Las URL `fiscalia.gov.co/colombia/wp-content/uploads/...` de la Resolución 0383, el Manual, la Resolución 0447 y la Directiva 0001 de 2021 redirigen hoy a una página 404. Por eso se usaron copias del archivo oficial en el Internet Archive:
 
 - Resolución 0-0383 de 2022: copia del 18 de octubre de 2025 del PDF oficial (escaneo firmado, 7 páginas), https://web.archive.org/web/20251018175020/https://www.fiscalia.gov.co/colombia/wp-content/uploads/2022-RES-0-0383-Adopta-Manual-Justicia-Restaurativa.pdf. Se leyó como imagen, página por página.
 - Resolución 0-0447 de 2023: copia del PDF oficial (4 hojas), https://web.archive.org/web/2025/https://www.fiscalia.gov.co/colombia/wp-content/uploads/0-0447.pdf.
 - Directiva 0001 de 2021: copia del PDF oficial (27 páginas), https://web.archive.org/web/2025/https://www.fiscalia.gov.co/colombia/wp-content/uploads/2021-DIRECTIVA-0001-DIRECTRICES-VIOLENCIA-INTRAFAMILIAR.pdf.
-- Manual de Justicia Restaurativa (versión 1, mayo de 2022): la única captura del archivo oficial (`MANUAL-JUSTICIA-FINAL.pdf`, 7 de septiembre de 2024) está truncada en 1 MiB y no se puede abrir. El texto que cito viene de una copia de 47 páginas alojada por un tercero, https://www.integritylegal.co/abogado/imagenes/Manual-de-Justicia-Restaurativa-Res-0-0383-de-2022.pdf (creada el 19 de mayo de 2022). No es el mismo archivo que el oficial, porque los tamaños difieren, de modo que no se pudo cotejar byte a byte. Lo que la respalda es que sus pasajes sobre violencia de género coinciden con el artículo 12 de la Resolución 0383, que sí se leyó en el original. Antes de citar el Manual en el README conviene pedir a la Fiscalía la versión vigente.
+- Manual de Justicia Restaurativa (versión 1, mayo de 2022): la única captura del archivo oficial (`MANUAL-JUSTICIA-FINAL.pdf`, 7 de septiembre de 2024) está truncada en 1 MiB y no se puede abrir. Las citas vienen de una copia de 47 páginas alojada por un tercero, https://www.integritylegal.co/abogado/imagenes/Manual-de-Justicia-Restaurativa-Res-0-0383-de-2022.pdf (creada el 19 de mayo de 2022). Como su tamaño difiere del oficial, no se pudo cotejar. La respalda que sus pasajes sobre violencia de género coinciden con el artículo 12 de la Resolución 0383, leído en el original. Antes de citar el Manual conviene pedir a la Fiscalía la versión vigente.
 
 ## 1. ¿El Manual excluye la violencia intrafamiliar de la mediación?
 
-**Respuesta.** No. El Manual no excluye la violencia intrafamiliar de la mediación. La menciona entre los delitos del procedimiento abreviado, en los que la mediación puede extinguir la acción penal. Lo que hace es condicionarla: la mediación no procede en violencia basada en género cuando el riesgo del FIR (formato de identificación del riesgo) es grave o extremo, y en violencia intrafamiliar las reuniones previas deben hacerse por separado. La misma regla del FIR está en el artículo 12 de la Resolución 0383. La afirmación de Beetar Bechara y Martínez Montenegro (2026) no se sostiene en el texto del Manual consultado.
+**Respuesta.** No. El Manual menciona la violencia intrafamiliar entre los delitos del procedimiento abreviado, en los que la mediación puede extinguir la acción penal. Lo que hace es condicionarla: la mediación no procede en violencia basada en género cuando el riesgo del FIR (formato de identificación del riesgo) es grave o extremo, y en violencia intrafamiliar las reuniones previas deben hacerse por separado. La misma regla del FIR está en el artículo 12 de la Resolución 0383. La afirmación de Beetar Bechara y Martínez Montenegro (2026) no se sostiene en el texto del Manual consultado.
 
 **Citas.**
 
@@ -37,7 +37,7 @@ Manual, páginas 12 y 13 (apartado 2.2.1, letra a, y nota 18): la mediación en 
 
 Manual, página 31: el Manual también prevé la mediación indirecta cuando las partes «no quieran reunirse cara a cara» (repetido en la Resolución 0383, artículo 17, parágrafo, página 6 de 7).
 
-**Lo que dicen otros actos de la Fiscalía.** La Directiva 0001 de 2021, que es anterior al Manual, va en otra dirección para la violencia intrafamiliar, aunque no menciona la mediación (busqué el término en las 27 páginas):
+**Lo que dicen otros actos de la Fiscalía.** La Directiva 0001 de 2021, que es anterior al Manual, va en otra dirección para la violencia intrafamiliar, aunque no menciona la mediación en ninguna de sus 27 páginas:
 
 > «La violencia intrafamiliar no es desistible ni conciliable.» (numeral 31, página 15)
 
@@ -47,9 +47,9 @@ Manual, página 31: el Manual también prevé la mediación indirecta cuando las
 
 **Sin resolver.**
 
-- No sé si la Directiva 0001 de 2021 sigue vigente ni cómo la Fiscalía concilia sus numerales 31 y 32 con el Manual de 2022 y con el artículo 547 de la Ley 906, que da efecto extintivo a la mediación en el abreviado. Que un acuerdo restaurativo extinga la acción en violencia intrafamiliar es la lectura que se desprende del Manual, pero la Directiva dice que los acuerdos reparatorios no permiten archivar ni precluir. No se encontró un acto posterior ni una sentencia que resuelva esa tensión.
+- No se sabe si la Directiva 0001 de 2021 sigue vigente ni cómo la Fiscalía concilia sus numerales 31 y 32 con el Manual de 2022 y con el artículo 547 de la Ley 906, que da efecto extintivo a la mediación en el abreviado. Que un acuerdo restaurativo extinga la acción en violencia intrafamiliar es la lectura que se desprende del Manual, pero la Directiva dice que los acuerdos reparatorios no permiten archivar ni precluir. No se encontró un acto posterior ni una sentencia que resuelva esa tensión.
 - No se leyó el artículo de Beetar Bechara y Martínez Montenegro para ver en qué se apoya. Puede que se refieran a la conciliación (que en violencia intrafamiliar no procede, ver la pregunta 3) y no a la mediación.
-- La versión del Manual que cito no es el archivo oficial (ver la advertencia).
+- La versión citada del Manual no es el archivo oficial (ver la advertencia).
 
 ## 2. ¿La Resolución 0-0211 de 2025 derogó la 0383 y su Manual?
 
@@ -83,8 +83,8 @@ Un acto de otra entidad muestra que al menos un convenio estaba vivo en 2023. La
 **Sin resolver.**
 
 - No se encontró ningún acto posterior a la 0211 (rutas, protocolos del artículo 8, circulares) que modifique la 0383, el Manual o los convenios. Tampoco una lista vigente de programas con convenio. La pregunta se resuelve con un derecho de petición a la Unidad Nacional de Justicia Restaurativa: si la 0383 y el Manual siguen vigentes, qué pasó con el Grupo de Apoyo y qué convenios de mediación hay en Bogotá.
-- La captura del PDF oficial de la 0383 del 18 de octubre de 2025, posterior a la 0211, muestra que seguía publicado en el sitio de la Fiscalía tres meses después, pero eso no prueba vigencia. Hoy la URL da 404, igual que la del Manual y las demás de esa carpeta, lo que parece un cambio de sitio y no un retiro.
-- Un post de Pares (pares.com.co, «Unidad de Justicia Restaurativa») plantea, según el buscador, dudas sobre cómo quedan el Manual y los convenios. La página da error 404 y no se pudo leer.
+- La captura del PDF oficial de la 0383 del 18 de octubre de 2025 muestra que seguía publicado tres meses después de la 0211, pero eso no prueba vigencia. Que hoy dé 404, como las demás URL de esa carpeta, parece un cambio de sitio y no un retiro.
+- Una nota de Pares (pares.com.co, «Unidad de Justicia Restaurativa») plantearía, según el resultado del buscador, dudas sobre cómo quedan el Manual y los convenios. La página da error 404 y no se pudo leer.
 
 ## 3. Ley 906, Ley 1826 y la violencia intrafamiliar
 
@@ -142,9 +142,9 @@ La Directiva 0001 de 2021 (nota 8, página 2) transcribe el artículo 4 del Decr
 
 **Sin resolver.**
 
-- No se encontró ninguna sentencia de la Corte Constitucional ni de la Corte Suprema que decida si la mediación del artículo 547 procede en violencia intrafamiliar ni con qué efecto. Las búsquedas en las relatorías devolvieron fallos sobre el tipo penal, el concurso y la prescripción, no sobre mediación. Esto no prueba que no exista; las relatorías no permiten búsqueda de texto completo desde aquí.
+- No se encontró ninguna sentencia de la Corte Constitucional ni de la Corte Suprema que decida si la mediación del artículo 547 procede en violencia intrafamiliar ni con qué efecto. Las búsquedas en las relatorías devolvieron fallos sobre el tipo penal, el concurso y la prescripción, no sobre mediación. Esto no prueba que no exista, porque las relatorías no permiten búsqueda de texto completo.
 - Si la violencia intrafamiliar protege un bien jurídico que «no sobrepase la órbita personal del perjudicado» es discutible. El Manual (página 14) incluye entre los bienes individuales «la familia (título VI del Libro Segundo del C.P.)», pero la Directiva 0001 de 2021 (numeral 1, página 2) dice que protege «la unidad y armonía familiar» y la Corte, en C-368 de 2014, que no es un asunto privado. En el abreviado el requisito del artículo 524 no rige porque el artículo 547 remite al Libro VI sin ese umbral, pero esta es una lectura propia y no de una fuente.
-- La Ley 2477 de 2025 modificó la Ley 906 (artículos 77, 78A, principio de oportunidad, preclusión, entre otros). Según las anotaciones del Gestor Normativo consultado hoy, no tocó los artículos 518 a 527, 534 ni 547. La Ley 2477 no se leyó completa.
+- La Ley 2477 de 2025 modificó la Ley 906 (artículos 77, 78A, principio de oportunidad, preclusión, entre otros). Según las anotaciones del Gestor Normativo al 2 de noviembre de 2026, no tocó los artículos 518 a 527, 534 ni 547. La Ley 2477 no se leyó completa.
 
 ## Archivos leídos
 

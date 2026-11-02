@@ -11,7 +11,7 @@ Convenciones. «Dice la norma» va entre comillas y con su numeral, fundamento o
 | Corte Constitucional, Sentencia T-323 de 2024 (2 de agosto) | https://www.corteconstitucional.gov.co/relatoria/2024/t-323-24.htm | 425 fundamentos y parte resolutiva | Síntesis, resolutivos cuarto a sexto, fundamentos 143, 164, 176, 373, 410 a 425 completos; el resto, por búsqueda de términos |
 | SIC, Circular Externa 002 de 2024 (21 de agosto) | https://sedeelectronica.sic.gov.co/sites/default/files/normativa/Circular%20Externa%20No.%20002%20del%2021%20de%20agosto%20de%202024.pdf | 8 págs. | Completa. El PDF es escaneado; la numeración romana de III a VI se confirmó en la copia del normograma de la Cancillería (https://cancilleria.gov.co/sites/default/files/Normograma/docs/circular_superindustria_0002_2024.htm) |
 | Consejo Superior de la Judicatura, Acuerdo PCSJA24-12243 (16 de diciembre de 2024) | https://www.ramajudicial.gov.co/documents/164295699/174277484/PCSJA24-12243.-USO-Y-APROVECHAMIENTO-DE-IA-EN-LA-RAMA-JUDICIAL.pdf/fbd6903d-d7b5-f9bd-faff-03f1087d6714 | 17 págs. | Completo |
-| Decreto 196 de 1971 | https://www.funcionpublica.gov.co/eva/gestornormativo/norma_pdf.php?i=92330 | 12 págs. | Arts. 1 a 7 y 24 a 36. La Secretaría del Senado no lo tiene en su base (la URL devuelve 404) |
+| Decreto 196 de 1971 | https://www.funcionpublica.gov.co/eva/gestornormativo/norma_pdf.php?i=92330 | 12 págs. | Arts. 1 a 7 y 24 a 36 |
 | Ley 1123 de 2007 | http://www.secretariasenado.gov.co/senado/basedoc/ley_1123_2007.html | | Arts. 18, 19 y 33 |
 | Ley 2113 de 2021 | http://www.secretariasenado.gov.co/senado/basedoc/ley_2113_2021.html | | Arts. 1 a 9, 13 y 20 |
 | Ley 1581 de 2012 | http://www.secretariasenado.gov.co/senado/basedoc/ley_1581_2012.html | | Arts. 5, 6, 9 y 12 |
@@ -21,7 +21,7 @@ Convenciones. «Dice la norma» va entre comillas y con su numeral, fundamento o
 
 ## 1. Sentencia T-323 de 2024
 
-**Respuesta.** La Corte fija doce criterios para el uso de IA «por parte de los despachos judiciales» en el fundamento 423 y los convierte en orden en el resolutivo cuarto, dirigido a «los funcionarios y empleados de la Rama Judicial». Sus destinatarios son, por tanto, autoridades judiciales y no herramientas que informan a la ciudadanía. Un agente de orientación no queda obligado por la sentencia, aunque sus criterios sirven como estándar de referencia; esa aplicación por analogía es de Londoño Villarreal (2025, p. 83), no de la Corte.
+**Respuesta.** La Corte fija doce criterios para el uso de IA «por parte de los despachos judiciales» en el fundamento 423 y los convierte en orden en el resolutivo cuarto, dirigido a «los funcionarios y empleados de la Rama Judicial». Como sus destinatarios son autoridades judiciales, un agente de orientación a la ciudadanía no queda obligado por la sentencia. Sus criterios sirven como estándar de referencia, pero esa aplicación por analogía es de Londoño Villarreal (2025, p. 83) y no de la Corte.
 
 **Dice la norma.**
 
@@ -41,7 +41,7 @@ Convenciones. «Dice la norma» va entre comillas y con su numeral, fundamento o
 
 **Lo que la sentencia dice sobre chatbots para la ciudadanía.** Solo los menciona al describir instrumentos extranjeros. En el fundamento 164 resume la Carta Ética de la CEPEJ, que pone entre los «usos que deben ser fomentados» el «acceso a la ley a través de sistemas de IA, como chatbots que faciliten el acceso a fuentes de información». En el fundamento 176, al describir el Reglamento europeo, dice que «al utilizar sistemas de IA como los chatbots, los usuarios deben ser conscientes de que están interactuando con una máquina». En ambos casos la Corte reseña y no ordena.
 
-**Sin resolver.** La sentencia no dice si sus criterios alcanzan a un particular o a una entidad distrital que despliega un agente informativo. Tampoco se encontró un pronunciamiento posterior de la Corte que lo extienda. Que la aplicación analógica sea exigible es, por ahora, una lectura de Londoño Villarreal (2025) y no una regla.
+**Sin resolver.** La sentencia no dice si sus criterios alcanzan a un particular o a una entidad distrital que despliega un agente informativo. Tampoco se encontró un pronunciamiento posterior de la Corte que lo extienda.
 
 ## 2. Circular Externa 002 de 2024 de la SIC
 
@@ -86,7 +86,7 @@ Convenciones. «Dice la norma» va entre comillas y con su numeral, fundamento o
 
 ## 4. Abogacía, consultorios jurídicos y la línea entre orientar y asesorar
 
-**Respuesta.** Ninguna de las tres normas define «orientar» ni «asesorar», y ninguna traza la línea entre ambas. Lo reservado expresamente a abogados inscritos es ejercer la profesión, anunciarse como abogado y litigar en causa propia o ajena (Decreto 196 de 1971, arts. 4, 24 y 25). «Asesorar» aparece como misión del abogado (Decreto 196, art. 2; Ley 1123, art. 19), y la Ley 2113 de 2021 separa la «asesoría jurídica» de la «pedagogía en derechos» como servicios distintos, sin definirlos. Londoño Villarreal (2025) no se apoya en ninguna de estas normas.
+**Respuesta.** Ninguna de las tres normas define «orientar» ni «asesorar», y ninguna traza la línea entre ambas. Lo reservado expresamente a abogados inscritos es ejercer la profesión, anunciarse como abogado y litigar en causa propia o ajena (Decreto 196 de 1971, arts. 4, 24 y 25). «Asesorar» aparece como misión del abogado (Decreto 196, art. 2; Ley 1123, art. 19), y la Ley 2113 de 2021 separa la «asesoría jurídica» de la «pedagogía en derechos» como servicios distintos, sin definirlos.
 
 **Dice la norma.**
 
@@ -103,7 +103,7 @@ Convenciones. «Dice la norma» va entre comillas y con su numeral, fundamento o
 
 **Dice un tercero.** Londoño Villarreal (2025, p. 81) afirma que la asesoría jurídica «está regulada en Colombia y su ejercicio profesional está limitado a los abogados» y que los chatbots jurídicos «se limitan a la provisión de información y orientación básica». La única cita que sostiene esa frase es «(Consejo Superior de la Judicatura, 2012)», y en la lista de referencias no hay ninguna entrada de 2012 de esa entidad: solo aparecen el Plan Sectorial de 2022 y el Acuerdo PCSJA24-12243 de 2024. El artículo no cita el Decreto 196 de 1971, la Ley 1123 de 2007 ni la Ley 2113 de 2021 en ninguna página. La afirmación es, entonces, del autor y no está anclada en una norma identificable.
 
-**Sin resolver.** No busqué jurisprudencia de la Corte Constitucional ni de la Comisión Nacional de Disciplina Judicial sobre qué cuenta como ejercicio ilegal de la abogacía fuera del litigio. Tampoco se verificó la sanción a la que remite el art. 25 del Decreto 196 («las sanciones señaladas para el ejercicio ilegal de la abogacía»). La Función Pública advierte que no responde por la vigencia del texto del Decreto 196.
+**Sin resolver.** No se buscó jurisprudencia de la Corte Constitucional ni de la Comisión Nacional de Disciplina Judicial sobre qué cuenta como ejercicio ilegal de la abogacía fuera del litigio. Tampoco se verificó la sanción a la que remite el art. 25 del Decreto 196 («las sanciones señaladas para el ejercicio ilegal de la abogacía»). La Función Pública advierte que no responde por la vigencia del texto del Decreto 196.
 
 ## 5. Proyectos de ley de IA en trámite
 
@@ -121,8 +121,6 @@ Convenciones. «Dice la norma» va entre comillas y con su numeral, fundamento o
 **Sin resolver.** No se encontró en la Cámara un registro de que el PL 025 de 2026 haya sido votado en primer debate después de la ponencia. Tampoco se verificó el PL 065 de 2026 Senado ni otros proyectos sectoriales (por ejemplo, IA en PQRSD). La clasificación definitiva quedaría en manos de la autoridad que el proyecto cree, por lo que hoy no se puede afirmar en qué categoría caería el agente.
 
 ## Requisitos para el agente del proyecto
-
-Cada requisito indica si es obligatorio hoy o si es un estándar de referencia, con su fuente.
 
 1. **Tratar los datos conforme a la Ley 1581 de 2012, sin importar que sea IA.** Obligatorio para quien sea responsable del tratamiento. Fuente: T-323 de 2024, fundamento 143; Circular 002 de 2024, numeral X.
 2. **Pedir autorización explícita antes de tratar datos sensibles, y avisar que responder sobre ellos o sobre menores es facultativo.** Obligatorio. Fuente: Ley 1581 de 2012, art. 6, literal a, y art. 12, literal b.

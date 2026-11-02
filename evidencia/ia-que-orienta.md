@@ -1,10 +1,10 @@
 # Lectura completa: IA que orienta, clasifica o deriva, e IA en procesos restaurativos
 
-2 de noviembre de 2026. Once textos leídos en texto completo para el estado del arte del proyecto (CAOBA y Javeriana). Cada hallazgo lleva cita literal en el idioma original y página impresa. Cuando el PDF no trae foliación impresa, se dice en la ficha y se cita la página del PDF. La marca [DATO] señala lo que el estudio midió u observó, y la marca [CONCLUSIÓN DEL AUTOR] señala lo que el autor infiere, recomienda o interpreta.
+2 de noviembre de 2026. Once textos leídos completos para el estado del arte del proyecto (CAOBA y Javeriana). Cada hallazgo lleva cita literal en el idioma original y página impresa; si el PDF no trae foliación impresa, se cita la página del PDF. [DATO] señala lo que el estudio midió u observó, y [CONCLUSIÓN DEL AUTOR], lo que el autor infiere, recomienda o interpreta.
 
 ## Registro de lectura
 
-Los once archivos están en `evidencia/pdfs/` (no versionada) y se confirmó, por título, autores y resumen de la primera página, que cada uno corresponde al artículo que indica su nombre. Se leyó el cuerpo completo de todos; las referencias solo se consultaron para ubicar citas. Las tablas y figuras con cifras clave se leyeron además como imagen.
+Se leyó el cuerpo completo de los once textos; las referencias solo se consultaron para ubicar citas. Las tablas y figuras con cifras clave se leyeron además como imagen.
 
 | Archivo | Referencia breve | Extensión | Foliación que se cita | Tablas y figuras leídas como imagen |
 |---|---|---|---|---|
@@ -20,7 +20,7 @@ Los once archivos están en `evidencia/pdfs/` (no versionada) y se confirmó, po
 | ponce-lopez-2015.pdf | Ponce-López y colegas (2015), versión enviada | 14 págs. | pp. 1–14 del preprint | Tablas IV a VII (p. 12) |
 | peleg-koriat-2026.pdf | Peleg-Koriat y Asraf (2026) | 16 págs. | pp. 1–16 impresas | Tabla 3 (p. 10) |
 
-Las versiones de Steenhuis y Westermann (2024), Steenhuis (2025) y Ponce-López y colegas (2015) no son las publicadas, de modo que sus páginas no coinciden con las de la versión publicada que dan las referencias del estado del arte.
+Las versiones leídas de Steenhuis y Westermann (2024), Steenhuis (2025) y Ponce-López y colegas (2015) no son las publicadas, por lo que sus páginas no coinciden con las de las referencias del estado del arte.
 
 ## 1. Westermann y Benyekhlef (2023), JusticeBot
 
@@ -35,13 +35,13 @@ Las versiones de Steenhuis y Westermann (2024), Steenhuis (2025) y Ponce-López 
 - [CONCLUSIÓN DEL AUTOR] p. 8: «This shows that even users that were not able to get an answer to their specific situation saw the usefulness of the tool.» La encuesta no distingue a quienes encontraron su ruta de quienes no, por lo que la inferencia no se sigue de los datos reportados.
 - [DATO] p. 4, sobre el diseño de la salida: «they are informed of possible next steps that they can undertake to try to resolve their issue, such as speaking to a lawyer, trying to settle their situation amicably, and filing a claim at the relevant tribunal.»
 
-**Qué aporta al proyecto.** Es el modelo más cercano de cómo orientar a un lego sin predecir ni aconsejar, porque el sistema pregunta por criterios que vienen de la ley, muestra cómo los aplicaron los jueces y termina en próximos pasos que incluyen el arreglo directo. Sin embargo, el 52% de «Other» advierte que, sin acompañamiento, la mitad de los usuarios no encuentra su ruta en un menú de temas.
+**Qué aporta al proyecto.** Es el modelo más cercano de cómo orientar a un lego sin predecir ni aconsejar: el sistema pregunta por criterios de la ley, muestra cómo los aplicaron los jueces y termina en próximos pasos que incluyen el arreglo directo. Sin embargo, el 52% de «Other» indica que, sin acompañamiento, la mitad de los usuarios no encuentra su ruta en un menú de temas.
 
 ## 2. Westermann y colegas (2023), Bridging the Gap
 
 **Referencia.** Westermann, H., Meeùs, S., Godet, M., Troussel, A., Tan, J., Savelka, J. y Benyekhlef, K. (2023). Bridging the gap: Mapping layperson narratives to legal issues with language models. En *Proceedings of the Sixth Workshop on Automated Semantic Analysis of Information in Legal Text (ASAIL 2023)*. CEUR Workshop Proceedings.
 
-**Diseño y datos.** Propone que el lego describa su situación con sus palabras y que un codificador de oraciones multilingüe le sugiera tres rutas de JusticeBot, cada una con una explicación de lo que el sistema entendió. Se evalúa fuera de línea, en Quebec (Canadá), con 58 ejemplos redactados por el equipo y 600 descripciones reales que dejaron usuarios al elegir «Other», etiquetadas por los autores entre 3.250 revisadas. No hubo prueba con usuarios.
+**Diseño y datos.** Propone que el lego describa su situación con sus palabras y que un modelo que compara el sentido de oraciones en varios idiomas le sugiera tres rutas de JusticeBot, cada una con una explicación de lo que el sistema entendió. Se evalúa fuera de línea, en Quebec (Canadá), con 58 ejemplos redactados por el equipo y 600 descripciones reales que dejaron usuarios al elegir «Other», etiquetadas por los autores entre 3.250 revisadas. No hubo prueba con usuarios.
 
 **Hallazgos.**
 - [DATO] p. 2: «When analyzing the submitted descriptions, we noticed that a significant number of the issues described by the users were, in fact, covered by existing pathways in the JusticeBot.»
@@ -50,7 +50,7 @@ Las versiones de Steenhuis y Westermann (2024), Steenhuis (2025) y Ponce-López 
 - [DATO] p. 10: «the evaluation presented in this paper is limited to examples where the situation described by the user is already part of the JusticeBot.»
 - [CONCLUSIÓN DEL AUTOR] p. 9: «the user is given a way to meaningfully verify whether the system worked, without having to understand the legal particularities of their situation». En p. 10 los autores dejan como trabajo futuro «pilot studies with end-users».
 
-**Qué aporta al proyecto.** Muestra un mecanismo concreto para cerrar la distancia entre el relato del lego y la categoría jurídica, que es el paso donde fallaba la mitad de los usuarios de JusticeBot, y lo hace sugiriendo y dejando que la persona confirme. No obstante, el 93,5% que se cita es un acierto entre tres sugerencias medido sobre casos ya cubiertos, no el desempeño frente a una persona.
+**Qué aporta al proyecto.** Muestra cómo cerrar la distancia entre el relato del lego y la categoría jurídica, el paso donde fallaba la mitad de los usuarios de JusticeBot: el sistema sugiere y la persona confirma. No obstante, el 93,5% es un acierto entre tres sugerencias sobre casos ya cubiertos, no el desempeño frente a una persona.
 
 ## 3. Tan y colegas (2023), ChatGPT como abogado artificial
 
@@ -65,7 +65,7 @@ Las versiones de Steenhuis y Westermann (2024), Steenhuis (2025) y Ponce-López 
 - [CONCLUSIÓN DEL AUTOR] p. 3: «legal self-help tools will serve a wide range of lay people, and every minor information error may potentially lead to harmful decisions being made by laypeople.»
 - [CONCLUSIÓN DEL AUTOR] p. 7: «ChatGPT is not yet accurate enough to provide legal information directly to laypeople», y en la misma página proponen que ChatGPT sirva de capa de conversación que guíe al usuario «toward the correct legal pathway in the JusticeBot».
 
-**Qué aporta al proyecto.** Respalda, con evidencia leída completa aunque cualitativa, que un modelo general inventa normas y casos y sostiene el error cuando el usuario duda, y propone la arquitectura que el proyecto puede seguir: el modelo conversa y una base verificada por expertos responde.
+**Qué aporta al proyecto.** Respalda, con evidencia cualitativa, que un modelo general inventa normas y casos y sostiene el error cuando el usuario duda. Además, propone la arquitectura que el proyecto puede seguir: el modelo conversa y una base verificada por expertos responde.
 
 ## 4. Mistica y colegas (2021), triaje de solicitudes de asistencia gratuita
 
@@ -74,19 +74,19 @@ Las versiones de Steenhuis y Westermann (2024), Steenhuis (2025) y Ponce-López 
 **Diseño y datos.** Clasificadores BERT asignan una o más de 33 áreas del derecho, incluidas «Criminal law», «Personal safety» y «Not a legal issue», a 4.062 descripciones reales que la población envió al portal de Justice Connect en Australia entre noviembre de 2020 y abril de 2021, etiquetadas por 243 abogados (p. 219). Se evalúa con validación cruzada y por subgrupos declarados; el modelo no se probó en operación ni con usuarios.
 
 **Hallazgos.**
-- [DATO] p. 221: el modelo entrenado con pesos de confianza tiene precisión alta y cobertura baja, «when it does label instances, it gets them correct 83.8% of the time»; el mejor equilibrio (pesos por anotador) logra f1 de 0,671 (Tabla 2, p. 222).
+- [DATO] p. 221: el modelo entrenado con pesos de confianza tiene precisión alta y cobertura baja, «when it does label instances, it gets them correct 83.8% of the time»; el mejor equilibrio entre precisión y cobertura (pesos por anotador) logra un f1, que combina ambas, de 0,671 (Tabla 2, p. 222).
 - [CONCLUSIÓN DEL AUTOR] pp. 221–222: prefieren precisión sobre cobertura porque «a more conservative low recall, high precision, system provides greater utility than a high recall, low precision, system because we are able to trust the predictions from the system in assigning lawyers with speciality in different areas of law».
 - [DATO] Tabla 7, p. 224: f1 de 0,543 para mayores de 65 años y de 0,638 para aborígenes e isleños del estrecho de Torres, frente a 0,671 en el total. El texto de p. 223 da 0,540 para el mismo grupo, de modo que hay una discrepancia menor entre texto y tabla.
 - [CONCLUSIÓN DEL AUTOR] p. 224: «This points to the model being systematically biased against this particular demographic, pointing to the need for explicit model debiasing.»
 - [DATO] Tabla 6, p. 223: «Personal safety» queda en el tercer nivel de confiabilidad (precisión 0,575, cobertura 0,387) y «Criminal law» en el segundo (0,721 y 0,592). Además, en p. 224: «all demographic information is volunteered and not mandatory».
 
-**Qué aporta al proyecto.** Es el único de los once que mide la equidad entre grupos, y encuentra que el clasificador rinde peor justo con los mayores, aun en las áreas donde rinde mejor en general. También muestra que la seguridad personal, la categoría más cercana a la violencia intrafamiliar, es de las que peor se clasifican, lo que pesa a favor de que esa vía no dependa de un clasificador.
+**Qué aporta al proyecto.** Es el único de los once que mide la equidad entre grupos, y el clasificador rinde peor con los mayores. Además, la seguridad personal, la categoría más cercana a la violencia intrafamiliar, es de las que peor se clasifican, lo que pesa a favor de que esa vía no dependa de un clasificador.
 
 ## 5. Steenhuis y Westermann (2024), admisión con modelos de lenguaje
 
 **Referencia.** Steenhuis, Q. y Westermann, H. (2024). *Getting in the door: Streamlining intake in civil legal services with large language models* (arXiv:2410.03762). arXiv. Publicado en *Frontiers in Artificial Intelligence and Applications, 395*, 155–167.
 
-**Diseño y datos.** Plataforma de admisión en vivienda piloteada en Misuri (Estados Unidos) con cuatro programas de asistencia legal: reglas en Python para los requisitos formales y un modelo de lenguaje que lee las reglas de cada programa y responde «califica», «no califica» o pregunta (pp. 3–4). La evaluación usa 48 pares de escenario y jurisdicción generados con ChatGPT, ocho modelos y una sola abogada revisora de 11 conversaciones simuladas. No se reportan datos de usuarios reales del piloto.
+**Diseño y datos.** Plataforma de admisión en vivienda piloteada en Misuri (Estados Unidos) con cuatro programas de asistencia legal: reglas programadas para los requisitos formales y un modelo de lenguaje que lee las reglas de cada programa y responde «califica», «no califica» o pregunta (pp. 3–4). La evaluación usa 48 pares de escenario y jurisdicción generados con ChatGPT, ocho modelos y una sola abogada revisora de 11 conversaciones simuladas. No se reportan datos de usuarios reales del piloto.
 
 **Hallazgos.**
 - [DATO] p. 5: los escenarios salieron del prompt «Create 10 scenarios of tenants seeking legal aid for landlord issues», revisados y codificados a mano.
@@ -95,13 +95,13 @@ Las versiones de Steenhuis y Westermann (2024), Steenhuis (2025) y Ponce-López 
 - [DATO] p. 8: «In 73% of cases, the expert rater marked the overall result as correct. In 63% of cases, follow-up questions were missed that would have improved the intake.»
 - [DATO] p. 6: «Initially, the model would give inappropriate advice (e.g., suggesting the tenant work things out with their landlord)», y en p. 10: «Google Gemini censored a scenario that stated "I'm a DV survivor, and my landlord won't renew my lease because they called the cops on my boyfriend."»
 
-**Qué aporta al proyecto.** Separa lo que se puede escribir como regla de lo que necesita interpretación, y diseña el error para que caiga del lado de preguntar o aceptar y no del lado de rechazar, con una persona que hace la admisión completa. Dos advertencias sirven al agente: el modelo empujaba por su cuenta al arreglo directo, y uno de los modelos se negó a procesar un caso de violencia doméstica. Además, la conclusión de p. 10 de que los errores son «similar to those a human intake worker might make» no se midió, porque la misma página deja como trabajo futuro «evaluate human intake staff performance».
+**Qué aporta al proyecto.** Separa lo que se puede escribir como regla de lo que necesita interpretación, y diseña el error para que caiga del lado de preguntar o aceptar y no de rechazar, con una persona que hace la admisión completa. Dos advertencias sirven al agente: el modelo empujaba por su cuenta al arreglo directo, y uno de los modelos se negó a procesar un caso de violencia doméstica. En cambio, la afirmación de p. 10 de que los errores son «similar to those a human intake worker might make» no se midió, porque la misma página deja como trabajo futuro «evaluate human intake staff performance».
 
 ## 6. Steenhuis (2025), FETCH
 
 **Referencia.** Steenhuis, Q. (2025). *That's so FETCH: Fashioning ensemble techniques for LLM classification in civil legal intake and referral* (arXiv:2509.07170v2). arXiv. Publicado en *Frontiers in Artificial Intelligence and Applications, 416*, 192–203.
 
-**Diseño y datos.** Clasificador por votación ponderada de tres modelos pequeños, palabras clave y el clasificador Spot, que ubica el problema en una taxonomía de 244 nodos y muestra los dos mejores; si no hay confianza, genera preguntas de seguimiento (p. 3). Se evalúa con 419 consultas reales del servicio de referencia del Colegio de Abogados de Oregón (Estados Unidos), etiquetadas por su personal, y está en uso en ese servicio y en Virginia (pp. 2–3). No se midió el efecto en los usuarios.
+**Diseño y datos.** Clasificador que combina por votación ponderada (en adelante, el ensamble) tres modelos pequeños, palabras clave y el clasificador Spot; ubica el problema en una taxonomía de 244 nodos y muestra los dos mejores; si no hay confianza, genera preguntas de seguimiento (p. 3). Se evalúa con 419 consultas reales del servicio de referencia del Colegio de Abogados de Oregón (Estados Unidos), etiquetadas por su personal, y está en uso en ese servicio y en Virginia (pp. 2–3). No se midió el efecto en los usuarios.
 
 **Hallazgos.**
 - [DATO] p. 4: unas 300 de las 419 consultas se etiquetaron solo en el primer nivel de la taxonomía y 119 en un nodo terminal. En p. 6 el criterio da medio punto «if at least the top-level node was present in the labels».
@@ -110,7 +110,7 @@ Las versiones de Steenhuis y Westermann (2024), Steenhuis (2025) y Ponce-López 
 - [CONCLUSIÓN DEL AUTOR] p. 9: «There was no evidence of bias in the distribution of errors and safety concerns revealed by the errors appear to be minimal.» El estudio no tiene datos demográficos, de modo que el sesgo entre grupos no se examinó.
 - [DATO] p. 10: «We did not measure whether faster automated referral improved real outcomes», y «OSB was only able to collect 19 "no legal problem" scenarios». En p. 4, el diseño deja una salida humana: «Applicants who are screened out are given the option to call a human intake worker».
 
-**Qué aporta al proyecto.** Es la evidencia más sólida de que se puede clasificar el relato de un lego en una taxonomía amplia con consultas reales y a bajo costo, y de que las preguntas de seguimiento ayudan a desambiguar. Sin embargo, no dice nada sobre lo que le pasa a la persona después, ni sobre la equidad entre grupos, y el autor no observó negativas del modelo ante violencia o abuso (nota 6, p. 4), al contrario que en el estudio de 2024.
+**Qué aporta al proyecto.** Es la evidencia más sólida de que se puede clasificar el relato de un lego en una taxonomía amplia con consultas reales y a bajo costo, y de que las preguntas de seguimiento ayudan a desambiguar. Sin embargo, no informa sobre lo que le pasa a la persona después ni sobre la equidad entre grupos. A diferencia del estudio de 2024, el autor no observó negativas del modelo ante violencia o abuso (nota 6, p. 4).
 
 ## 7. Molinari y Giacalone (2026), proyecto IDEA
 
@@ -125,7 +125,7 @@ Las versiones de Steenhuis y Westermann (2024), Steenhuis (2025) y Ponce-López 
 - [CONCLUSIÓN DEL AUTOR] p. 2: «A chatbot that guides users through redundancy disputes must therefore be jurisdiction-aware: it must ask the questions that actually matter in that legal order, apply the correct triggers and timelines».
 - [CONCLUSIÓN DEL AUTOR] p. 13: «the prototype would not forecast the behavior of individual judges or optimize forum selection; instead, it will constrain itself to doctrine and procedure aware guidance (e.g., thresholds, deadlines, information duties)».
 
-**Qué aporta al proyecto.** Es el único diseño del grupo que se propone derivar hacia una vía alternativa al juicio, la mediación, y lo hace con una capa de reglas visible por jurisdicción, que es lo que el proyecto necesita para la elegibilidad restaurativa. Sin embargo, es laboral y no penal, y todavía no tiene resultados. Hay además una inconsistencia: el resumen (p. 1) llama «digital development» a las cifras 8,4 y 8,0, que en p. 9 son la satisfacción con la gestión electrónica de casos y la firma electrónica.
+**Qué aporta al proyecto.** Es el único diseño del grupo que se propone derivar hacia una vía alternativa al juicio, la mediación, con una capa de reglas visible por jurisdicción, que es lo que el proyecto necesita para la elegibilidad restaurativa. Sin embargo, es laboral y no penal, y todavía no tiene resultados. Además, hay una inconsistencia: el resumen (p. 1) llama «digital development» a las cifras 8,4 y 8,0, que en p. 9 son la satisfacción con la gestión electrónica de casos y la firma electrónica.
 
 ## 8. Londoño Villarreal (2025), guía de cumplimiento para chatbots jurídicos en Colombia
 
@@ -140,7 +140,7 @@ Las versiones de Steenhuis y Westermann (2024), Steenhuis (2025) y Ponce-López 
 - [CONCLUSIÓN DEL AUTOR] p. 83: los principios de la T-323 de 2024 «también pueden ser aplicables por analogía» a los chatbots jurídicos, y en p. 86 el autor lee que exige auditorías para «verificar el riesgo de sesgo algorítmico y evaluar el impacto en las poblaciones vulnerables».
 - [DATO citado de segunda mano] p. 78: según la encuesta de HiiL de 2024, solo el 37% de las personas con problemas legales buscó asesoría, aunque el 55% identificó la necesidad de actuar. Además, el texto se contradice: en p. 80 dice que la UE clasificó los chatbots como de «riesgo moderado» y en p. 83 habla de «sistemas de alto riesgo, como los chatbots jurídicos».
 
-**Qué aporta al proyecto.** Fija el piso regulatorio para el agente en Bogotá: debe presentarse como orientación y no como asesoría, porque esta es reservada a abogados; el aviso de alcance no lo exime de dar información correcta y actualizada; y, si trata datos sensibles, necesita estudio de impacto de privacidad y gestión del riesgo, además de auditar sesgos e impacto en población vulnerable si se sigue la lectura analógica de la T-323.
+**Qué aporta al proyecto.** Fija el piso regulatorio para el agente en Bogotá. Debe presentarse como orientación y no como asesoría, reservada a abogados, y el aviso de alcance no lo exime de dar información correcta y actualizada. Si trata datos sensibles, necesita estudio de impacto de privacidad y gestión del riesgo; la auditoría de sesgos solo se sigue de la lectura analógica de la T-323.
 
 ## 9. Ponce-López y colegas (2013), acuerdo en mediaciones víctima-ofensor
 
@@ -150,12 +150,12 @@ Las versiones de Steenhuis y Westermann (2024), Steenhuis (2025) y Ponce-López 
 
 **Hallazgos.**
 - [DATO] p. 500: «Data consist of a total of 26 recorded conversational sessions of about 35 minutes-per-session», y «the total number of used samples is 28».
-- [DATO] pp. 497 y 500: la verdad de referencia es la opinión del mediador, de 1 a 5, binarizada, y seis de los 34 indicadores (f7 a f12) «are extracted from a report obtained before the session, which is written by the mediators».
+- [DATO] pp. 497 y 500: la etiqueta que se predice es la opinión del mediador, de 1 a 5, binarizada, y seis de los 34 indicadores (f7 a f12) «are extracted from a report obtained before the session, which is written by the mediators».
 - [DATO] Tabla 2, p. 501: la exactitud al predecir el acuerdo es 75% con una red neuronal y 71% con los otros tres métodos.
 - [DATO] p. 501: el sistema es semiautomático y requiere, en promedio, una anotación manual «for each 2000 frames».
 - [CONCLUSIÓN DEL AUTOR] p. 501: «We demonstrated the applicability as a tool for the experts, obtaining results upon 75% of accuracy predicting the agreement in conversational victim-offender mediation processes».
 
-**Qué aporta al proyecto.** Aplica la IA dentro de la sesión restaurativa, para dar retroalimentación al mediador, y no antes de ella, de modo que no informa sobre orientar ni derivar. Con 28 muestras, cada caso mal clasificado mueve la exactitud en 3,6 puntos, por lo que la cifra es frágil.
+**Qué aporta al proyecto.** Aplica la IA dentro de la sesión restaurativa, como retroalimentación al mediador, de modo que no informa sobre orientar ni derivar. Además, con 28 muestras cada caso mal clasificado mueve la exactitud en 3,6 puntos, por lo que la cifra es frágil.
 
 ## 10. Ponce-López y colegas (2015), comunicación no verbal en mediaciones víctima-ofensor
 
@@ -170,7 +170,7 @@ Las versiones de Steenhuis y Westermann (2024), Steenhuis (2025) y Ponce-López 
 - [DATO] p. 12: «the feature chosen as being most relevant for predicting agreement is the age of the mediator».
 - [CONCLUSIÓN DEL AUTOR] p. 13: «We have demonstrated the applicability of the system for use in the restorative justice field as a tool for mediators».
 
-**Qué aporta al proyecto.** Confirma que existe IA aplicada a un proceso restaurativo penal real, pero en la sesión y como apoyo al mediador, sin relación con orientar a la persona antes de llegar. Coincide con el trabajo de 2013 en sesiones (26), duración (35 minutos) y muestras (28), por lo que, aunque ninguno de los dos lo declara, todo indica que son la misma base de datos y no dos estudios independientes.
+**Qué aporta al proyecto.** Confirma que existe IA aplicada a un proceso restaurativo penal real, aunque, como en 2013, en la sesión y no al orientar a la persona. Coincide con ese trabajo en sesiones (26), duración (35 minutos) y muestras (28), por lo que, aunque ninguno lo declara, todo indica que son la misma base de datos y no dos estudios independientes.
 
 ## 11. Peleg-Koriat y Asraf (2026), juicios humanos y de IA sobre la vía restaurativa en abuso sexual
 
@@ -185,4 +185,4 @@ Las versiones de Steenhuis y Westermann (2024), Steenhuis (2025) y Ponce-López 
 - [CONCLUSIÓN DEL AUTOR] p. 12: «An unregulated recommendation of RJ may expose survivors to secondary victimization, subtle coercion or the reactivation of abusive dynamics», y por eso los sistemas deberían incluir «disclaimers, professional referrals, warnings about the limits of AI-generated guidance».
 - [CONCLUSIÓN DEL AUTOR] p. 12: los resultados deben leerse como apertura a la vía restaurativa «under controlled experimental conditions, rather than as evidence that LLMs would recommend RJ in real-world cases». En p. 13 se reconoce que no hubo patrón externo, como expertos o sobrevivientes, para juzgar qué respuesta era la adecuada.
 
-**Qué aporta al proyecto.** Es el texto más cercano a la pregunta del proyecto, porque mide qué le diría un modelo general a quien pregunta por la vía restaurativa en un caso de violencia sexual intrafamiliar, y la respuesta es que varía según el modelo, que algunos se niegan a responder y que los autores piden derivación profesional. Respalda, por lo tanto, que el agente no ofrezca por sí mismo la mediación en violencia intrafamiliar.
+**Qué aporta al proyecto.** Es el texto más cercano a la pregunta del proyecto, porque mide qué le diría un modelo general a quien pregunta por la vía restaurativa en un caso de violencia sexual intrafamiliar: la respuesta varía según el modelo, algunos se niegan a responder y los autores piden derivación profesional. Por lo tanto, respalda que el agente no ofrezca por sí mismo la mediación en violencia intrafamiliar.

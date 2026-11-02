@@ -1,6 +1,6 @@
 # Evidencia por hipótesis
 
-Las seis hipótesis de trabajo se formularon a partir de lo conversado en las reuniones con el equipo y con los expertos consultados, y su veredicto resumido está en la Tabla 3 del [estado del arte](../docs/01-estado-del-arte.md). Aquí va la evidencia de cada una. Las marcadas **[PDF]** se cotejaron en el documento con su página impresa; las que solo se conocen por el resumen lo dicen. Los textos se consiguieron por acceso abierto o con el acceso institucional de la Javeriana, y no se versionan. Cada afirmación de esta ficha se auditó contra su fuente, y el registro está en [`verificacion.csv`](verificacion.csv).
+Las seis hipótesis de trabajo se formularon a partir de lo conversado en las reuniones con el equipo y con los expertos consultados, y su veredicto resumido está en la Tabla 3 del [estado del arte](../docs/01-estado-del-arte.md). Las fuentes marcadas **[PDF]** se cotejaron en el documento con su página impresa; las que solo se conocen por el resumen lo dicen. Cada afirmación de esta ficha se auditó contra su fuente, y el registro está en [`verificacion.csv`](verificacion.csv).
 
 ## H1. Comprensión: el dato colombiano la debilita en el ámbito penal
 
