@@ -1,6 +1,6 @@
 # Marco de análisis: lo nuestro y lo levantado
 
-**Fecha:** 30-oct-2026. El marco sale de las cuatro reuniones con Efraín, Luis Gabriel y Jorge ([`reuniones/`](reuniones/)), tal como las resumió Granola; no hay otro documento que lo fije. Sobre ese marco se lee lo levantado en el [Leviatán](leviatan.md) y en el [contraste de hipótesis](estado-del-arte/contraste-hipotesis.md). No se mira desde el producto ni se baja a medición.
+**Fecha:** 30-oct-2026. El marco sale de las cuatro reuniones con Efraín, Luis Gabriel y Jorge, tal como las resumió Granola; no hay otro documento que lo fije. Sobre ese marco se lee lo levantado en el [Leviatán](leviatan.md) y en el [contraste de hipótesis](estado-del-arte/contraste-hipotesis.md). No se mira desde el producto ni se baja a medición.
 
 ## 1. El marco que ya usamos sin haberlo escrito
 

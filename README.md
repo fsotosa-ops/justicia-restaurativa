@@ -195,10 +195,8 @@ El contraste completo, hipótesis por hipótesis, está en [`estado-del-arte/con
 | [`leviatan-estructura.md`](leviatan-estructura.md) | Entidades, normas, etapas del proceso penal y remisiones |
 | [`mapa/`](mapa/) | Los CSV del Leviatán, el script de grafos y las figuras |
 | [`estado-del-arte/`](estado-del-arte/) | Contraste de H1 a H6, lectura de Gemini, hilo de Consensus y prompt de lectura |
-| [`reuniones/`](reuniones/) | Resúmenes de las cuatro reuniones (Granola) |
-| [`contexto/`](contexto/) | Propuesta técnica, entregables E1 a E7 y cronograma, extraídos de los documentos de CAOBA |
 
-Los PDF de terceros (`estado-del-arte/pdfs/`) y los documentos originales de CAOBA (`contexto/originales/`) no se versionan.
+Los PDF de terceros (`estado-del-arte/pdfs/`) no se versionan, y tampoco las notas de reuniones ni los documentos internos de CAOBA.
 
 ### Regenerar los grafos
 
