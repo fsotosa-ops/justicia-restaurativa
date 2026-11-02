@@ -1,0 +1,11 @@
+{
+  "name": "procesos-leviatan",
+  "private": true,
+  "description": "Láminas BPMN 2.0 del Leviatán: .bpmn a SVG con el motor de bpmn.io",
+  "scripts": {
+    "svg": "bpmn-to-image"
+  },
+  "devDependencies": {
+    "bpmn-to-image": "^0.10.0"
+  }
+}

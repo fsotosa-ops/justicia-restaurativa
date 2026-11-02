@@ -11,3 +11,6 @@ __pycache__/
 estado-del-arte/busqueda/scopus/
 estado-del-arte/busqueda/corpus.csv
 Rplots.pdf
+
+# Dependencias de node para generar las láminas BPMN
+node_modules/

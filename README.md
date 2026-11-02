@@ -184,63 +184,47 @@ El término lo propuso Jorge Salcedo, docente de Filosofía e Historia del Derec
 
 De esa definición se desprenden dos decisiones para el mapa. En primer lugar, el Leviatán se dibuja completo y no solo en su parte restaurativa, porque, según Salcedo, la justicia restaurativa no se opone a la retributiva, sino que la complementa y está inmersa en el proceso penal; por eso el mapa traza una línea que muestra dónde aparece lo restaurativo dentro del sistema. En segundo lugar, lo que interesa son las bifurcaciones: el momento en que el operador consulta a las partes si quieren una vía restaurativa, que es voluntaria, y lo que ocurre cuando no la toman, que es la vía tradicional de la cárcel, la multa y el incidente de reparación. Como referente de un Leviatán que se puede recorrer, Salcedo citó las unidades de atención y orientación integral que nacieron de la sentencia T-025 de 2004, que le evitan a la víctima tener que lidiar con el Estado entero. El equipo acordó entonces dibujar ese mapa para identificar los vacíos y los puntos de intervención, con la analogía del sistema de salud y sus niveles de atención.
 
-### 7.2 El recorrido por las seis capas
+### 7.2 Cómo se dibuja
 
-Siguiendo esa analogía, una persona entra por una puerta, alguien clasifica su caso y esa clasificación abre o cierra rutas. La Figura 6 sigue ese recorrido a través de las seis capas del mapa.
+Antes de dibujar se buscó si ya existe un mapa de procesos del sistema de justicia colombiano, en fuentes oficiales, en la literatura académica y en Scopus. No existe, ni oficial ni académico: la Fiscalía no publica los procedimientos de sus salas de atención ni de justicia restaurativa, y la única fuente oficial que describe una ruta paso a paso es el Tomo V de los lineamientos del Ministerio de Justicia para las comisarías de familia, que la presenta en texto y sin flujograma ([`busqueda-de-mapas.md`](estado-del-arte/procesos/busqueda-de-mapas.md)). Por eso el mapa se construye desde las normas y los lineamientos disponibles, con dos referentes. Por un lado, el Sequential Intercept Model (Munetz y Griffin, 2006), que mapea el sistema penal como una secuencia de puntos donde un caso puede desviarse del proceso ordinario, ordena la vista general. Por otro lado, cada proceso se dibuja en BPMN 2.0, el estándar de notación de procesos de la Object Management Group (2013), que es el que usan Bizagi y Camunda.
 
-**Figura 6.** Recorrido de una persona por las seis capas del Leviatán
+Cada lámina tiene un carril por actor, numera sus actividades y asocia a cada una su fuente con artículo o página en una tabla aparte. En naranja va la vía restaurativa y en gris lo que propone el proyecto y falta validar. Además, cada lámina se guarda como archivo `.bpmn`, de modo que el equipo jurídico puede abrirla en Bizagi Modeler, Camunda Modeler o [demo.bpmn.io](https://demo.bpmn.io), corregirla y devolverla, y la figura se regenera desde ese archivo.
 
-```mermaid
-flowchart TD
-  P(["Persona con un conflicto"]) --> PU
+### 7.3 Las láminas del Leviatán
 
-  subgraph C1["Capa 1. Puertas de entrada"]
-    PU["Comisaría de familia · Casa de justicia<br/>Fiscalía (SAU y URI) · Línea Púrpura<br/>Consultorio jurídico · Inspección · Policía"]
-  end
+La Figura 6 es la vista general. Una persona consulta en una puerta de entrada, el agente que propone el proyecto le pregunta por su conflicto, su rol y si ya hay un proceso abierto, y según la respuesta el caso va a la comisaría, al proceso penal o a otra entidad. Las preguntas salen de las reuniones del equipo de octubre y por eso van en gris. En cambio, lo que sigue está en la norma: la comisaría denuncia ante la Fiscalía, y solo desde el proceso penal se llega a la mediación.
 
-  subgraph C2["Capa 2. Clasificación del caso"]
-    T{"¿El delito es querellable?<br/>(art. 74 de la Ley 906)"}
-  end
+**Figura 6.** Vista general tentativa de las rutas de acceso
 
-  PU --> T
-  T -- "sí" --> CP["Conciliación preprocesal<br/>obligatoria (art. 522)"]
-  T -- "no, se persigue de oficio" --> PR["Proceso penal ordinario<br/>o abreviado (art. 534)"]
-  CP -- "hay acuerdo" --> X1(["Se extingue la acción"])
-  CP -- "no hay acuerdo" --> PR
-  PR --> Q{"¿El fiscal o el juez<br/>ofrece la vía restaurativa?"}
+![Vista general del Leviatán en BPMN](mapa/procesos/vista-general.svg)
 
-  subgraph C3["Capa 3. Rutas restaurativas"]
-    R["Mediación (arts. 523 a 527 y 547)<br/>Principio de oportunidad (arts. 323 a 325)<br/>Conciliación en la reparación (arts. 102 a 108)"]
-  end
+*Nota:* las actividades con el signo + se detallan en las Figuras 7 a 9. En gris, la propuesta del proyecto por validar; en naranja, la vía restaurativa. *Fuente:* Elaboración propia a partir de las reuniones del equipo de octubre de 2026, la Ley 906 de 2004 y la Resolución FGN 0383 de 2022. Archivo editable: [`vista-general.bpmn`](mapa/procesos/vista-general.bpmn).
 
-  subgraph C4["Capa 4. Puntos donde se pierde"]
-    QB["Archivo en la indagación · Una parte no comparece<br/>El operador no la ofrece · La querella caduca"]
-  end
+La Figura 7 detalla una de las puertas de la violencia intrafamiliar, la comisaría de familia, con las actividades principales de las dos primeras fases del Tomo V y el responsable de cada una. La comisaría valora el riesgo, decreta medidas provisionales y diligencia la denuncia para la Fiscalía, pero no tiene una salida restaurativa propia en lo penal, porque solo el fiscal o el juez remiten a mediación.
 
-  Q -- "sí, y hay programa con convenio" --> R
-  Q -- "no" --> QB
-  R --> X2(["Acuerdo: extinción de la acción o beneficios"])
+**Figura 7.** Recepción de un caso de violencia en el contexto familiar en una comisaría de familia
 
-  subgraph C5["Capa 5. Operadores y referentes"]
-    O["Centro de Recepción de las casas de justicia<br/>LegalApp · Unidad de Justicia Restaurativa de la Fiscalía"]
-  end
-  O -.-> PU
-  O -.-> Q
+![Proceso de la comisaría de familia en BPMN](mapa/procesos/comisaria.svg)
 
-  subgraph C6["Capa 6. Recorridos priorizados"]
-    V["Violencia intrafamiliar"]
-    AL["Inasistencia alimentaria"]
-  end
-  V -.-> PR
-  AL -.-> CP
+*Nota:* las fases 3 a 8 del Tomo V quedan como subprocesos. *Fuente:* Elaboración propia a partir de Ministerio de Justicia y del Derecho (2022), fases 1 y 2, pp. 17-24. Fuente de cada actividad en [`comisaria-fuentes.md`](mapa/procesos/comisaria-fuentes.md); archivo editable: [`comisaria.bpmn`](mapa/procesos/comisaria.bpmn).
 
-  classDef llave fill:#fde6dc,stroke:#eb6834,stroke-width:2px,color:#0b0b0b
-  class Q llave
-```
+La Figura 8 dibuja el proceso penal con sus bifurcaciones, que son las que Salcedo pidió mirar. Si el delito es querellable, el proceso empieza por la conciliación preprocesal, y si hay acuerdo se archiva. Si no lo hay, o si el delito se persigue de oficio, el fiscal indaga y, tras la imputación, decide entre la mediación, el principio de oportunidad o la acusación. Cuando nadie ofrece la vía restaurativa, el caso sigue a juicio y la reparación se discute en el incidente de reparación integral.
 
-*Nota:* en naranja, el punto donde se decide la vía restaurativa. Los artículos son de la Ley 906 de 2004; el procedimiento abreviado es el de la Ley 1826 de 2017. *Fuente:* Elaboración propia a partir de la Ley 906 de 2004, la Ley 1826 de 2017 y las normas registradas en [`entidades.csv`](mapa/entidades.csv).
+**Figura 8.** Proceso penal y salidas restaurativas
 
-### 7.3 Remisiones entre entidades
+![Proceso penal en BPMN](mapa/procesos/proceso-penal.svg)
+
+*Nota:* en naranja, las dos salidas restaurativas: la conciliación preprocesal y la mediación. *Fuente:* Elaboración propia a partir de la Ley 906 de 2004 y la Resolución FGN 0383 de 2022. Fuente de cada actividad en [`proceso-penal-fuentes.md`](mapa/procesos/proceso-penal-fuentes.md); archivo editable: [`proceso-penal.bpmn`](mapa/procesos/proceso-penal.bpmn).
+
+Por último, la Figura 9 abre la mediación penal. La piden la víctima o el imputado, el fiscal o el juez evalúa si procede y la remite a un programa con convenio, que hace reuniones previas por separado y luego la audiencia. Si hay acuerdo, el acta vuelve al fiscal y de ahí al juez; si no, el mediador informa el fracaso y el proceso sigue.
+
+**Figura 9.** Mediación penal
+
+![Mediación penal en BPMN](mapa/procesos/mediacion-penal.svg)
+
+*Fuente:* Elaboración propia a partir de la Resolución FGN 0383 de 2022, arts. 12, 14, 16, 19 y 22, y la Ley 906 de 2004, arts. 524 y 525. Fuente de cada actividad en [`mediacion-penal-fuentes.md`](mapa/procesos/mediacion-penal-fuentes.md); archivo editable: [`mediacion-penal.bpmn`](mapa/procesos/mediacion-penal.bpmn).
+
+### 7.4 Remisiones entre entidades
 
 Una remisión es el envío de un caso de una entidad a otra porque la norma lo obliga o lo permite. Se levantaron 38 remisiones, cada una con su disparador, su plazo, su norma y su grado de verificación, que la Tabla 3 resume por ruta.
 
@@ -256,21 +240,7 @@ Una remisión es el envío de un caso de una entidad a otra porque la norma lo o
 
 *Fuente:* Elaboración propia con datos de [`remisiones.csv`](mapa/remisiones.csv).
 
-La Figura 7 dibuja las 38 remisiones como red, con las entidades ordenadas por bloque del Estado.
-
-**Figura 7.** Remisiones entre las entidades del Leviatán
-
-![Red de remisiones del Leviatán](mapa/grafos/remisiones.svg)
-
-*Nota:* las 38 remisiones dan 100 flechas al separar los destinos múltiples. La línea continua es una remisión obligatoria y la punteada una opcional o que depende de la voluntad de las partes; en azul, las entidades que ofrecen conciliación, mediación u otra vía alterna, y en naranja, la única entrada formal a la mediación penal. *Fuente:* Elaboración propia con datos de [`remisiones.csv`](mapa/remisiones.csv) y [`entidades.csv`](mapa/entidades.csv).
-
-**Figura 8.** Remisiones por ruta
-
-![Red de remisiones por ruta](mapa/grafos/remisiones-por-ruta.svg)
-
-*Nota:* en cada panel se resaltan las remisiones de una ruta; las de las otras rutas quedan en gris y las entidades que la ruta no toca, atenuadas. *Fuente:* Elaboración propia con datos de [`remisiones.csv`](mapa/remisiones.csv).
-
-Las remisiones confirman lo que mostró el recorrido de la Figura 6. En la violencia intrafamiliar todos los caminos llevan al fiscal, y ni la comisaría ni la casa de justicia pueden remitir un caso penal a mediación, de modo que la vía restaurativa depende de una decisión del fiscal o del juez y de que exista un programa con convenio. En cambio, en la inasistencia alimentaria la conciliación ocurre antes del incumplimiento y fuera de lo penal, por lo que es el punto restaurativo más accesible para una primera iteración del agente. Además, ninguna norma obliga a una remisión de vuelta: la Fiscalía no tiene que informar a la comisaría o a la casa de justicia qué pasó con el caso que estas le enviaron, y solo la víctima tiene derecho a conocer el trámite (Ley 906 de 2004, art. 136). Por último, 20 de las 38 remisiones están verificadas en el texto de la norma y el resto proviene de citas devueltas por Gemini Notebook, por lo que la tabla es una base para validar con el equipo jurídico y no un resultado cerrado.
+Las remisiones confirman lo que muestran las láminas. En la violencia intrafamiliar todos los caminos llevan al fiscal, y ni la comisaría ni la casa de justicia pueden remitir un caso penal a mediación, de modo que la vía restaurativa depende de una decisión del fiscal o del juez y de que exista un programa con convenio. En cambio, en la inasistencia alimentaria la conciliación ocurre antes del incumplimiento y fuera de lo penal, por lo que es el punto restaurativo más accesible para una primera iteración del agente. Además, ninguna norma obliga a una remisión de vuelta: la Fiscalía no tiene que informar a la comisaría o a la casa de justicia qué pasó con el caso que estas le enviaron, y solo la víctima tiene derecho a conocer el trámite (Ley 906 de 2004, art. 136). Por último, 20 de las 38 remisiones están verificadas en el texto de la norma y el resto proviene de citas devueltas por Gemini Notebook, por lo que la tabla es una base para validar con el equipo jurídico y no un resultado cerrado.
 
 ## 8. Lo que falta validar
 
@@ -306,7 +276,9 @@ Esta versión se presenta al equipo para validarla. Una parte de lo que estaba p
 
 | Carpeta o archivo | Qué contiene |
 |---|---|
-| [`mapa/`](mapa/) | Los CSV del Leviatán (42 entidades, 14 etapas y 38 remisiones, cada una con su norma y su grado de verificación) y el script de sus figuras |
+| [`mapa/`](mapa/) | Los CSV del Leviatán (42 entidades, 14 etapas y 38 remisiones, cada una con su norma y su grado de verificación) |
+| [`mapa/procesos/`](mapa/procesos/) | Las láminas BPMN: el modelo de cada una en Python, el archivo `.bpmn` editable, la figura y la tabla de fuentes por actividad |
+| [`estado-del-arte/procesos/`](estado-del-arte/procesos/) | La búsqueda de mapas de procesos existentes del sistema de justicia |
 | [`estado-del-arte/busqueda/`](estado-del-arte/busqueda/) | Protocolo, ecuaciones, unificación del corpus, medida de conexión, grafos y revisión por título y resumen |
 | [`estado-del-arte/contraste-hipotesis.md`](estado-del-arte/contraste-hipotesis.md) | El contraste de las hipótesis con los textos completos |
 
@@ -319,7 +291,7 @@ python3 estado-del-arte/busqueda/ecuaciones.py     # ecuaciones y URL de cada un
 python3 estado-del-arte/busqueda/corpus.py         # corpus unificado y medida de conexión
 Rscript estado-del-arte/busqueda/grafos.R          # cocitación, palabras clave y mapa temático
 uv run estado-del-arte/busqueda/prisma.py          # Figura 1
-uv run mapa/grafos.py                              # Figuras 7 y 8
+(cd mapa/procesos && npm install && python3 generar.py)  # Figuras 6 a 9
 ```
 
 ## 10. Referencias
@@ -370,9 +342,15 @@ Makasi, T., Nili, A., Desouza, K. C. y Tate, M. (2020). Chatbot-mediated public 
 
 Mestre-Mestre, E. M. (2023). Representation of gender violence in appeal proceedings in Spain: A corpus pragmatics analysis. *Revista de Llengua i Dret, Journal of Language and Law*, (79), 158–175. https://doi.org/10.58992/rld.i79.2023.3927
 
+Ministerio de Justicia y del Derecho. (2022). *Modelos de justicia local y rural. Tomo V: Lineamientos para el servicio de atención en comisarías de familia*. Ministerio de Justicia y del Derecho.
+
 Mistica, M., Lau, J. H., Merrifield, B., Fazio, K. y Baldwin, T. (2021). Semi-automatic triage of requests for free legal assistance. En *Proceedings of the Natural Legal Language Processing Workshop 2021* (pp. 217–227).
 
 Molinari, M. y Giacalone, M. (2026). AI and digital justice in EU labor law. A comparative study on predictive tools and judicial transformation. *Frontiers in Artificial Intelligence, 8*, 1742239. https://doi.org/10.3389/frai.2025.1742239
+
+Munetz, M. R. y Griffin, P. A. (2006). Use of the Sequential Intercept Model as an approach to decriminalization of people with serious mental illness. *Psychiatric Services, 57*(4), 544–549. https://doi.org/10.1176/ps.2006.57.4.544
+
+Object Management Group. (2013). *Business Process Model and Notation (BPMN), versión 2.0.2*. https://www.omg.org/spec/BPMN/2.0.2/
 
 Page, M. J., McKenzie, J. E., Bossuyt, P. M., Boutron, I., Hoffmann, T. C., Mulrow, C. D., Shamseer, L., Tetzlaff, J. M., Akl, E. A., Brennan, S. E., Chou, R., Glanville, J., Grimshaw, J. M., Hróbjartsson, A., Lalu, M. M., Li, T., Loder, E. W., Mayo-Wilson, E., McDonald, S., … Moher, D. (2021). The PRISMA 2020 statement: An updated guideline for reporting systematic reviews. *BMJ, 372*, n71. https://doi.org/10.1136/bmj.n71
 

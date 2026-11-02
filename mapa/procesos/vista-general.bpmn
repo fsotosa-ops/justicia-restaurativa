@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<bpmn:definitions xmlns:bpmn="http://www.omg.org/spec/BPMN/20100524/MODEL" xmlns:bpmndi="http://www.omg.org/spec/BPMN/20100524/DI" xmlns:dc="http://www.omg.org/spec/DD/20100524/DC" xmlns:di="http://www.omg.org/spec/DD/20100524/DI" xmlns:bioc="http://bpmn.io/schema/bpmn/biocolor/1.0" xmlns:color="http://www.omg.org/spec/BPMN/non-normative/color/1.0" id="def_p_vista-general" targetNamespace="https://github.com/fsotosa-ops/justicia-restaurativa" exporter="justicia-restaurativa/mapa/procesos/bpmn.py" exporterVersion="1">
+  <bpmn:collaboration id="col_p_vista-general">
+    <bpmn:participant id="pool_p_vista-general" name="Leviatán: vista general tentativa de las rutas de acceso" processRef="p_vista-general"/>
+    <bpmn:participant id="persona" name="Persona con un conflicto"/>
+    <bpmn:messageFlow id="mf0" sourceRef="persona" targetRef="inicio" name="Consulta"/>
+  </bpmn:collaboration>
+  <bpmn:process id="p_vista-general" name="Leviatán: vista general tentativa de las rutas de acceso" isExecutable="false">
+    <bpmn:laneSet id="ls_p_vista-general">
+      <bpmn:lane id="lane_pue" name="Puerta de entrada">
+        <bpmn:flowNodeRef>inicio</bpmn:flowNodeRef>
+      </bpmn:lane>
+      <bpmn:lane id="lane_age" name="Agente de orientación (propuesta)">
+        <bpmn:flowNodeRef>a1</bpmn:flowNodeRef>
+        <bpmn:flowNodeRef>gB</bpmn:flowNodeRef>
+        <bpmn:flowNodeRef>gC</bpmn:flowNodeRef>
+        <bpmn:flowNodeRef>fin_o</bpmn:flowNodeRef>
+      </bpmn:lane>
+      <bpmn:lane id="lane_com" name="Comisaría de familia">
+        <bpmn:flowNodeRef>cC</bpmn:flowNodeRef>
+      </bpmn:lane>
+      <bpmn:lane id="lane_fis" name="Fiscalía y jueces">
+        <bpmn:flowNodeRef>cP</bpmn:flowNodeRef>
+        <bpmn:flowNodeRef>fin_p</bpmn:flowNodeRef>
+      </bpmn:lane>
+      <bpmn:lane id="lane_con" name="Conciliación y mediación">
+        <bpmn:flowNodeRef>cM</bpmn:flowNodeRef>
+        <bpmn:flowNodeRef>fin_m</bpmn:flowNodeRef>
+      </bpmn:lane>
+    </bpmn:laneSet>
+    <bpmn:startEvent id="inicio" name="Consulta en consultorio jurídico o casa de justicia">
+      <bpmn:messageEventDefinition id="med_inicio"/>
+      <bpmn:outgoing>f0</bpmn:outgoing>
+    </bpmn:startEvent>
+    <bpmn:task id="a1" name="1. Preguntar por el conflicto, el rol y si hay un proceso abierto">
+      <bpmn:documentation>Fuente: Propuesta del equipo, por validar</bpmn:documentation>
+      <bpmn:incoming>f0</bpmn:incoming>
+      <bpmn:outgoing>f1</bpmn:outgoing>
+    </bpmn:task>
+    <bpmn:exclusiveGateway id="gB" name="¿Violencia intrafamiliar?">
+      <bpmn:incoming>f1</bpmn:incoming>
+      <bpmn:outgoing>f2</bpmn:outgoing>
+      <bpmn:outgoing>f3</bpmn:outgoing>
+    </bpmn:exclusiveGateway>
+    <bpmn:exclusiveGateway id="gC" name="¿Es un delito?">
+      <bpmn:incoming>f3</bpmn:incoming>
+      <bpmn:outgoing>f4</bpmn:outgoing>
+      <bpmn:outgoing>f5</bpmn:outgoing>
+    </bpmn:exclusiveGateway>
+    <bpmn:endEvent id="fin_o" name="Orientado a otra entidad">
+      <bpmn:incoming>f4</bpmn:incoming>
+    </bpmn:endEvent>
+    <bpmn:callActivity id="cC" name="2. Comisaría de familia (lámina 2)">
+      <bpmn:documentation>Fuente: MinJusticia (2022), Tomo V</bpmn:documentation>
+      <bpmn:incoming>f2</bpmn:incoming>
+      <bpmn:outgoing>f6</bpmn:outgoing>
+    </bpmn:callActivity>
+    <bpmn:callActivity id="cP" name="3. Proceso penal (lámina 3)">
+      <bpmn:documentation>Fuente: Ley 906 de 2004</bpmn:documentation>
+      <bpmn:incoming>f5</bpmn:incoming>
+      <bpmn:incoming>f6</bpmn:incoming>
+      <bpmn:outgoing>f7</bpmn:outgoing>
+      <bpmn:outgoing>f8</bpmn:outgoing>
+    </bpmn:callActivity>
+    <bpmn:callActivity id="cM" name="4. Mediación penal (lámina 4)">
+      <bpmn:documentation>Fuente: Resolución FGN 0383 de 2022</bpmn:documentation>
+      <bpmn:incoming>f7</bpmn:incoming>
+      <bpmn:outgoing>f9</bpmn:outgoing>
+    </bpmn:callActivity>
+    <bpmn:endEvent id="fin_p" name="Sentencia o archivo">
+      <bpmn:incoming>f8</bpmn:incoming>
+    </bpmn:endEvent>
+    <bpmn:endEvent id="fin_m" name="Acuerdo restaurativo">
+      <bpmn:incoming>f9</bpmn:incoming>
+    </bpmn:endEvent>
+    <bpmn:textAnnotation id="n_q"><bpmn:text>En delitos querellables, el proceso penal empieza por la conciliación preprocesal (Ley 906, art. 522)</bpmn:text></bpmn:textAnnotation>
+    <bpmn:textAnnotation id="n_a"><bpmn:text>Preguntas de las reuniones del equipo: tipo de conflicto, si ya hay proceso y si la persona es víctima o señalada</bpmn:text></bpmn:textAnnotation>
+    <bpmn:sequenceFlow id="f0" sourceRef="inicio" targetRef="a1"/>
+    <bpmn:sequenceFlow id="f1" sourceRef="a1" targetRef="gB"/>
+    <bpmn:sequenceFlow id="f2" sourceRef="gB" targetRef="cC" name="Sí"/>
+    <bpmn:sequenceFlow id="f3" sourceRef="gB" targetRef="gC" name="No"/>
+    <bpmn:sequenceFlow id="f4" sourceRef="gC" targetRef="fin_o" name="No"/>
+    <bpmn:sequenceFlow id="f5" sourceRef="gC" targetRef="cP" name="Sí"/>
+    <bpmn:sequenceFlow id="f6" sourceRef="cC" targetRef="cP" name="Denuncia"/>
+    <bpmn:sequenceFlow id="f7" sourceRef="cP" targetRef="cM" name="Remisión del fiscal o el juez"/>
+    <bpmn:sequenceFlow id="f8" sourceRef="cP" targetRef="fin_p"/>
+    <bpmn:sequenceFlow id="f9" sourceRef="cM" targetRef="fin_m"/>
+    <bpmn:association id="asoc0" sourceRef="cP" targetRef="n_q"/>
+    <bpmn:association id="asoc1" sourceRef="a1" targetRef="n_a"/>
+  </bpmn:process>
+  <bpmndi:BPMNDiagram id="dia_p_vista-general">
+    <bpmndi:BPMNPlane id="pl_p_vista-general" bpmnElement="col_p_vista-general">
+      <bpmndi:BPMNShape id="s_pool" bpmnElement="pool_p_vista-general" isHorizontal="true"><dc:Bounds x="0" y="110" width="1250" height="800"/></bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="s_persona" bpmnElement="persona" isHorizontal="true"><dc:Bounds x="0" y="0" width="1250" height="60"/></bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="s_lane_pue" bpmnElement="lane_pue" isHorizontal="true"><dc:Bounds x="30" y="110" width="1220" height="160"/></bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="s_lane_age" bpmnElement="lane_age" isHorizontal="true"><dc:Bounds x="30" y="270" width="1220" height="160"/></bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="s_lane_com" bpmnElement="lane_com" isHorizontal="true"><dc:Bounds x="30" y="430" width="1220" height="160"/></bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="s_lane_fis" bpmnElement="lane_fis" isHorizontal="true"><dc:Bounds x="30" y="590" width="1220" height="160"/></bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="s_lane_con" bpmnElement="lane_con" isHorizontal="true"><dc:Bounds x="30" y="750" width="1220" height="160"/></bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="s_inicio" bpmnElement="inicio"><dc:Bounds x="102" y="172" width="36" height="36"/>
+        <bpmndi:BPMNLabel><dc:Bounds x="144" y="176" width="90" height="28"/></bpmndi:BPMNLabel>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="s_a1" bpmnElement="a1" bioc:stroke="#8a8984" bioc:fill="#f1f0ec" color:border-color="#8a8984" color:background-color="#f1f0ec"><dc:Bounds x="230" y="310" width="120" height="80"/>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="s_gB" bpmnElement="gB" bioc:stroke="#8a8984" bioc:fill="#f1f0ec" color:border-color="#8a8984" color:background-color="#f1f0ec"><dc:Bounds x="435" y="325" width="50" height="50"/>
+        <bpmndi:BPMNLabel><dc:Bounds x="405" y="291" width="110" height="28"/></bpmndi:BPMNLabel>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="s_gC" bpmnElement="gC" bioc:stroke="#8a8984" bioc:fill="#f1f0ec" color:border-color="#8a8984" color:background-color="#f1f0ec"><dc:Bounds x="605" y="325" width="50" height="50"/>
+        <bpmndi:BPMNLabel><dc:Bounds x="575" y="381" width="110" height="28"/></bpmndi:BPMNLabel>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="s_fin_o" bpmnElement="fin_o" bioc:stroke="#8a8984" bioc:fill="#f1f0ec" color:border-color="#8a8984" color:background-color="#f1f0ec"><dc:Bounds x="782" y="280" width="36" height="36"/>
+        <bpmndi:BPMNLabel><dc:Bounds x="824" y="284" width="90" height="28"/></bpmndi:BPMNLabel>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="s_cC" bpmnElement="cC"><dc:Bounds x="400" y="470" width="120" height="80"/>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="s_cP" bpmnElement="cP"><dc:Bounds x="740" y="630" width="120" height="80"/>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="s_cM" bpmnElement="cM" bioc:stroke="#c4501c" bioc:fill="#fde6dc" color:border-color="#c4501c" color:background-color="#fde6dc"><dc:Bounds x="910" y="790" width="120" height="80"/>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="s_fin_p" bpmnElement="fin_p"><dc:Bounds x="1122" y="652" width="36" height="36"/>
+        <bpmndi:BPMNLabel><dc:Bounds x="1085" y="694" width="110" height="28"/></bpmndi:BPMNLabel>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="s_fin_m" bpmnElement="fin_m" bioc:stroke="#c4501c" bioc:fill="#fde6dc" color:border-color="#c4501c" color:background-color="#fde6dc"><dc:Bounds x="1122" y="812" width="36" height="36"/>
+        <bpmndi:BPMNLabel><dc:Bounds x="1085" y="854" width="110" height="28"/></bpmndi:BPMNLabel>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="s_n_q" bpmnElement="n_q"><dc:Bounds x="535" y="793" width="190" height="74"/>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="s_n_a" bpmnElement="n_a"><dc:Bounds x="365" y="153" width="190" height="74"/>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNEdge id="e_f0" bpmnElement="f0"><di:waypoint x="120" y="208"/><di:waypoint x="120" y="350"/><di:waypoint x="230" y="350"/></bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="e_f1" bpmnElement="f1"><di:waypoint x="350" y="350"/><di:waypoint x="435" y="350"/></bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="e_f2" bpmnElement="f2"><di:waypoint x="460" y="375"/><di:waypoint x="460" y="470"/><bpmndi:BPMNLabel><dc:Bounds x="465" y="414" width="70" height="14"/></bpmndi:BPMNLabel></bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="e_f3" bpmnElement="f3"><di:waypoint x="485" y="350"/><di:waypoint x="605" y="350"/><bpmndi:BPMNLabel><dc:Bounds x="515" y="332" width="60" height="14"/></bpmndi:BPMNLabel></bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="e_f4" bpmnElement="f4"><di:waypoint x="630" y="325"/><di:waypoint x="630" y="298"/><di:waypoint x="782" y="298"/><bpmndi:BPMNLabel><dc:Bounds x="635" y="304" width="70" height="14"/></bpmndi:BPMNLabel></bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="e_f5" bpmnElement="f5"><di:waypoint x="655" y="350"/><di:waypoint x="800" y="350"/><di:waypoint x="800" y="630"/><bpmndi:BPMNLabel><dc:Bounds x="698" y="332" width="60" height="14"/></bpmndi:BPMNLabel></bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="e_f6" bpmnElement="f6"><di:waypoint x="460" y="550"/><di:waypoint x="460" y="670"/><di:waypoint x="740" y="670"/><bpmndi:BPMNLabel><dc:Bounds x="465" y="602" width="70" height="14"/></bpmndi:BPMNLabel></bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="e_f7" bpmnElement="f7" bioc:stroke="#c4501c" color:border-color="#c4501c"><di:waypoint x="800" y="710"/><di:waypoint x="800" y="830"/><di:waypoint x="910" y="830"/><bpmndi:BPMNLabel><dc:Bounds x="805" y="762" width="70" height="14"/></bpmndi:BPMNLabel></bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="e_f8" bpmnElement="f8"><di:waypoint x="860" y="670"/><di:waypoint x="1122" y="670"/></bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="e_f9" bpmnElement="f9" bioc:stroke="#c4501c" color:border-color="#c4501c"><di:waypoint x="1030" y="830"/><di:waypoint x="1122" y="830"/></bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="e_mf0" bpmnElement="mf0"><di:waypoint x="120" y="60"/><di:waypoint x="120" y="172"/><bpmndi:BPMNLabel><dc:Bounds x="126" y="109" width="90" height="14"/></bpmndi:BPMNLabel></bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="e_asoc0" bpmnElement="asoc0"><di:waypoint x="800" y="710"/><di:waypoint x="630" y="793"/></bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="e_asoc1" bpmnElement="asoc1"><di:waypoint x="290" y="310"/><di:waypoint x="460" y="227"/></bpmndi:BPMNEdge>
+    </bpmndi:BPMNPlane>
+  </bpmndi:BPMNDiagram>
+</bpmn:definitions>

@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<bpmn:definitions xmlns:bpmn="http://www.omg.org/spec/BPMN/20100524/MODEL" xmlns:bpmndi="http://www.omg.org/spec/BPMN/20100524/DI" xmlns:dc="http://www.omg.org/spec/DD/20100524/DC" xmlns:di="http://www.omg.org/spec/DD/20100524/DI" xmlns:bioc="http://bpmn.io/schema/bpmn/biocolor/1.0" xmlns:color="http://www.omg.org/spec/BPMN/non-normative/color/1.0" id="def_p_mediacion-penal" targetNamespace="https://github.com/fsotosa-ops/justicia-restaurativa" exporter="justicia-restaurativa/mapa/procesos/bpmn.py" exporterVersion="1">
+  <bpmn:collaboration id="col_p_mediacion-penal">
+    <bpmn:participant id="pool_p_mediacion-penal" name="Mediación penal (Resolución FGN 0383 de 2022)" processRef="p_mediacion-penal"/>
+    <bpmn:participant id="partes" name="Víctima e imputado o acusado"/>
+    <bpmn:messageFlow id="mf0" sourceRef="partes" targetRef="inicio" name="Solicita (víctima o imputado)"/>
+    <bpmn:messageFlow id="mf1" sourceRef="t3" targetRef="partes" name="Citación"/>
+    <bpmn:messageFlow id="mf2" sourceRef="t4" targetRef="partes" name="Citación"/>
+  </bpmn:collaboration>
+  <bpmn:process id="p_mediacion-penal" name="Mediación penal (Resolución FGN 0383 de 2022)" isExecutable="false">
+    <bpmn:laneSet id="ls_p_mediacion-penal">
+      <bpmn:lane id="lane_pro" name="Programa de mediación con convenio">
+        <bpmn:flowNodeRef>t3</bpmn:flowNodeRef>
+        <bpmn:flowNodeRef>t4</bpmn:flowNodeRef>
+        <bpmn:flowNodeRef>g2</bpmn:flowNodeRef>
+        <bpmn:flowNodeRef>t5</bpmn:flowNodeRef>
+        <bpmn:flowNodeRef>fin_fr</bpmn:flowNodeRef>
+      </bpmn:lane>
+      <bpmn:lane id="lane_fis" name="Fiscal o juez">
+        <bpmn:flowNodeRef>inicio</bpmn:flowNodeRef>
+        <bpmn:flowNodeRef>t1</bpmn:flowNodeRef>
+        <bpmn:flowNodeRef>g1</bpmn:flowNodeRef>
+        <bpmn:flowNodeRef>fin_no</bpmn:flowNodeRef>
+        <bpmn:flowNodeRef>t2</bpmn:flowNodeRef>
+        <bpmn:flowNodeRef>t6</bpmn:flowNodeRef>
+        <bpmn:flowNodeRef>fin</bpmn:flowNodeRef>
+      </bpmn:lane>
+    </bpmn:laneSet>
+    <bpmn:startEvent id="inicio" name="Solicitud de mediación">
+      <bpmn:messageEventDefinition id="med_inicio"/>
+      <bpmn:outgoing>f0</bpmn:outgoing>
+    </bpmn:startEvent>
+    <bpmn:task id="t1" name="1. Evaluar si procede la mediación">
+      <bpmn:documentation>Fuente: Resolución FGN 0383 de 2022, art. 12; Ley 906 de 2004, arts. 524 y 525</bpmn:documentation>
+      <bpmn:incoming>f0</bpmn:incoming>
+      <bpmn:outgoing>f1</bpmn:outgoing>
+    </bpmn:task>
+    <bpmn:exclusiveGateway id="g1" name="¿Procede?">
+      <bpmn:incoming>f1</bpmn:incoming>
+      <bpmn:outgoing>f2</bpmn:outgoing>
+      <bpmn:outgoing>f3</bpmn:outgoing>
+    </bpmn:exclusiveGateway>
+    <bpmn:endEvent id="fin_no" name="El proceso sigue">
+      <bpmn:incoming>f2</bpmn:incoming>
+    </bpmn:endEvent>
+    <bpmn:task id="t2" name="2. Remitir el caso al programa por comunicación">
+      <bpmn:documentation>Fuente: Resolución FGN 0383 de 2022, art. 14</bpmn:documentation>
+      <bpmn:incoming>f3</bpmn:incoming>
+      <bpmn:outgoing>f4</bpmn:outgoing>
+    </bpmn:task>
+    <bpmn:task id="t3" name="3. Reuniones previas por separado (hasta 15 días)">
+      <bpmn:documentation>Fuente: Resolución FGN 0383 de 2022, art. 16</bpmn:documentation>
+      <bpmn:incoming>f4</bpmn:incoming>
+      <bpmn:outgoing>f5</bpmn:outgoing>
+    </bpmn:task>
+    <bpmn:task id="t4" name="4. Audiencia de mediación (hasta 7 días hábiles después)">
+      <bpmn:documentation>Fuente: Resolución FGN 0383 de 2022, art. 16</bpmn:documentation>
+      <bpmn:incoming>f5</bpmn:incoming>
+      <bpmn:outgoing>f6</bpmn:outgoing>
+    </bpmn:task>
+    <bpmn:exclusiveGateway id="g2" name="¿Hay acuerdo?">
+      <bpmn:incoming>f6</bpmn:incoming>
+      <bpmn:outgoing>f7</bpmn:outgoing>
+      <bpmn:outgoing>f8</bpmn:outgoing>
+    </bpmn:exclusiveGateway>
+    <bpmn:task id="t5" name="5. Remitir el acta al fiscal">
+      <bpmn:documentation>Fuente: Resolución FGN 0383 de 2022, art. 19</bpmn:documentation>
+      <bpmn:incoming>f7</bpmn:incoming>
+      <bpmn:outgoing>f9</bpmn:outgoing>
+    </bpmn:task>
+    <bpmn:endEvent id="fin_fr" name="Informe de fracaso al fiscal">
+      <bpmn:incoming>f8</bpmn:incoming>
+    </bpmn:endEvent>
+    <bpmn:task id="t6" name="6. Remitir el acta al juez">
+      <bpmn:documentation>Fuente: Resolución FGN 0383 de 2022, art. 22</bpmn:documentation>
+      <bpmn:incoming>f9</bpmn:incoming>
+      <bpmn:outgoing>f10</bpmn:outgoing>
+    </bpmn:task>
+    <bpmn:endEvent id="fin" name="Acta ante el juez">
+      <bpmn:incoming>f10</bpmn:incoming>
+    </bpmn:endEvent>
+    <bpmn:textAnnotation id="n_vif"><bpmn:text>Violencia intrafamiliar: no procede con riesgo grave o extremo, y las reuniones previas van por separado (art. 16, par. 1)</bpmn:text></bpmn:textAnnotation>
+    <bpmn:sequenceFlow id="f0" sourceRef="inicio" targetRef="t1"/>
+    <bpmn:sequenceFlow id="f1" sourceRef="t1" targetRef="g1"/>
+    <bpmn:sequenceFlow id="f2" sourceRef="g1" targetRef="fin_no" name="No"/>
+    <bpmn:sequenceFlow id="f3" sourceRef="g1" targetRef="t2" name="Sí"/>
+    <bpmn:sequenceFlow id="f4" sourceRef="t2" targetRef="t3"/>
+    <bpmn:sequenceFlow id="f5" sourceRef="t3" targetRef="t4"/>
+    <bpmn:sequenceFlow id="f6" sourceRef="t4" targetRef="g2"/>
+    <bpmn:sequenceFlow id="f7" sourceRef="g2" targetRef="t5" name="Sí"/>
+    <bpmn:sequenceFlow id="f8" sourceRef="g2" targetRef="fin_fr" name="No"/>
+    <bpmn:sequenceFlow id="f9" sourceRef="t5" targetRef="t6"/>
+    <bpmn:sequenceFlow id="f10" sourceRef="t6" targetRef="fin"/>
+    <bpmn:association id="asoc0" sourceRef="g1" targetRef="n_vif"/>
+  </bpmn:process>
+  <bpmndi:BPMNDiagram id="dia_p_mediacion-penal">
+    <bpmndi:BPMNPlane id="pl_p_mediacion-penal" bpmnElement="col_p_mediacion-penal">
+      <bpmndi:BPMNShape id="s_pool" bpmnElement="pool_p_mediacion-penal" isHorizontal="true"><dc:Bounds x="0" y="110" width="1930" height="320"/></bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="s_partes" bpmnElement="partes" isHorizontal="true"><dc:Bounds x="0" y="0" width="1930" height="60"/></bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="s_lane_pro" bpmnElement="lane_pro" isHorizontal="true"><dc:Bounds x="30" y="110" width="1900" height="160"/></bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="s_lane_fis" bpmnElement="lane_fis" isHorizontal="true"><dc:Bounds x="30" y="270" width="1900" height="160"/></bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="s_inicio" bpmnElement="inicio"><dc:Bounds x="102" y="332" width="36" height="36"/>
+        <bpmndi:BPMNLabel><dc:Bounds x="65" y="374" width="110" height="28"/></bpmndi:BPMNLabel>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="s_t1" bpmnElement="t1"><dc:Bounds x="230" y="310" width="120" height="80"/>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="s_g1" bpmnElement="g1"><dc:Bounds x="435" y="325" width="50" height="50"/>
+        <bpmndi:BPMNLabel><dc:Bounds x="346" y="295" width="110" height="28"/></bpmndi:BPMNLabel>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="s_fin_no" bpmnElement="fin_no"><dc:Bounds x="612" y="384" width="36" height="36"/>
+        <bpmndi:BPMNLabel><dc:Bounds x="654" y="388" width="90" height="28"/></bpmndi:BPMNLabel>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="s_t2" bpmnElement="t2" bioc:stroke="#c4501c" bioc:fill="#fde6dc" color:border-color="#c4501c" color:background-color="#fde6dc"><dc:Bounds x="740" y="310" width="120" height="80"/>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="s_t3" bpmnElement="t3" bioc:stroke="#c4501c" bioc:fill="#fde6dc" color:border-color="#c4501c" color:background-color="#fde6dc"><dc:Bounds x="910" y="150" width="120" height="80"/>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="s_t4" bpmnElement="t4" bioc:stroke="#c4501c" bioc:fill="#fde6dc" color:border-color="#c4501c" color:background-color="#fde6dc"><dc:Bounds x="1080" y="150" width="120" height="80"/>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="s_g2" bpmnElement="g2" bioc:stroke="#c4501c" bioc:fill="#fde6dc" color:border-color="#c4501c" color:background-color="#fde6dc"><dc:Bounds x="1285" y="165" width="50" height="50"/>
+        <bpmndi:BPMNLabel><dc:Bounds x="1255" y="131" width="110" height="28"/></bpmndi:BPMNLabel>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="s_t5" bpmnElement="t5" bioc:stroke="#c4501c" bioc:fill="#fde6dc" color:border-color="#c4501c" color:background-color="#fde6dc"><dc:Bounds x="1420" y="150" width="120" height="80"/>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="s_fin_fr" bpmnElement="fin_fr"><dc:Bounds x="1292" y="226" width="36" height="36"/>
+        <bpmndi:BPMNLabel><dc:Bounds x="1334" y="230" width="90" height="28"/></bpmndi:BPMNLabel>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="s_t6" bpmnElement="t6" bioc:stroke="#c4501c" bioc:fill="#fde6dc" color:border-color="#c4501c" color:background-color="#fde6dc"><dc:Bounds x="1590" y="310" width="120" height="80"/>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="s_fin" bpmnElement="fin" bioc:stroke="#c4501c" bioc:fill="#fde6dc" color:border-color="#c4501c" color:background-color="#fde6dc"><dc:Bounds x="1802" y="332" width="36" height="36"/>
+        <bpmndi:BPMNLabel><dc:Bounds x="1765" y="374" width="110" height="28"/></bpmndi:BPMNLabel>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="s_n_vif" bpmnElement="n_vif"><dc:Bounds x="365" y="153" width="190" height="74"/>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNEdge id="e_f0" bpmnElement="f0"><di:waypoint x="138" y="350"/><di:waypoint x="230" y="350"/></bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="e_f1" bpmnElement="f1"><di:waypoint x="350" y="350"/><di:waypoint x="435" y="350"/></bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="e_f2" bpmnElement="f2"><di:waypoint x="460" y="375"/><di:waypoint x="460" y="402"/><di:waypoint x="612" y="402"/><bpmndi:BPMNLabel><dc:Bounds x="465" y="380" width="70" height="14"/></bpmndi:BPMNLabel></bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="e_f3" bpmnElement="f3"><di:waypoint x="485" y="350"/><di:waypoint x="740" y="350"/><bpmndi:BPMNLabel><dc:Bounds x="582" y="332" width="60" height="14"/></bpmndi:BPMNLabel></bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="e_f4" bpmnElement="f4" bioc:stroke="#c4501c" color:border-color="#c4501c"><di:waypoint x="800" y="310"/><di:waypoint x="800" y="190"/><di:waypoint x="910" y="190"/></bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="e_f5" bpmnElement="f5" bioc:stroke="#c4501c" color:border-color="#c4501c"><di:waypoint x="1030" y="190"/><di:waypoint x="1080" y="190"/></bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="e_f6" bpmnElement="f6" bioc:stroke="#c4501c" color:border-color="#c4501c"><di:waypoint x="1200" y="190"/><di:waypoint x="1285" y="190"/></bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="e_f7" bpmnElement="f7" bioc:stroke="#c4501c" color:border-color="#c4501c"><di:waypoint x="1335" y="190"/><di:waypoint x="1420" y="190"/><bpmndi:BPMNLabel><dc:Bounds x="1348" y="172" width="60" height="14"/></bpmndi:BPMNLabel></bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="e_f8" bpmnElement="f8"><di:waypoint x="1310" y="215"/><di:waypoint x="1310" y="226"/><bpmndi:BPMNLabel><dc:Bounds x="1315" y="212" width="70" height="14"/></bpmndi:BPMNLabel></bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="e_f9" bpmnElement="f9" bioc:stroke="#c4501c" color:border-color="#c4501c"><di:waypoint x="1480" y="230"/><di:waypoint x="1480" y="350"/><di:waypoint x="1590" y="350"/></bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="e_f10" bpmnElement="f10" bioc:stroke="#c4501c" color:border-color="#c4501c"><di:waypoint x="1710" y="350"/><di:waypoint x="1802" y="350"/></bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="e_mf0" bpmnElement="mf0"><di:waypoint x="120" y="60"/><di:waypoint x="120" y="332"/><bpmndi:BPMNLabel><dc:Bounds x="126" y="189" width="90" height="14"/></bpmndi:BPMNLabel></bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="e_mf1" bpmnElement="mf1"><di:waypoint x="970" y="150"/><di:waypoint x="970" y="60"/><bpmndi:BPMNLabel><dc:Bounds x="976" y="98" width="90" height="14"/></bpmndi:BPMNLabel></bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="e_mf2" bpmnElement="mf2"><di:waypoint x="1140" y="150"/><di:waypoint x="1140" y="60"/><bpmndi:BPMNLabel><dc:Bounds x="1146" y="98" width="90" height="14"/></bpmndi:BPMNLabel></bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="e_asoc0" bpmnElement="asoc0"><di:waypoint x="460" y="325"/><di:waypoint x="460" y="227"/></bpmndi:BPMNEdge>
+    </bpmndi:BPMNPlane>
+  </bpmndi:BPMNDiagram>
+</bpmn:definitions>
