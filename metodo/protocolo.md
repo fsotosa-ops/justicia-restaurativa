@@ -1,10 +1,10 @@
 # Protocolo de búsqueda en Scopus
 
-2 de noviembre de 2026. Las ecuaciones traducen la búsqueda a bloques de conceptos, de manera que se pueda repetir, verificar y graficar, y que permita saber cuánto cubre cada literatura y si las literaturas se leen entre sí.
+2 de noviembre de 2026. Cada búsqueda se escribe como una ecuación de bloques de conceptos, para que se pueda repetir y verificar, y para medir cuánto cubre cada campo de estudio y si los campos se citan entre sí.
 
-## Las tres literaturas
+## Los campos de estudio
 
-Las literaturas salen del marco de análisis del equipo y no del producto. La primera es el acceso a la justicia, que corresponde a la dimensión A (el Leviatán como sistema de puertas y rutas). La segunda es la justicia restaurativa en lo penal, que corresponde a la dimensión C. La tercera es la IA aplicada al derecho, que reúne las dimensiones B (conocimiento jurídico computable), D (lenguaje judicial) y E (infraestructura y fiabilidad). Las ecuaciones de cruce miden si esas literaturas se encuentran.
+La búsqueda cubre tres campos: el acceso a la justicia, la justicia restaurativa en lo penal y la IA aplicada al derecho, a los que se suma el lenguaje judicial sobre las víctimas. Las ecuaciones combinadas miden si esos campos se encuentran.
 
 ## Bloques de conceptos
 
@@ -30,11 +30,11 @@ Cada bloque se busca en título, resumen y palabras clave (`TITLE-ABS-KEY`), sin
 
 ## Ecuaciones
 
-Cada ecuación responde una pregunta del estado del arte. La Tabla 1 las ordena por literatura y deja al final los cruces, que son los que muestran el vacío.
+Cada ecuación responde una pregunta del estado del arte. La Tabla 1 las ordena por campo y deja al final las combinadas.
 
-**Tabla 1.** Ecuaciones por literatura.
+**Tabla 1.** Ecuaciones por campo.
 
-| Ecuación | Literatura | Pregunta | Bloques |
+| Ecuación | Campo | Pregunta | Bloques |
 |---|---|---|---|
 | E1 | Acceso | ¿Por qué la gente llega o no al sistema de justicia, y quién la orienta? | AJ y RUTA |
 | E2 | Acceso | ¿Qué se sabe de las necesidades jurídicas en América Latina? | AJ y G |
@@ -45,34 +45,30 @@ Cada ecuación responde una pregunta del estado del arte. La Tabla 1 las ordena 
 | E7 | IA | ¿Qué tan fiable es la IA en preguntas jurídicas? | IA, LEG y HAL |
 | E8 | IA | ¿Cómo se representa el conocimiento jurídico para que una máquina lo use? | IA, LEG y KG |
 | E9 | IA | ¿Qué se ha medido del lenguaje judicial sobre las víctimas? | LANG, LEG y VIC |
-| E10 | Cruce | IA y justicia restaurativa | IA y JR |
-| E11 | Cruce | IA para la orientación y la derivación en el acceso a la justicia | IA, AJ y RUTA |
-| E12 | Cruce | La vía restaurativa vista desde el acceso a la justicia | JR y AJ |
-| E13 | Cruce completo | IA, justicia restaurativa y acceso o derivación | IA, JR y (AJ, RUTA o DER) |
+| E10 | Combinada | IA y justicia restaurativa | IA y JR |
+| E11 | Combinada | IA para la orientación y la derivación en el acceso a la justicia | IA, AJ y RUTA |
+| E12 | Combinada | La vía restaurativa vista desde el acceso a la justicia | JR y AJ |
+| E13 | Combinada de los tres campos | IA, justicia restaurativa y acceso o derivación | IA, JR y (AJ, RUTA o DER) |
 
 ## Prueba de sensibilidad
 
-Una estrategia es verificable si recupera textos que ya se sabe que pertenecen al campo. Para eso se usan los artículos leídos en texto completo el 30 de octubre, que se buscan primero por título para saber si Scopus los indexa y después se comprueba si la ecuación correspondiente los trae. Cuando una ecuación pierde un artículo indexado, se amplía el bloque y se corre de nuevo. Las ecuaciones E6, E8, E9, E10, E11 y E13 no tienen artículos conocidos de antemano, de modo que en ellas la prueba se reemplaza por una revisión de los veinte primeros resultados.
+Una estrategia es verificable si recupera textos que ya se sabe que pertenecen al campo. Para eso se usan los artículos de la búsqueda complementaria: primero se buscan por título para saber si Scopus los indexa, y después se comprueba si la ecuación correspondiente los trae. Cuando una ecuación pierde un artículo indexado, se amplía el bloque y se corre de nuevo. Las ecuaciones E6, E8, E9, E10, E11 y E13 no tienen artículos conocidos de antemano, de modo que en ellas la prueba se reemplaza por una revisión de los veinte primeros resultados.
 
 **Tabla 2.** Artículos de control por ecuación.
 
 | Ecuación | Artículos que debería recuperar |
 |---|---|
 | E1 | Pleasence y colegas (2003); Chaara y colegas (2022); Sykes y colegas (2020) |
-| E2 | Hilbink y colegas (2021); Guarin y colegas (2023) |
-| E3 | Hoekstra (2022); Sandbye (2024); Rasmussen (2020); Jauhiainen (2025) |
-| E4 | Westmarland y colegas (2018); Campos y Oliveira (2021); Hudson y Berger (2026); Kettrey y colegas (2024) |
-| E5 | Fulham y colegas (2023); Sherman y colegas (2015); Islam y colegas (2023) |
-| E7 | Magesh y colegas (2024); Dahl y colegas (2024) |
+| E2 | Hilbink y colegas (2022); Guarin y colegas (2024) |
+| E3 | Hoekstra (2022); Sandbye y colegas (2024); Rasmussen (2020); Jauhiainen (2025) |
+| E4 | Westmarland y colegas (2018); De Campos y De Oliveira (2021); Hudson y Berger (2026); Kettrey y Reynolds (2026) |
+| E5 | Fulham y colegas (2025); Sherman y colegas (2015); Islam y colegas (2023) |
+| E7 | Magesh y colegas (2025); Dahl y colegas (2024) |
 | E12 | Lounkaew (2026); Charkoudian y colegas (2021) |
-
-## Lo que sigue a las corridas
-
-Con el corpus unificado y sin duplicados se calcula la fracción de pares de documentos que comparten al menos una referencia, dentro de cada literatura y entre literaturas, y se dibujan la red de cocitación, la de palabras clave y el mapa temático con bibliometrix. Después se priorizan por título y resumen los documentos más cercanos a la pregunta, que se revisan en texto completo con registro de páginas.
 
 ## Registro de corridas
 
-Las dos corridas se hicieron el 2 de noviembre de 2026 en Scopus, con el acceso institucional de la Javeriana, con una sesión institucional. La primera corrida mostró dos problemas. Por un lado, E1 perdía a Pleasence y colegas (2003) y a Chaara y colegas (2022), que están indexados, porque el bloque de rutas no reconocía «advice» a secas ni el uso de tribunales. Por otro lado, la literatura de IA traía demasiados documentos, porque «citizen*» en E6 y «reliab*» en E7 son términos genéricos. En la segunda corrida se amplió el bloque de rutas y se quitaron esos dos términos, de modo que la Tabla 3 muestra cómo cambió cada ecuación.
+Las dos corridas se hicieron el 2 de noviembre de 2026 en Scopus, con el acceso institucional de la Javeriana. La primera corrida mostró dos problemas. Por un lado, E1 perdía a Pleasence y colegas (2003) y a Chaara y colegas (2022), que están indexados, porque el bloque de rutas no reconocía «advice» a secas ni el uso de tribunales. Por otro lado, las ecuaciones de IA traían demasiados documentos, porque «citizen*» en E6 y «reliab*» en E7 son términos genéricos. En la segunda corrida se amplió el bloque de rutas y se quitaron esos dos términos, de modo que la Tabla 3 muestra cómo cambió cada ecuación.
 
 **Tabla 3.** Documentos por ecuación en las dos corridas.
 
@@ -92,7 +88,7 @@ Las dos corridas se hicieron el 2 de noviembre de 2026 en Scopus, con el acceso 
 | E12 | 71 | 71 |
 | E13 | 7 | 12 |
 
-En la segunda corrida cada ecuación recupera todos sus artículos de control indexados, con una excepción. Sykes y colegas (2020) no está en Scopus, y la búsqueda por título falló en la primera corrida para Sandbye (2024) y Magesh y colegas (2024) porque el signo de interrogación del título rompía la consulta; sin ese signo, los dos aparecen y se recuperan. La excepción es Charkoudian y colegas (2021), que E12 no trae porque estudia la mediación comunitaria en faltas y no nombra la justicia restaurativa, lo que es coherente con lo que la ecuación pregunta.
+En la segunda corrida, cada ecuación recupera todos sus artículos de control indexados, salvo uno: E12 no trae a Charkoudian y colegas (2021), porque estudia la mediación comunitaria en faltas y no nombra la justicia restaurativa. Sykes y colegas (2020) no está indexado en Scopus.
 
 **Tabla 4.** Resultado de la prueba de sensibilidad en la segunda corrida.
 
@@ -106,4 +102,4 @@ En la segunda corrida cada ecuación recupera todos sus artículos de control in
 | E7 | 2 | 2 | |
 | E12 | 2 | 1 | |
 
-Los 12 documentos del cruce completo (E13) muestran el vacío de forma directa, porque casi ninguno trata de justicia restaurativa con IA: aparecen, entre otros, un estudio sobre el trigo y el cambio climático, uno sobre integridad académica y otro sobre difamación en redes sociales.
+Los 12 documentos de la ecuación que combina los tres campos (E13) muestran el vacío de forma directa, porque casi ninguno trata de justicia restaurativa con IA: aparecen, entre otros, un estudio sobre el trigo y el cambio climático, uno sobre integridad académica y otro sobre difamación en redes sociales.
