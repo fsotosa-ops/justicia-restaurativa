@@ -20,7 +20,7 @@ La revisión se hizo en tres pasos. Primero, una búsqueda complementaria en bas
 
 *Nota:* E1 a E13 son las búsquedas en Scopus, en título, resumen y palabras clave, sin filtro de años. La revisión por título y resumen cubrió solo las búsquedas que combinan campos; en las búsquedas E1 a E9 los textos se eligieron por pertinencia, de modo que esta no es una revisión sistemática completa. Los 22 textos de la columna derecha provienen de la búsqueda complementaria previa a Scopus. Las búsquedas completas y la comprobación de que recuperan artículos conocidos están en [`protocolo.md`](../metodo/protocolo.md). *Fuente:* Elaboración propia con la plantilla de Page y colegas (2021).
 
-Las trece búsquedas devolvieron 9.268 resultados, que corresponden a 7.930 documentos distintos. La Tabla 1 resume qué pregunta cada búsqueda y cuántos documentos trajo en la segunda corrida, que es la definitiva. Entre la primera y la segunda corrida se ampliaron los términos sobre rutas de E1, que perdía dos artículos conocidos, y se quitaron dos términos genéricos de las búsquedas de IA, que traían documentos ajenos al derecho.
+Las trece búsquedas devolvieron 9.268 resultados, que corresponden a 7.930 documentos distintos. La Tabla 1 resume qué pregunta cada búsqueda y cuántos documentos trajo en la segunda corrida, que es la definitiva.
 
 **Tabla 1.** Búsquedas en Scopus y documentos que trajo cada una
 
