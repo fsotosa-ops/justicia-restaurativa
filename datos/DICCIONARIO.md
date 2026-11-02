@@ -30,7 +30,7 @@ Una fila por derivación, es decir, por envío de un caso de una entidad a otra 
 |---|---|
 | `id` | Identificador de la derivación (r01 a r39) |
 | `ruta` | Ruta a la que pertenece: `vif` (violencia intrafamiliar), `mujeres`, `casas_justicia`, `alimentos` o `fiscalia` |
-| `origen`, `destino` | `id` de las entidades que remiten y reciben |
+| `origen`, `destino` | `id` de las entidades que envían y reciben el caso |
 | `cuando` | Qué dispara la derivación |
 | `tipo` | Obligatoria, opcional u orientativa, con su matiz entre paréntesis |
 | `plazo` | Plazo legal, si existe |
@@ -54,11 +54,11 @@ Una fila por etapa del proceso penal (14 filas), en el procedimiento ordinario d
 | `salidas` | Formas en que el caso puede terminar en esa etapa |
 | `restaurativo` | Salida restaurativa disponible en la etapa |
 
-## Revisión de la literatura
+## Búsqueda en Scopus
 
 ### `revision-e10.csv`, `revision-e11.csv` y `revision-e12.csv`
 
-Revisión por título y resumen de los documentos de los cruces E10 (IA y justicia restaurativa), E11 (IA para orientar y derivar en el acceso a la justicia) y E12 (la vía restaurativa vista desde el acceso a la justicia).
+Revisión por título y resumen de los documentos de las búsquedas combinadas E10 (IA y justicia restaurativa), E11 (IA para orientar y derivar en el acceso a la justicia) y E12 (la vía restaurativa vista desde el acceso a la justicia).
 
 | Columna | Descripción |
 |---|---|
@@ -76,17 +76,17 @@ Salidas de [`metodo/corpus.py`](../metodo/corpus.py) y [`metodo/grafos.R`](../me
 
 | Archivo | Descripción |
 |---|---|
-| `conexion.txt` | Fracción de pares de documentos que comparten al menos una referencia, dentro de cada literatura y entre ellas |
-| `co-citacion-grupos.csv` | Grupo y centralidades (intermediación, cercanía y PageRank) de las 40 referencias de la red de cocitación |
-| `palabras-clave-grupos.csv` | Lo mismo para las 35 palabras clave de autor |
-| `mapa-tematico-terminos.csv` | Términos del mapa temático, con su grupo, frecuencia y centralidades |
+| `conexion.txt` | Fracción de pares de documentos que citan al menos una misma fuente, dentro de cada campo y entre campos (Tabla 2 del estado del arte) |
+| `co-citacion-grupos.csv` | Grupo y centralidades (intermediación, cercanía y PageRank) de las 40 fuentes de la Figura 2 del estado del arte |
+| `palabras-clave-grupos.csv` | Lo mismo para las 35 palabras clave de la Figura 3 |
+| `mapa-tematico-terminos.csv` | Términos del mapa temático de la Figura 4, con su grupo, frecuencia y centralidades |
 
 ## Grados de verificación
 
 | Valor | Significado |
 |---|---|
 | `verificado` | Se abrió el texto oficial de la norma o del documento; el paréntesis precisa la copia usada o la inferencia hecha |
-| `PDF` | La cita se cotejó en el documento con su página |
-| `cita` | Texto literal de una fuente oficial, tomado de una búsqueda asistida sin abrir el original |
+| `PDF` | Solo en las fichas de evidencia: la cita se cotejó en el documento con su página |
+| `cita` | Texto literal de una fuente oficial que todavía no se pudo cotejar en el original |
 | `secundaria` | Viene de prensa o de un sitio jurídico, no de la fuente oficial |
 | `sin verificar` | No tiene respaldo y no se usa en los documentos hasta verificarlo |
