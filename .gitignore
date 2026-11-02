@@ -10,3 +10,4 @@ __pycache__/
 # Exportaciones de Scopus: pesadas y con licencia que no permite redistribuirlas.
 estado-del-arte/busqueda/scopus/
 estado-del-arte/busqueda/corpus.csv
+Rplots.pdf
