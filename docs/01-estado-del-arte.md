@@ -44,8 +44,6 @@ Las trece búsquedas devolvieron 9.268 resultados, que corresponden a 7.930 docu
 
 Las fichas de lectura de cada texto, con sus hallazgos citados con página, están en [`evidencia/`](../evidencia/).
 
-**Declaración sobre el uso de inteligencia artificial.** La búsqueda complementaria se hizo con Consensus, y la extracción de los textos completos y el cotejo de las citas se hicieron con asistencia de Gemini Notebook y Claude (Anthropic). Todas las citas que se usan en estos documentos se verificaron en el texto original, con su página. Las preguntas, los campos de estudio, los criterios de inclusión y las conclusiones son del autor.
-
 ## 3. Cuánto se citan entre sí los campos
 
 Para saber si estos campos dialogan, se tomaron todos los pares posibles de documentos y se contó en cuántos los dos citan al menos una misma fuente, dentro de cada campo y entre campos. Es lo que en bibliometría se llama acoplamiento bibliográfico, y su ventaja es que no depende de cómo se nombra cada tema, sino de a quién se cita. La Tabla 2 presenta el resultado.
