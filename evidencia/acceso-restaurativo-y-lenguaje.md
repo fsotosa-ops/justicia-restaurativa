@@ -1,6 +1,6 @@
 # Acceso a lo restaurativo y lenguaje judicial: lectura en texto completo
 
-2 de noviembre de 2026. Son diez textos para el estado del arte del proyecto 21871 (CAOBA y Javeriana). Siete tratan el acceso a la justicia restaurativa o a la mediación penal y tres el lenguaje judicial sobre las víctimas. Antes de leerlos se confirmó que cada PDF es el artículo que indica su nombre.
+2 de noviembre de 2026. Son diez textos para el estado del arte del proyecto (CAOBA y Javeriana). Siete tratan el acceso a la justicia restaurativa o a la mediación penal y tres el lenguaje judicial sobre las víctimas. Antes de leerlos se confirmó que cada PDF es el artículo que indica su nombre.
 
 Cada hallazgo lleva una cita literal en el idioma original y la página impresa. Se marca como [DATO] lo que el estudio observó o midió, y como [CONCLUSIÓN DEL AUTOR] la interpretación, la generalización o la recomendación. Cuando un dato viene de otra fuente o de un solo testimonio, se dice.
 

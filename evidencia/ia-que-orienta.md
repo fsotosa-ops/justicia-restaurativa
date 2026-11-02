@@ -1,6 +1,6 @@
 # Lectura completa: IA que orienta, clasifica o deriva, e IA en procesos restaurativos
 
-2 de noviembre de 2026. Once textos leídos en texto completo para el estado del arte del proyecto 21871 (CAOBA y Javeriana). Cada hallazgo lleva cita literal en el idioma original y página impresa. Cuando el PDF no trae foliación impresa, se dice en la ficha y se cita la página del PDF. La marca [DATO] señala lo que el estudio midió u observó, y la marca [CONCLUSIÓN DEL AUTOR] señala lo que el autor infiere, recomienda o interpreta.
+2 de noviembre de 2026. Once textos leídos en texto completo para el estado del arte del proyecto (CAOBA y Javeriana). Cada hallazgo lleva cita literal en el idioma original y página impresa. Cuando el PDF no trae foliación impresa, se dice en la ficha y se cita la página del PDF. La marca [DATO] señala lo que el estudio midió u observó, y la marca [CONCLUSIÓN DEL AUTOR] señala lo que el autor infiere, recomienda o interpreta.
 
 ## Registro de lectura
 

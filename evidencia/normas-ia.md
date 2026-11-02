@@ -1,6 +1,6 @@
 # Qué le exigen las normas colombianas a un agente de IA que orienta sobre la justicia
 
-Verificación en fuente primaria, 2 de noviembre de 2026, para el documento de validación ([`03-validacion.md`](../docs/03-validacion.md)). El agente del proyecto 21871 informa sobre rutas, entidades y la vía restaurativa en Bogotá y no asesora.
+Verificación en fuente primaria, 2 de noviembre de 2026, para el documento de validación ([`03-validacion.md`](../docs/03-validacion.md)). El agente del proyecto informa sobre rutas, entidades y la vía restaurativa en Bogotá y no asesora.
 
 Convenciones. «Dice la norma» va entre comillas y con su numeral, fundamento o artículo. «Lectura propia» marca una inferencia hecha a partir del texto, y «Dice un tercero» marca lo que afirma un autor o un medio.
 

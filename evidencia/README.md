@@ -4,13 +4,13 @@ Esta carpeta reúne la evidencia que sostiene los [documentos](../docs/): qué e
 
 ## Cómo se conecta la evidencia
 
-La Figura 1 muestra el recorrido de la evidencia. Las cuatro literaturas de la búsqueda y las normas colombianas aportan textos a las seis hipótesis del equipo, y cada flecha indica cuántos textos de esa literatura aportan a esa hipótesis. Las normas, además, son la base del mapa del Leviatán. En cambio, el lenguaje judicial no aporta a ninguna hipótesis y sustenta el vacío que describe la sección 6 del estado del arte.
+La Figura 1 muestra el recorrido de la evidencia. Los cuatro campos de estudio de la búsqueda y las normas colombianas aportan textos a las seis hipótesis del equipo, y cada flecha indica cuántos textos de ese campo aportan a esa hipótesis. Las normas, además, son la base del mapa del Leviatán. En cambio, el lenguaje judicial no aporta a ninguna hipótesis y sustenta lo que la sección 6 del estado del arte describe como no cubierto.
 
 **Figura 1.** Mapa conceptual de la evidencia
 
 ```mermaid
 flowchart LR
-  subgraph LIT["Literaturas y normas"]
+  subgraph LIT["Campos de estudio y normas"]
     direction TB
     AJ["Acceso a la justicia<br/>8 estudios"]
     JR["Justicia restaurativa en lo penal<br/>21 estudios"]
@@ -29,8 +29,8 @@ flowchart LR
   end
   subgraph PRO["Otros productos"]
     direction TB
-    LEV["Mapa del Leviatán<br/>(láminas BPMN)"]
-    VAC["Vacío en la literatura<br/>(estado del arte, sección 6)"]
+    LEV["Mapa del Leviatán<br/>(diagramas BPMN)"]
+    VAC["Lo que los estudios no han cubierto<br/>(estado del arte, sección 6)"]
   end
   AJ -- 6 --> H1
   AJ -- 3 --> H2
@@ -76,11 +76,11 @@ La Figura 2 es un mapa de brechas de evidencia, en la forma que usan la Colabora
 
 ## Matriz de extracción
 
-La matriz tiene una fila por cada uno de los 68 estudios y normas citados en los documentos, con su país, diseño, muestra, hallazgo principal con página, nivel de evidencia y las hipótesis a las que aporta. Se presenta en tablas por literatura en [`matriz.md`](matriz.md), y los datos completos están en [`matriz.csv`](matriz.csv).
+La matriz tiene una fila por cada uno de los 68 estudios y normas citados en los documentos, con su país, diseño, muestra, hallazgo principal con página, nivel de evidencia y las hipótesis a las que aporta. Se presenta en tablas por campo en [`matriz.md`](matriz.md), y los datos completos están en [`matriz.csv`](matriz.csv).
 
 ## Verificación contra las fuentes
 
-Cada afirmación con fuente de los documentos, de las fichas, de las tablas de fuentes de las láminas y de los datos del Leviatán se cotejó contra el texto original: el PDF del estudio, mirando como imagen las tablas y los gráficos, o el texto oficial de la norma. La Tabla 1 resume el resultado, y el registro completo, con la cita de la fuente y la corrección aplicada, está en [`verificacion.csv`](verificacion.csv).
+Cada afirmación con fuente de los documentos, de las fichas, de las tablas de fuentes de los diagramas y de los datos del Leviatán se cotejó contra el texto original: el PDF del estudio, mirando como imagen las tablas y los gráficos, o el texto oficial de la norma. La Tabla 1 resume el resultado, y el registro completo, con la cita de la fuente y la corrección aplicada, está en [`verificacion.csv`](verificacion.csv).
 
 **Tabla 1.** Resultado de la verificación de 411 afirmaciones
 
