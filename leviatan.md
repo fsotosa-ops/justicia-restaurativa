@@ -2,7 +2,7 @@
 
 **Origen:** reunión del 28-oct-2026 con Jorge Salcedo. El equipo acordó dibujar el mapa completo del ecosistema de justicia en Colombia, porque sin él no se ven las bifurcaciones donde la vía restaurativa aparece o desaparece. El mapa queda a cargo de Luis Gabriel, Felipe y Efraín, y sirve además para retomar la conversación con Jorge sobre algo concreto.
 
-**Estado al 30-oct-2026:** las seis capas ya tienen contenido, sacado de las investigaciones del cuaderno [Leviatán · justicia restaurativa Bogotá](https://notebook.google.com/notebook/0d8f078d-4f14-43cc-9d68-d1d4487e226d) (178 fuentes). El 2-nov se dibujó una primera versión: el recorrido por las seis capas está en el [README](README.md#el-mapa-del-leviatán) y las redes de remisiones en [`mapa/grafos/`](mapa/grafos/). Falta el mapa completo con el equipo.
+**Estado al 30-oct-2026:** las seis capas ya tienen contenido, sacado de las investigaciones del cuaderno [Leviatán · justicia restaurativa Bogotá](https://notebook.google.com/notebook/0d8f078d-4f14-43cc-9d68-d1d4487e226d) (178 fuentes). El 2-nov se dibujó una primera versión: el recorrido por las seis capas está en el [README](README.md#7-el-mapa-del-leviatán) y las redes de remisiones en [`mapa/grafos/`](mapa/grafos/). Falta el mapa completo con el equipo.
 
 **Cómo leer el grado de verificación** (marca al final de cada dato):
 - **[abierto]**: abrí la fuente oficial y la leí.

@@ -23,7 +23,8 @@ B = {
     'RUTA': '"one-stop" OR "justice centre*" OR "justice center*" OR "casas de justicia" OR referral* OR triage '
             'OR "legal information" OR "legal advice" OR "legal pathway*" OR "justice pathway*" OR "justice journey*" '
             'OR navigat* OR "help-seeking" OR "advice-seeking" OR "first point of contact" OR "online dispute resolution" '
-            'OR "online court*"',
+            'OR "online court*" OR advice OR adviser* OR advisor* OR "dispute resolution" OR "use of court*" OR "court use" '
+            'OR inaction OR "no action" OR pathway*',
 
     # Literatura 2: justicia restaurativa en lo penal
     'JR': '"restorative justice" OR "victim-offender mediation" OR "victim offender mediation" OR "penal mediation" '
@@ -42,8 +43,8 @@ B = {
           'OR "large language model*" OR "language model*" OR LLM* OR GPT* OR ChatGPT OR "generative AI" OR chatbot*',
     'LEG': 'legal OR judicial OR court* OR "justice system" OR jurisprud* OR lawyer* OR statut*',
     'INFO': 'chatbot* OR "conversational agent*" OR "question answering" OR "retrieval-augmented" OR "legal information" '
-            'OR "legal advice" OR "self-represented" OR "self-help" OR "access to justice" OR citizen*',
-    'HAL': 'hallucinat* OR faithful* OR "citation accuracy" OR abstention OR "factual accuracy" OR reliab* OR "false premise*"',
+            'OR "legal advice" OR "legal aid" OR "self-represented" OR "self-help" OR "access to justice" OR "lay user*" OR "layperson*"',
+    'HAL': 'hallucinat* OR faithful* OR "citation accuracy" OR abstention OR "factual accuracy" OR "false premise*" OR "legal reasoning error*"',
     'KG': '"knowledge graph*" OR ontolog* OR "knowledge representation" OR "legal informatics" OR "argument mining" '
           'OR "rhetorical role*" OR "legal text segmentation" OR "graph RAG" OR "GraphRAG"',
     'LANG': '"judicial language" OR "legal language" OR "plain language" OR euphemism* OR "agent deletion" '
@@ -88,11 +89,11 @@ E = {
 SENSIBILIDAD = {
     'E1': ['Causes of Action: First Findings of the LSRC Periodic Survey',
            'Does legal aid improve access to justice in',
-           'Civil Revolution: User Experiences with British Columbia'],
+           'User Experiences with British Columbia'],
     'E2': ['Why People Turn to Institutions They Detest',
            "Family issues and custodial mothers' quest for justice"],
     'E3': ['Messy victims and sympathetic offenders',
-           'To Refer or Not to Refer? Police Discretion and Morality',
+           'Police Discretion and Morality in the Danish Victim-Offender Mediation',
            'The Police as Gatekeepers of Restorative Justice',
            'Gatekeeping or Gate-pushing Restorative Justice'],
     'E4': ['Using restorative justice approaches to police domestic violence and abuse',
@@ -102,7 +103,7 @@ SENSIBILIDAD = {
     'E5': ['The effectiveness of restorative justice programs: A meta-analysis',
            'Are Restorative Justice Conferences Effective in Reducing Repeat Offending',
            'An assessment of the potential outcomes in practising restorative justice'],
-    'E7': ['Hallucination-Free? Assessing the Reliability of Leading AI Legal Research Tools',
+    'E7': ['Assessing the Reliability of Leading AI Legal Research Tools',
            'Large Legal Fictions: Profiling Legal Hallucinations in Large Language Models'],
     'E12': ['Beyond diversion: the economic and institutional impact of criminal mediation in Thailand',
             'Mediation in Criminal Misdemeanor Cases'],

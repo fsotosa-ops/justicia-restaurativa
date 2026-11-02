@@ -72,4 +72,38 @@ Con el corpus unificado y sin duplicados se calcula la fracción de pares de doc
 
 ## Registro de corridas
 
-Pendiente. Las corridas se hacen por Playwright con la sesión de la Javeriana en Scopus.
+Las dos corridas se hicieron el 2 de noviembre de 2026 en Scopus, con el acceso institucional de la Javeriana, por Playwright y con la sesión de Felipe Soto. La primera corrida mostró dos problemas. Por un lado, E1 perdía a Pleasence y colegas (2003) y a Chaara y colegas (2022), que están indexados, porque el bloque de rutas no reconocía «advice» a secas ni el uso de tribunales. Por otro lado, la literatura de IA traía demasiados documentos, porque «citizen*» en E6 y «reliab*» en E7 son términos genéricos. En la segunda corrida se amplió el bloque de rutas y se quitaron esos dos términos, de modo que la Tabla 3 muestra cómo cambió cada ecuación.
+
+**Tabla 3.** Documentos por ecuación en las dos corridas.
+
+| Ecuación | Corrida 1 | Corrida 2 |
+|---|---:|---:|
+| E1 | 1.016 | 1.814 |
+| E2 | 806 | 806 |
+| E3 | 789 | 789 |
+| E4 | 288 | 288 |
+| E5 | 52 | 52 |
+| E6 | 3.380 | 2.667 |
+| E7 | 2.684 | 625 |
+| E8 | 1.465 | 1.465 |
+| E9 | 374 | 374 |
+| E10 | 57 | 57 |
+| E11 | 191 | 248 |
+| E12 | 71 | 71 |
+| E13 | 7 | 12 |
+
+En la segunda corrida cada ecuación recupera todos sus artículos de control indexados, con una excepción. Sykes y colegas (2020) no está en Scopus, y la búsqueda por título falló en la primera corrida para Sandbye (2024) y Magesh y colegas (2024) porque el signo de interrogación del título rompía la consulta; sin ese signo, los dos aparecen y se recuperan. La excepción es Charkoudian y colegas (2021), que E12 no trae porque estudia la mediación comunitaria en faltas y no nombra la justicia restaurativa, lo que es coherente con lo que la ecuación pregunta.
+
+**Tabla 4.** Resultado de la prueba de sensibilidad en la segunda corrida.
+
+| Ecuación | Indexados | Recuperados | No indexados |
+|---|---:|---:|---|
+| E1 | 2 | 2 | Sykes y colegas (2020) |
+| E2 | 2 | 2 | |
+| E3 | 4 | 4 | |
+| E4 | 4 | 4 | |
+| E5 | 3 | 3 | |
+| E7 | 2 | 2 | |
+| E12 | 2 | 1 | |
+
+Los 12 documentos del cruce completo (E13) muestran el vacío de forma directa, porque casi ninguno trata de justicia restaurativa con IA: aparecen, entre otros, un estudio sobre el trigo y el cambio climático, uno sobre integridad académica y otro sobre difamación en redes sociales.

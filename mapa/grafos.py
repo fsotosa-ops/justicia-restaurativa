@@ -9,7 +9,6 @@
 Escribe en mapa/grafos/:
   remisiones.png            quién manda el caso a quién, por bloque del Estado
   remisiones-por-ruta.png   la misma red, una ruta por panel
-  etapas.png                en qué etapa del proceso penal se abre cada salida restaurativa
 
 Antes de dibujar valida los ids: si una remisión o una dependencia apunta a una
 entidad que no está en entidades.csv, se detiene y dice cuál.
@@ -17,7 +16,6 @@ entidad que no está en entidades.csv, se detiene y dice cuál.
 
 import csv
 import sys
-import textwrap
 from pathlib import Path
 
 import matplotlib
@@ -221,15 +219,8 @@ def figura_remisiones():
         nodo(ax, i)
     for a in fusionar(aristas):
         flecha(ax, a)
-    fig.suptitle("Remisiones en el Leviatán: quién manda el caso a quién",
-                 x=0.02, ha="left", fontsize=14, fontweight="bold", color=TINTA)
-    fig.text(0.02, 0.915,
-             f"{len(remisiones)} remisiones de mapa/remisiones.csv ({len(aristas)} flechas al separar "
-             "los destinos múltiples). Toda la violencia intrafamiliar termina en el fiscal, "
-             "y solo el fiscal o el juez abren la mediación.",
-             fontsize=9, color=TINTA_2)
     leyenda(ax, loc="lower right", bbox=(1.0, -0.02))
-    fig.subplots_adjust(left=0.01, right=0.99, top=0.9, bottom=0.01)
+    fig.subplots_adjust(left=0.01, right=0.99, top=0.99, bottom=0.01)
     fig.savefig(SALIDA / "remisiones.png", dpi=200)
     plt.close(fig)
 
@@ -261,80 +252,8 @@ def figura_por_ruta():
     ult = axs.flat[-1]
     ult.axis("off")
     leyenda(ult, loc="center")
-    fig.suptitle("La misma red, una ruta por panel", x=0.02, ha="left", fontsize=14,
-                 fontweight="bold", color=TINTA)
-    fig.text(0.02, 0.955, "En gris claro, las remisiones de las otras rutas; atenuadas, las entidades que la ruta no toca.",
-             fontsize=9, color=TINTA_2)
-    fig.subplots_adjust(left=0.01, right=0.99, top=0.93, bottom=0.01, hspace=0.12, wspace=0.03)
+    fig.subplots_adjust(left=0.01, right=0.99, top=0.97, bottom=0.01, hspace=0.12, wspace=0.03)
     fig.savefig(SALIDA / "remisiones-por-ruta.png", dpi=170)
-    plt.close(fig)
-
-
-MECANISMOS = [
-    ("conciliacion_preprocesal", "Conciliación\npreprocesal"),
-    ("mediacion", "Mediación"),
-    ("principio_oportunidad", "Principio de\noportunidad"),
-    ("conciliacion_reparacion", "Conciliación en\nla reparación"),
-]
-
-
-def mecanismos_de(e):
-    """Lee la columna restaurativo de etapas.csv: devuelve {mecanismo: nota}."""
-    out = {}
-    for parte in e["restaurativo"].split("|"):
-        parte = parte.strip()
-        clave, _, nota = parte.partition(" ")
-        nota = nota.strip(" ()")
-        if clave == "conciliacion_preprocesal":
-            out["conciliacion_preprocesal"] = nota
-        elif clave == "mediacion":
-            out["mediacion"] = nota
-        elif clave == "principio_oportunidad":
-            out["principio_oportunidad"] = nota
-        elif clave in ("conciliacion_incidente", "conciliacion"):
-            out["conciliacion_reparacion"] = nota
-    return out
-
-
-def figura_etapas():
-    filas = [e for e in etapas if e["procedimiento"] == "ordinario"] + \
-            [e for e in etapas if e["procedimiento"] == "abreviado"]
-    n = len(filas)
-    fig, ax = plt.subplots(figsize=(11.5, 9.4))
-    ys = []
-    y = 0
-    for k, e in enumerate(filas):
-        if k and e["procedimiento"] != filas[k - 1]["procedimiento"]:
-            y += 0.9
-        ys.append(y)
-        y += 1
-    for (e, yy) in zip(filas, ys):
-        ax.text(-0.15, yy, f"{e['orden']}. {e['etapa']}", ha="right", va="center", fontsize=9, color=TINTA)
-        ax.plot([0, len(MECANISMOS) - 1], [yy, yy], color=TENUE, lw=0.6, zorder=1)
-        m = mecanismos_de(e)
-        for j, (clave, _) in enumerate(MECANISMOS):
-            if clave in m:
-                ax.scatter(j, yy, s=150, color=AZUL, zorder=3, edgecolor=SUPERFICIE, linewidth=2)
-                if m[clave]:
-                    nota = textwrap.fill(m[clave].replace("<=", "≤"), 34)
-                    ax.text(j, yy + 0.22, nota, fontsize=6.8, color=TINTA_2, va="top", ha="center",
-                            linespacing=1.0)
-    # Etiquetas de procedimiento
-    corte = next(k for k, e in enumerate(filas) if e["procedimiento"] == "abreviado")
-    ax.text(-4.3, ys[0] - 0.9, "ORDINARIO · Ley 906 de 2004", fontsize=8.5, fontweight="bold", color=TINTA_2)
-    ax.text(-4.3, ys[corte] - 0.9, "ABREVIADO · Ley 1826 de 2017 (incluye la VIF desde la Ley 1959 de 2019)",
-            fontsize=8.5, fontweight="bold", color=TINTA_2)
-    for j, (_, nombre) in enumerate(MECANISMOS):
-        ax.text(j, -1.6, nombre, ha="center", va="bottom", fontsize=9, color=TINTA, fontweight="bold")
-    ax.set_xlim(-4.4, len(MECANISMOS) - 0.2)
-    ax.set_ylim(ys[-1] + 0.9, -2.3)
-    ax.axis("off")
-    fig.suptitle("Dónde se abre la vía restaurativa en el proceso penal", x=0.02, ha="left",
-                 fontsize=14, fontweight="bold", color=TINTA)
-    fig.text(0.02, 0.935, "Cada punto es una salida restaurativa que la ley admite en esa etapa (mapa/etapas.csv). "
-             "En el abreviado la mediación cabe hasta antes del fallo (art. 547).", fontsize=9, color=TINTA_2)
-    fig.subplots_adjust(left=0.01, right=0.99, top=0.88, bottom=0.02)
-    fig.savefig(SALIDA / "etapas.png", dpi=200)
     plt.close(fig)
 
 
@@ -342,6 +261,5 @@ if __name__ == "__main__":
     SALIDA.mkdir(exist_ok=True)
     figura_remisiones()
     figura_por_ruta()
-    figura_etapas()
     print(f"{len(entidades)} entidades, {len(remisiones)} remisiones ({len(aristas)} flechas), "
           f"{len(etapas)} etapas -> {SALIDA.relative_to(AQUI.parent)}/")

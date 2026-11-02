@@ -1,0 +1,33 @@
+corpus: 7930 documentos únicos
+cruce 374 · acceso 2274 · restaurativa 1033 · ia 3877 · lenguaje 372
+sin referencias: 844
+
+dentro de acceso            12,748 de   2,584,401 pares    0.49 %
+dentro de restaurativa      41,682 de     533,028 pares    7.82 %
+dentro de ia               166,051 de   7,513,626 pares    2.21 %
+dentro de lenguaje           2,604 de      69,006 pares    3.77 %
+acceso × restaurativa        5,255 de   2,349,042 pares    0.22 %
+acceso × ia                  4,435 de   8,816,298 pares    0.05 %
+restaurativa × ia            1,032 de   4,004,941 pares    0.03 %
+lenguaje × ia                  756 de   1,442,244 pares    0.05 %
+lenguaje × restaurativa      3,518 de     384,276 pares    0.92 %
+cruce × acceso               2,780 de     850,476 pares    0.33 %
+cruce × restaurativa         4,171 de     386,342 pares    1.08 %
+cruce × ia                  16,913 de   1,449,998 pares    1.17 %
+
+referencias citadas a la vez por restaurativa e ia:
+   26   7  clarkevusingthematicanalysisinpsychologyqualitativeresearchi
+    5  10  altmandgpreferredreportingitemsforsystematicreviewsandmetaan
+   13   3  rawlsjatheoryofjustice1971
+   12   3  crenshawkmappingthemarginsintersectionalityidentitypoliticsa
+    2  14  harthlatheconceptoflaw1961
+    4   6  moherdtheprisma2020statementanupdatedguidelineforreportingsy
+    7   3  cohenjstatisticalpoweranalysisforthebehavioralsciences1988
+    1  21  kochggthemeasurementofobserveragreementforcategoricaldatabio
+   10   2  creswelljwresearchdesignqualitativequantitativeandmixedmetho
+    9   2  conventionontherightsofthechild1989
+   17   1  tylertrwhypeopleobeythelaw1990
+    4   4  frickermepistemicinjusticepowerandtheethicsofknowing2007
+    5   3  tylertrproceduraljusticelegitimacyandtheeffectiveruleoflawcr
+    5   3  beckurisksocietytowardsanewmodernity1992
+    2   7  kahnemandthinkingfastandslow2011
