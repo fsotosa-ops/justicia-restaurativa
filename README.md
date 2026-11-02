@@ -10,7 +10,7 @@ El proyecto 21871, del programa Atenea, explora cómo un agente de inteligencia 
 
 | Documento | Qué contiene |
 |---|---|
-| [Estado del arte](docs/01-estado-del-arte.md) | Desafío, búsqueda en Scopus con su diagrama PRISMA, conexión entre literaturas, grafos de cocitación y palabras clave, contraste de las seis hipótesis del equipo y vacío en la literatura |
+| [Estado del arte](docs/01-estado-del-arte.md) | Desafío, búsqueda en Scopus con su diagrama, conexión entre literaturas, grafos de cocitación y palabras clave, contraste de las seis hipótesis del equipo y vacío en la literatura |
 | [El Leviatán](docs/02-leviatan.md) | Qué se entiende por Leviatán, cómo se dibuja y las láminas BPMN de la vista general, la comisaría de familia, el proceso penal y la mediación penal, con las remisiones entre entidades |
 | [Lo que falta validar](docs/03-validacion.md) | Preguntas ya resueltas con fuentes primarias y lo que sigue abierto, con su responsable |
 
