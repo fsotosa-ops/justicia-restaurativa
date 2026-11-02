@@ -96,7 +96,7 @@ En las palabras clave la separación se repite, aunque con matices. El acceso a 
 
 El mapa temático resume lo anterior. La justicia restaurativa es un tema de nicho, desarrollado por dentro pero desconectado del resto. La inteligencia artificial es un tema motor, mientras que los modelos de lenguaje son un tema básico. El acceso a la justicia, por su parte, aparece con baja centralidad y baja densidad, lo que sugiere un campo amplio que no se articula alrededor de un vocabulario común. El agente que propone el proyecto trabaja precisamente entre el nicho restaurativo y el tema básico de los modelos de lenguaje.
 
-## 5. Lo que sostiene la lectura completa
+## 5. Resultados de las hipótesis
 
 La revisión partió de seis hipótesis de trabajo se formularon a partir de lo conversado en las reuniones con el equipo y con los expertos consultados. Los 51 textos leídos completos permitieron contrastarlas con los datos de cada estudio y no con sus resúmenes, y el resultado es que cuatro hay que reformularlas y dos se sostienen, una de ellas con un límite. La Tabla 3 resume cada hipótesis con su veredicto.
 
