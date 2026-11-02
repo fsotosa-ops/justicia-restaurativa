@@ -30,22 +30,22 @@ tam = list(csv.DictReader(open(AQUI / "tamizaje-e10.csv", encoding="utf-8")))
 inc_e10 = sum(1 for f in tam if f["decision"] == "incluye")
 cruce_tamizados = len(tam) + sum(1 for f in corpus if "E13" in f["ecuaciones"].split())
 
-# Textos leídos en texto completo el 30 de octubre, por literatura (contraste-hipotesis.md)
-LEIDOS = {"acceso": 7, "restaurativa": 15, "ia": 0, "lenguaje": 0}
+# Textos leídos en texto completo por literatura: 22 el 30 de octubre (contraste-hipotesis.md)
+# y 29 el 2 de noviembre (estado-del-arte/lectura/)
+LEIDOS = {"acceso": 7, "restaurativa": 15, "ia": 6, "lenguaje": 4, "cruce": 19}
 
 PASOS = [
     ("1 · Hipótesis", "Consensus para contrastar\nH1 a H6 con la literatura"),
     ("2 · Búsqueda", "13 ecuaciones en Scopus,\ndos corridas con prueba\nde sensibilidad"),
-    ("3 · Tamizaje", "Título y resumen de los\ncruces E10 y E13"),
-    ("4 · Texto completo", "22 textos con registro\nde páginas, cotejados\nen el PDF"),
+    ("3 · Tamizaje", "Título y resumen de los\ncruces E10 a E13, con\ncriterios explícitos"),
+    ("4 · Texto completo", "51 textos con registro\nde páginas, cotejados\nen el PDF"),
 ]
 FILAS = [
     ("E1 y E2", "Acceso a la justicia", n["acceso"], f"{LEIDOS['acceso']}", "leídos"),
     ("E3 a E5", "Justicia restaurativa en lo penal", n["restaurativa"], f"{LEIDOS['restaurativa']}", "leídos"),
-    ("E6 a E8", "IA y derecho", n["ia"], "0", "leídos"),
-    ("E9", "Lenguaje judicial sobre las víctimas", n["lenguaje"], "0", "leídos"),
-    ("E10 a E13", "Cruces entre las literaturas", n["cruce"], f"{inc_e10} de {cruce_tamizados}",
-     "aplican IA a lo restaurativo"),
+    ("E6 a E8", "IA y derecho", n["ia"], f"{LEIDOS['ia']}", "leídos"),
+    ("E9", "Lenguaje judicial sobre las víctimas", n["lenguaje"], f"{LEIDOS['lenguaje']}", "leídos"),
+    ("E10 a E13", "Cruces entre las literaturas", n["cruce"], f"{LEIDOS['cruce']}", "leídos"),
 ]
 
 
