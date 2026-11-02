@@ -12,15 +12,15 @@ Por otra parte, la vía restaurativa no depende solo de la ciudadanía. En Colom
 
 ## 2. Qué se buscó y qué se leyó
 
-La revisión se hizo en tres pasos. Primero, una búsqueda complementaria en bases académicas sirvió para contrastar seis hipótesis levantadas a partir de las reuniones con los estudios publicados e identificar los trabajos que las respaldan o las discuten. Después, trece búsquedas en Scopus, numeradas de E1 a E13, cada una escrita como una ecuación de búsqueda, es decir, una combinación de términos, permitieron ampliar la búsqueda de forma sistemática y comprobar que se recuperaran artículos conocidos de antemano. Por último, los 374 documentos de las búsquedas que combinan dos campos (E10 a E12) se revisaron por título y resumen con criterios explícitos, y los textos más cercanos a las preguntas del proyecto se leyeron completos: 22 en una primera ronda, centrada en las hipótesis, y 29 en una segunda, que cubrió la IA aplicada al derecho, los documentos que combinan campos y el lenguaje judicial. La Figura 1 presenta ese recorrido.
+La revisión se hizo en tres pasos. Primero, una búsqueda complementaria en bases académicas sirvió para contrastar con los estudios publicados seis hipótesis levantadas a partir de las reuniones, e identificar los trabajos que las respaldan o las discuten. Después, trece búsquedas en Scopus, numeradas de E1 a E13, permitieron ampliar la revisión de forma sistemática. Por último, los 374 documentos de las búsquedas que combinan dos campos (E10 a E12) se revisaron por título y resumen con criterios explícitos, y los textos más cercanos a las preguntas del proyecto se leyeron completos: 22 en una primera ronda, centrada en las hipótesis, y 29 en una segunda, que cubrió la IA aplicada al derecho, los documentos que combinan campos y el lenguaje judicial. La Figura 1 presenta ese recorrido.
 
 **Figura 1.** Diagrama de flujo de la búsqueda
 
 ![Diagrama de flujo de la búsqueda](../figuras/prisma.svg)
 
-*Nota:* E1 a E13 son las búsquedas en Scopus, en título, resumen y palabras clave, sin filtro de años. La revisión por título y resumen cubrió solo las búsquedas que combinan campos; en las búsquedas E1 a E9 los textos se eligieron por pertinencia, de modo que esta no es una revisión sistemática completa. Los 22 textos de la columna derecha provienen de la búsqueda complementaria previa a Scopus. Las búsquedas completas y la comprobación de que recuperan artículos conocidos están en [`protocolo.md`](../metodo/protocolo.md). *Fuente:* Elaboración propia con la plantilla de Page y colegas (2021).
+*Nota:* E1 a E13 son las búsquedas en Scopus, en título, resumen y palabras clave, sin filtro de años. La revisión por título y resumen cubrió solo las búsquedas que combinan campos; en las búsquedas E1 a E9 los textos se eligieron por pertinencia, de modo que esta no es una revisión sistemática completa. Las búsquedas completas y la comprobación de que recuperan artículos conocidos están en [`protocolo.md`](../metodo/protocolo.md). *Fuente:* Elaboración propia con la plantilla de Page y colegas (2021).
 
-Las trece búsquedas devolvieron 9.268 resultados, que corresponden a 7.930 documentos distintos. La Tabla 1 resume qué pregunta cada búsqueda y cuántos documentos trajo en la segunda corrida, que es la definitiva.
+Las trece búsquedas devolvieron 9.268 resultados, que corresponden a 7.930 documentos distintos. La Tabla 1 resume qué pregunta cada búsqueda y cuántos documentos trajo.
 
 **Tabla 1.** Búsquedas en Scopus y documentos que trajo cada una
 
@@ -42,7 +42,7 @@ Las trece búsquedas devolvieron 9.268 resultados, que corresponden a 7.930 docu
 
 *Fuente:* Elaboración propia con datos de Scopus.
 
-Las fichas de cada texto, con su diseño, sus hallazgos citados con página y lo que aportan a este documento, están en [`evidencia/`](../evidencia/). La primera ronda de lectura cubrió el acceso a la justicia, la justicia restaurativa y dos estudios sobre la fiabilidad de la IA aplicada al derecho, y la segunda amplió ese campo y agregó las búsquedas combinadas y el lenguaje judicial. De los 51 textos, 29 salen de la búsqueda en Scopus y 22 de la búsqueda complementaria.
+Las fichas de lectura de cada texto, con sus hallazgos citados con página, están en [`evidencia/`](../evidencia/).
 
 **Declaración sobre el uso de inteligencia artificial.** La búsqueda complementaria se hizo con Consensus, y la extracción de los textos completos y el cotejo de las citas se hicieron con asistencia de Gemini Notebook y Claude (Anthropic). Todas las citas que se usan en estos documentos se verificaron en el texto original, con su página. Las preguntas, los campos de estudio, los criterios de inclusión y las conclusiones son del autor.
 
