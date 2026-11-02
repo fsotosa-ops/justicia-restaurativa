@@ -1,10 +1,12 @@
 # Justicia restaurativa e inteligencia artificial en Bogotá
 
-Estado del arte y mapa del Leviatán · Proyecto 21871 «Tecnología para fortalecer el acceso y la restauración en la justicia» · Alianza CAOBA y Pontificia Universidad Javeriana · Noviembre de 2026
+Estado del arte y mapa del Leviatán · Proyecto 21871 «Tecnología para fortalecer el acceso y la restauración en la justicia» · Alianza CAOBA y Pontificia Universidad Javeriana · Versión 1, noviembre de 2026
+
+> **Versión 1, en proceso de validación.** Este documento reúne lo levantado durante el primer mes del proyecto y todavía no ha sido revisado por el equipo jurídico ni por los expertos consultados. Las hipótesis, el mapa del Leviatán y las conclusiones sobre la literatura son una propuesta de trabajo para discutir, no resultados cerrados. La sección 8 detalla qué falta validar y con quién.
 
 ## Resumen
 
-El proyecto 21871, del programa Atenea, explora cómo un agente de inteligencia artificial puede ayudar a que las personas en Bogotá lleguen a la justicia y, cuando corresponde, a la vía restaurativa. Para situarlo se revisaron tres literaturas que hoy se estudian por separado: el acceso a la justicia, la justicia restaurativa en lo penal y la inteligencia artificial aplicada al derecho, a las que se suma el lenguaje judicial sobre las víctimas. Trece ecuaciones en Scopus reunieron 7.930 documentos distintos, y la lectura en texto completo de 22 de ellos permitió contrastar las hipótesis del equipo. Cada literatura tiene un cuerpo propio, pero casi no se citan entre sí: entre la justicia restaurativa y la inteligencia artificial solo el 0,03% de los pares de documentos comparte una referencia, y de los 57 documentos que las cruzan apenas cinco aplican la IA a un proceso restaurativo penal, ninguno para orientar a la ciudadanía ni para derivar casos. En paralelo se bajó el Leviatán, es decir, el sistema de justicia bogotano, a 42 entidades, 14 etapas procesales y 24 remisiones con su norma, lo que muestra que en lo penal la vía restaurativa solo se abre cuando un fiscal o un juez la ofrece.
+El proyecto 21871, del programa Atenea, explora cómo un agente de inteligencia artificial puede ayudar a que las personas en Bogotá lleguen a la justicia y, cuando corresponde, a la vía restaurativa. Para situarlo se revisaron tres literaturas que hoy se estudian por separado: el acceso a la justicia, la justicia restaurativa en lo penal y la inteligencia artificial aplicada al derecho, a las que se suma el lenguaje judicial sobre las víctimas. Trece ecuaciones en Scopus reunieron 7.930 documentos distintos, y la lectura en texto completo de 22 de ellos permitió contrastar las hipótesis del equipo. Cada literatura tiene un cuerpo propio, pero casi no se citan entre sí: entre la justicia restaurativa y la inteligencia artificial solo el 0,03% de los pares de documentos comparte una referencia, y de los 57 documentos que las cruzan apenas cinco aplican la IA a un proceso restaurativo penal, ninguno para orientar a la ciudadanía ni para derivar casos. En paralelo se empezó a dibujar el Leviatán, como llamó Jorge Salcedo al Estado y su sistema de justicia, con 42 entidades, 14 etapas procesales y 24 remisiones con su norma, lo que muestra que en lo penal la vía restaurativa solo se abre cuando un fiscal o un juez la ofrece.
 
 ## Contenido
 
@@ -14,8 +16,8 @@ El proyecto 21871, del programa Atenea, explora cómo un agente de inteligencia 
 4. [Cómo se organiza cada literatura](#4-cómo-se-organiza-cada-literatura)
 5. [Lo que sostiene la lectura completa](#5-lo-que-sostiene-la-lectura-completa)
 6. [Vacío en la literatura](#6-vacío-en-la-literatura)
-7. [El mapa del Leviatán](#7-el-mapa-del-leviatán)
-8. [Pendientes](#8-pendientes)
+7. [El Leviatán: qué es y cómo se ve](#7-el-leviatán-qué-es-y-cómo-se-ve)
+8. [Lo que falta validar](#8-lo-que-falta-validar)
 9. [Organización del repositorio](#9-organización-del-repositorio)
 10. [Referencias](#10-referencias)
 
@@ -27,7 +29,7 @@ Por otra parte, la vía restaurativa no depende solo de la ciudadanía. En Colom
 
 ## 2. Universo relevante
 
-La revisión se hizo en tres pasos. Primero, Consensus AI sirvió para contrastar las seis hipótesis del equipo con la literatura e identificar los trabajos que las respaldan o las discuten. Después, trece ecuaciones en Scopus, numeradas de E1 a E13, permitieron ampliar la búsqueda de forma sistemática y comprobar que se recuperaran artículos conocidos de antemano. Por último, los documentos de los cruces se tamizaron por título y resumen, y los 22 textos más cercanos a las hipótesis se leyeron completos. La Figura 1 muestra ese recorrido y lo que quedó en cada literatura.
+La revisión se hizo en tres pasos. Primero, Consensus AI sirvió para contrastar las seis hipótesis del equipo con la literatura e identificar los trabajos que las respaldan o las discuten. Después, trece ecuaciones en Scopus, numeradas de E1 a E13, permitieron ampliar la búsqueda de forma sistemática y comprobar que se recuperaran artículos conocidos de antemano. Por último, los documentos de los cruces E10 a E12 se tamizaron por título y resumen con criterios explícitos, y los 22 textos más cercanos a las hipótesis se leyeron completos. La Figura 1 muestra ese recorrido y lo que quedó en cada literatura.
 
 **Figura 1.** Recorrido de la búsqueda y lo que quedó en cada literatura
 
@@ -117,7 +119,7 @@ Los 22 textos leídos completos permitieron contrastar las hipótesis del equipo
 
 ### 5.1 La barrera no está en la puerta
 
-La literatura sobre necesidades jurídicas coincide en que las personas dejan de actuar menos por no saber a dónde ir que por no reconocer su problema como jurídico o por creer que nada se puede hacer. En Inglaterra y Gales, el costo apareció en menos del 5% de las razones para no actuar, y en la violencia doméstica el 32% no actuó porque creía que no se podía hacer nada (Pleasence y colegas, 2003). En Estados Unidos, la razón principal es no ver el problema como legal (Sandefur, 2016). En Colombia, el dato del PNUD y el DNP (2023) va en la misma dirección, y Hilbink y colegas (2022) muestran, con grupos focales en Medellín y Santiago, que la desconfianza tampoco explica por sí sola la decisión de acudir, porque pesan más las expectativas y la capacidad de agencia legal. Guarin y colegas (2024) agregan que, entre las madres custodias de Colombia, las más vulnerables son las que más problemas de familia tienen y las que menos buscan ayuda institucional. Por lo tanto, un agente que solo indique la puerta atacaría la barrera menor, y lo que necesita es explicar qué se puede lograr y qué hace falta para lograrlo.
+La literatura sobre necesidades jurídicas coincide en que las personas dejan de actuar menos por no saber a dónde ir que por no reconocer su problema como jurídico o por creer que nada se puede hacer. En Inglaterra y Gales, el costo apareció en menos del 5% de las razones para no actuar, y en la violencia doméstica el 32% no actuó porque creía que no se podía hacer nada (Pleasence y colegas, 2003). En Estados Unidos, entre las razones más importantes están no ver el problema como legal y creer que ya se hace lo posible, mientras que el costo explica solo el 17% de los problemas sin ayuda (Sandefur, 2016). En Colombia, el dato del PNUD y el DNP (2023) va en la misma dirección, y Hilbink y colegas (2022) muestran, con grupos focales en Medellín y Santiago, que la desconfianza tampoco explica por sí sola la decisión de acudir, porque pesan más las expectativas y la capacidad de agencia legal. Guarin y colegas (2024) agregan que, entre las madres custodias de Colombia, las más vulnerables son las que más problemas de familia tienen y las que menos buscan ayuda institucional. Por lo tanto, un agente que solo indique la puerta atacaría la barrera menor, y lo que necesita es explicar qué se puede lograr y qué hace falta para lograrlo.
 
 ### 5.2 Orientar rinde cuando alguien acompaña
 
@@ -125,11 +127,11 @@ Las herramientas de orientación funcionan mejor con una persona al lado. En el 
 
 ### 5.3 Quien deriva decide la vía restaurativa
 
-En los países donde se ha estudiado, la derivación a la vía restaurativa depende del juicio del operador. Los policías de Países Bajos derivan por intuición y por su juicio moral sobre la víctima y el ofensor (Hoekstra, 2022); en Dinamarca la derivación es una formalidad que se olvida o se desconoce (Sandbye y colegas, 2023), y a quién se le informa siquiera de la mediación varía según el distrito y el policía (Rasmussen, 2020). En Colombia ocurre algo análogo, porque solo el fiscal o el juez pueden remitir un caso penal a mediación, y únicamente a un programa con convenio (Resolución 0383 de 2022 de la Fiscalía, artículo 14). En consecuencia, la elegibilidad se puede expresar como reglas que hagan visible el caso elegible, sin necesidad de un modelo predictivo.
+En los países donde se ha estudiado, la derivación a la vía restaurativa depende del juicio del operador. En Países Bajos, 33 entrevistas mostraron que los policías ofrecen la vía restaurativa sin protocolo y por intuición, y sus relatos dejan ver que también pesa su juicio moral sobre la víctima y el ofensor (Hoekstra, 2022). En un distrito de Dinamarca, los policías ven el aviso de mediación como una formalidad blanda, que se olvida o se posterga, y muchos conocen poco el programa (Sandbye y colegas, 2024). Además, según entrevistas con coordinadores de cinco distritos daneses, que a las partes se les informe de la mediación varía según el distrito y el policía, y en la mayoría de los casos no se les informa por desconocimiento (Rasmussen, 2020). Son estudios cualitativos y exploratorios, pero coinciden en el mecanismo. En Colombia ocurre algo análogo, porque solo el fiscal o el juez pueden remitir un caso penal a mediación, y únicamente a un programa con convenio (Resolución 0383 de 2022 de la Fiscalía, artículo 14). En consecuencia, la elegibilidad se puede expresar como reglas que hagan visible el caso elegible, sin necesidad de un modelo predictivo.
 
 ### 5.4 Lo robusto es la satisfacción de la víctima
 
-Los metaanálisis coinciden en que la justicia restaurativa mejora la experiencia de la víctima, pero no en cuánto reduce la reincidencia. Fulham y colegas (2025) encontraron una reducción de la reincidencia general cercana al 17%, que deja de ser significativa en la reincidencia violenta y en los ensayos aleatorios, mientras que el efecto sobre la satisfacción de la víctima es mayor (d = 0,63). La revisión Campbell de Strang y colegas (2013) halló efectos pequeños en reincidencia, algo mayores en delitos violentos y cercanos a cero en delitos contra la propiedad, e Islam y colegas (2023) sí encontraron un efecto significativo en los delitos violentos, a diferencia de Fulham. Por eso la medida más defendible para un piloto es la satisfacción y la justicia procedimental de quienes pasan por el proceso.
+Los metaanálisis coinciden en que la justicia restaurativa mejora la experiencia de la víctima, pero no en cuánto reduce la reincidencia. Fulham y colegas (2025) encontraron una reducción de la reincidencia general cercana al 17%, que deja de ser significativa en la reincidencia violenta y en los ensayos aleatorios, mientras que el efecto sobre la satisfacción de la víctima es mayor (d = 0,63). La revisión Campbell de Strang y colegas (2013), con diez ensayos aleatorios, halló una reducción pequeña de la reincidencia a dos años (d = 0,155), algo mayor en delitos violentos (d = 0,20) y prácticamente nula en delitos contra la propiedad, aunque la diferencia entre ambos grupos no fue significativa, y la satisfacción de las víctimas fue mayor en todos los ensayos que la midieron. Por su parte, Islam y colegas (2023) sí encontraron un efecto significativo en los delitos violentos, a diferencia de Fulham. Por eso la medida más defendible para un piloto es la satisfacción y la justicia procedimental de quienes pasan por el proceso.
 
 ### 5.5 En la violencia intrafamiliar la evidencia no alcanza
 
@@ -137,7 +139,7 @@ La violencia intrafamiliar es el límite más claro. La revisión de Kettrey y R
 
 ### 5.6 La IA jurídica construye mucho y evalúa poco
 
-Esta parte se apoya en el corpus y en resúmenes, porque aún no hay textos leídos completos de esta literatura. El cruce E11 reúne 248 documentos sobre IA para el acceso a la justicia, de los cuales 196 son de 2023 en adelante, 114 son ponencias y 82 tienen al menos un autor en India. La mayoría describe un asistente o chatbot jurídico, pero solo unos pocos lo evalúan con usuarios, y apenas tres tratan de forma directa la clasificación y derivación de solicitudes, todos en asistencia legal civil (Mistica y colegas, 2021; Steenhuis y Westermann, 2024; Steenhuis, 2025). En paralelo, la fiabilidad sigue siendo el problema central: según sus resúmenes, las herramientas comerciales de investigación jurídica inventan información en una parte relevante de sus respuestas (Magesh y colegas, 2025) y los modelos generales lo hacen con más frecuencia y aceptan las premisas falsas del usuario (Dahl y colegas, 2024). Por último, de los 57 documentos que cruzan IA y justicia restaurativa, solo cinco aplican la IA a un proceso restaurativo penal: dos analizan señales no verbales en mediaciones víctima-ofensor (Ponce-López y colegas, 2013, 2015), uno estudia la IA en la mediación de procesos penales en China (Lu, 2025), uno compara juicios humanos y de IA sobre respuestas restaurativas al abuso sexual (Peleg-Koriat y Asraf, 2026) y uno simula intervenciones restaurativas con agentes (Ali y colegas, 2026). El tamizaje completo está en [`tamizaje-e10.csv`](estado-del-arte/busqueda/tamizaje-e10.csv).
+Esta parte se apoya en el tamizaje por título y resumen, porque la lectura completa de esta literatura está en curso. De los 248 documentos del cruce E11, 86 diseñan o evalúan un sistema de IA que orienta, clasifica o deriva a personas que no son abogados, 48 discuten el tema sin sistema ni datos y 114 quedan fuera. De los 86, la mitad tiene autores en India y casi todos son prototipos presentados en congresos de ingeniería, de modo que solo 10 se evaluaron con usuarios reales, mientras que 41 se evaluaron únicamente con métricas del modelo y 35 no se evaluaron. Además, 14 tocan lo penal, pero casi siempre para identificar el artículo aplicable del código, y ninguno deriva a una vía alternativa al proceso. Los trabajos más cercanos a lo que necesita el proyecto clasifican y derivan solicitudes en asistencia legal civil (Mistica y colegas, 2021; Steenhuis y Westermann, 2024; Steenhuis, 2025), y en Colombia hay dos antecedentes, un clasificador de casos del consultorio jurídico de la Universidad Santo Tomás en Bogotá y un análisis de temas sobre los casos de orientación de la Personería de Medellín. Por su parte, de los 71 documentos de E12, que miran la vía restaurativa desde el acceso a la justicia, 17 son pertinentes, entre ellos, según sus resúmenes, una encuesta checa en la que solo el 31% de la población conoce la mediación penal y un estudio sobre los consultorios jurídicos de Cartagena, donde 3 de 10 estaban habilitados para mediar. Los tamizajes completos están en [`tamizaje-e11.csv`](estado-del-arte/busqueda/tamizaje-e11.csv) y [`tamizaje-e12.csv`](estado-del-arte/busqueda/tamizaje-e12.csv). En paralelo, la fiabilidad sigue siendo el problema central: según sus resúmenes, las herramientas comerciales de investigación jurídica inventan información en una parte relevante de sus respuestas (Magesh y colegas, 2025) y los modelos generales lo hacen con más frecuencia y aceptan las premisas falsas del usuario (Dahl y colegas, 2024). Por último, de los 57 documentos que cruzan IA y justicia restaurativa, solo cinco aplican la IA a un proceso restaurativo penal: dos analizan señales no verbales en mediaciones víctima-ofensor (Ponce-López y colegas, 2013, 2015), uno estudia la IA en la mediación de procesos penales en China (Lu, 2025), uno compara juicios humanos y de IA sobre respuestas restaurativas al abuso sexual (Peleg-Koriat y Asraf, 2026) y uno simula intervenciones restaurativas con agentes (Ali y colegas, 2026). El tamizaje completo está en [`tamizaje-e10.csv`](estado-del-arte/busqueda/tamizaje-e10.csv).
 
 ## 6. Vacío en la literatura
 
@@ -158,13 +160,21 @@ La literatura revisada tiene las piezas del proyecto por separado. Por un lado, 
 
 *Evidencia de la búsqueda:* entre la justicia restaurativa y la IA comparte referencias el 0,03% de los pares de documentos; de los 57 documentos que las cruzan, cinco aplican la IA a un proceso restaurativo penal y ninguno a orientar o derivar.
 
-*Nota:* las columnas son lo que el proyecto necesita reunir según el marco de análisis del equipo ([`marco-de-analisis.md`](marco-de-analisis.md)). *Fuente:* Elaboración propia a partir de las secciones 3 a 5.
+*Nota:* las columnas son lo que el proyecto necesita reunir según las preguntas de la sección 1. *Fuente:* Elaboración propia a partir de las secciones 3 a 5.
 
 Queda abierto, entonces, cómo un agente de IA puede orientar a las personas en Bogotá sobre el sistema de justicia con información fiable, hacer visible la vía restaurativa donde la ley la permite y dejarla fuera donde la evidencia no la respalda, apoyando al operador que decide en lugar de reemplazarlo.
 
-## 7. El mapa del Leviatán
+## 7. El Leviatán: qué es y cómo se ve
 
-Para saber dónde podría intervenir el agente, el equipo decidió dibujar el sistema de justicia completo, con la analogía del sistema de salud: una persona entra por una puerta, alguien clasifica su caso y esa clasificación abre o cierra rutas. La Figura 6 sigue ese recorrido a través de las seis capas del mapa.
+### 7.1 Qué entendemos por Leviatán
+
+El término lo propuso Jorge Salcedo, docente de Filosofía e Historia del Derecho de la Javeriana, en la reunión del 28 de octubre de 2026 con el equipo (comunicación personal). Retomando la imagen de Hobbes, Salcedo llamó Leviatán al Estado, entendido como una máquina hipercompleja de procesos y procedimientos frente a la cual las personas se sienten indefensas cuando quieren reclamar o ejercer sus derechos. Aclaró que no lo llama monstruo porque sea malo, sino porque su complejidad hace que, en un Estado tan burocratizado como el colombiano, no existan rutas claras ni un abecé que le diga al ciudadano a dónde ir. En su lectura, los sistemas de justicia son estructuras con actores, procesos, entradas, salidas y un intermedio, cuyas reglas de juego son el derecho sustancial y el procesal.
+
+De esa definición se desprenden dos decisiones para el mapa. En primer lugar, el Leviatán se dibuja completo y no solo en su parte restaurativa, porque, según Salcedo, la justicia restaurativa no se opone a la retributiva, sino que la complementa y está inmersa en el proceso penal; por eso el mapa traza una línea que muestra dónde aparece lo restaurativo dentro del sistema. En segundo lugar, lo que interesa son las bifurcaciones: el momento en que el operador consulta a las partes si quieren una vía restaurativa, que es voluntaria, y lo que ocurre cuando no la toman, que es la vía tradicional de la cárcel, la multa y el incidente de reparación. Como referente de un Leviatán que se puede recorrer, Salcedo citó las unidades de atención y orientación integral que nacieron de la sentencia T-025 de 2004, que le evitan a la víctima tener que lidiar con el Estado entero. El equipo acordó entonces dibujar ese mapa para identificar los vacíos y los puntos de intervención, con la analogía del sistema de salud y sus niveles de atención.
+
+### 7.2 El recorrido por las seis capas
+
+Siguiendo esa analogía, una persona entra por una puerta, alguien clasifica su caso y esa clasificación abre o cierra rutas. La Figura 6 sigue ese recorrido a través de las seis capas del mapa.
 
 **Figura 6.** Recorrido de una persona por las seis capas del Leviatán
 
@@ -216,7 +226,9 @@ flowchart TD
   class Q llave
 ```
 
-*Nota:* en naranja, el punto donde se decide la vía restaurativa. Los artículos son de la Ley 906 de 2004; el procedimiento abreviado es el de la Ley 1826 de 2017. *Fuente:* Elaboración propia a partir de [`leviatan.md`](leviatan.md) y [`leviatan-estructura.md`](leviatan-estructura.md).
+*Nota:* en naranja, el punto donde se decide la vía restaurativa. Los artículos son de la Ley 906 de 2004; el procedimiento abreviado es el de la Ley 1826 de 2017. *Fuente:* Elaboración propia a partir de la Ley 906 de 2004, la Ley 1826 de 2017 y las normas registradas en [`entidades.csv`](mapa/entidades.csv).
+
+### 7.3 Quién manda el caso a quién
 
 El recorrido muestra que, una vez que un caso entra al proceso penal, la vía restaurativa depende de una sola decisión. La Figura 7 lo confirma desde las remisiones entre entidades, es decir, quién manda el caso a quién según la norma.
 
@@ -236,16 +248,17 @@ La red muestra que toda la violencia intrafamiliar termina en el fiscal, porque 
 
 Al separar las rutas se ve que cada conflicto tiene una forma distinta. En la violencia intrafamiliar todo converge en el fiscal, mientras que en las casas de justicia el Centro de Recepción reparte el caso entre ocho entidades y en la inasistencia alimentaria hay dos caminos paralelos, cobrar ante el juez de familia o denunciar. Esa diferencia importa para el agente, porque en alimentos la conciliación ocurre antes del incumplimiento y fuera de lo penal, lo que la hace el punto restaurativo más accesible para una primera iteración.
 
-## 8. Pendientes
+## 8. Lo que falta validar
 
-La revisión deja tareas concretas, que la Tabla 3 ordena por responsable.
+Esta versión se presenta al equipo para validarla. La Tabla 3 ordena lo que falta, empezando por lo que deben revisar las personas con experticia jurídica, porque el mapa y las hipótesis se construyeron desde la ingeniería y con fuentes leídas con asistencia de IA.
 
-**Tabla 3.** Pendientes de la investigación
+**Tabla 3.** Lo que falta validar y completar
 
 | Qué | Quién | Para cuándo |
 |---|---|---|
+| Revisar el mapa del Leviatán (Figuras 6 a 8) y las 24 remisiones con su norma | Lorena Vega y Jorge Salcedo | Próxima sesión |
 | Leer en texto completo los documentos clave de IA jurídica (E6 a E8) y de lenguaje judicial (E9), con registro de páginas | Felipe Soto | Sprint S3, hasta el 15 de noviembre |
-| Tamizar E11 y E12 por título y resumen con criterios explícitos | Felipe Soto | Sprint S3 |
+| Leer en texto completo los 10 documentos priorizados de E11 y los 10 de E12 | Felipe Soto | Sprint S3 |
 | Llevar al equipo el cambio en la hipótesis de comprensión y decidir si el agente va en la puerta o con el operador | Felipe Soto con el equipo | Próxima sesión |
 | Validar con Lorena Vega la mediación en violencia intrafamiliar, la vigencia de la Resolución 0383 frente a la 0-0211 y la inasistencia alimentaria como primera iteración | Felipe Soto y Lorena Vega | Próxima sesión |
 | Levantar las remisiones de vuelta, las de la Defensoría y la Personería, y los plazos | Felipe Soto | Sprint S3 |
@@ -255,12 +268,11 @@ La revisión deja tareas concretas, que la Tabla 3 ordena por responsable.
 
 | Carpeta o archivo | Qué contiene |
 |---|---|
-| [`marco-de-analisis.md`](marco-de-analisis.md) | Las cinco dimensiones del marco del equipo y el cruce con la IA |
-| [`leviatan.md`](leviatan.md) | Las seis capas del Leviatán, con norma y grado de verificación |
-| [`leviatan-estructura.md`](leviatan-estructura.md) | Entidades, normas, etapas del proceso penal y remisiones |
-| [`mapa/`](mapa/) | Los CSV del Leviatán y el script de sus figuras |
+| [`mapa/`](mapa/) | Los CSV del Leviatán (42 entidades, 14 etapas y 24 remisiones, cada una con su norma y su grado de verificación) y el script de sus figuras |
 | [`estado-del-arte/busqueda/`](estado-del-arte/busqueda/) | Protocolo, ecuaciones, unificación del corpus, medida de conexión, grafos y tamizaje |
 | [`estado-del-arte/contraste-hipotesis.md`](estado-del-arte/contraste-hipotesis.md) | El contraste de las hipótesis con los textos completos |
+
+En los CSV del mapa y en el contraste de hipótesis, cada dato lleva un grado de verificación: *verificado* cuando se abrió el texto oficial, *PDF* cuando la cita se cotejó en el documento con su página, *cita* cuando es texto literal de una fuente oficial devuelto por Gemini sin abrir el original, *abstract* cuando viene del resumen, *secundaria* cuando viene de prensa o de un blog jurídico y *sin cita* cuando no tiene respaldo y no se usa hasta verificarlo.
 
 Las exportaciones de Scopus y los PDF no se versionan, porque sus licencias no permiten redistribuirlos, pero se reproducen con el protocolo. Para regenerar el corpus y las figuras:
 
@@ -314,9 +326,9 @@ Ponce-López, V., Escalera, S., Pérez, M., Janés, O. y Baró, X. (2015). Non-v
 
 Rasmussen, K. B. (2020). The police as gatekeepers of restorative justice: Perspectives of professionals, perspectives on professionals. *Nordic Journal of Studies in Policing, 7*(2), 137–159. https://doi.org/10.18261/ISSN.2703-7045-2020-02-05
 
-Sandbye, C. R., Christensen, S. R. B., Mogensen, S. A. I., Gade, C. y van Mastrigt, S. (2023). To refer or not to refer? Police discretion and morality in the Danish victim–offender mediation programme. *Nordic Journal of Criminology, 25*(1), 1–19. https://doi.org/10.18261/njc.25.1.1
+Sandbye, C. R., Christensen, S. R. B., Mogensen, S. A. I., Gade, C. y van Mastrigt, S. (2024). To refer or not to refer? Police discretion and morality in the Danish victim–offender mediation programme. *Nordic Journal of Criminology, 25*(1), 1–19. https://doi.org/10.18261/njc.25.1.1
 
-Sandefur, R. L. (2016). What we know and need to know about the legal needs of the public. *South Carolina Law Review, 67*(2).
+Sandefur, R. L. (2016). What we know and need to know about the legal needs of the public. *South Carolina Law Review, 67*(2), 443–459.
 
 Steenhuis, Q. (2025). That's so FETCH: Fashioning ensemble techniques for LLM classification in civil legal intake and referral. *Frontiers in Artificial Intelligence and Applications, 416*, 192–203. https://doi.org/10.3233/FAIA251588
 
