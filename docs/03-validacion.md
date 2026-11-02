@@ -4,7 +4,7 @@
 
 > Versión 1, en proceso de validación con el equipo del proyecto.
 
-Esta versión se presenta al equipo para validarla. Una parte de lo que estaba pendiente ya se resolvió con fuentes primarias, y la Tabla 1 resume esas respuestas. El resto requiere a personas con experticia jurídica o información que solo tienen las entidades, y la Tabla 2 lo ordena por responsable.
+Una parte de lo que estaba pendiente ya se resolvió con fuentes primarias, y la Tabla 1 resume esas respuestas. El resto requiere experticia jurídica o información que solo tienen las entidades, y la Tabla 2 lo ordena por responsable.
 
 **Tabla 1.** Preguntas resueltas con fuentes primarias
 
@@ -25,9 +25,9 @@ Esta versión se presenta al equipo para validarla. Una parte de lo que estaba p
 | Qué | Quién | Cómo se resuelve |
 |---|---|---|
 | Revisar los diagramas del [Leviatán](02-leviatan.md), las 38 derivaciones y las reglas de elegibilidad | Lorena Vega y Jorge Salcedo | Sesión de validación con los diagramas del mapa |
-| Saber qué convenios de mediación siguen vigentes, qué pasó con el Grupo de Apoyo de la Resolución 0383, qué rutas emitió la Unidad de Justicia Restaurativa y cuál es el procedimiento interno de recepción de denuncias en las salas SAU y URI, que no está publicado y por eso no tiene diagrama propio | Felipe Soto | Derecho de petición a la Unidad de Justicia Restaurativa de la Fiscalía |
+| Saber qué convenios de mediación siguen vigentes, qué pasó con el grupo de la Fiscalía que coordinaba la mediación según la Resolución 0383, qué rutas emitió la Unidad de Justicia Restaurativa y cómo se reciben las denuncias en las salas de atención al usuario (SAU) y las unidades de reacción inmediata (URI), un procedimiento que no está publicado y por eso no tiene diagrama propio | Felipe Soto | Derecho de petición a la Unidad de Justicia Restaurativa de la Fiscalía |
 | Confirmar si la Directiva 0001 de 2021 sigue vigente y conseguir la versión oficial del manual de justicia restaurativa, que ya no está en el portal de la Fiscalía | Felipe Soto y Lorena Vega | Derecho de petición o consulta a la Fiscalía |
 | Definir quién opera el agente y quién es responsable del tratamiento de datos, porque de eso depende si los criterios de la Rama Judicial obligan o solo orientan | Equipo del proyecto con CAOBA | Decisión del equipo |
 | Decidir si el agente se ubica en la puerta, con un orientador, o con el operador que deriva, a la luz de las secciones 5.1 a 5.3 del [estado del arte](01-estado-del-arte.md) | Equipo del proyecto | Próxima sesión |
-| Conseguir y leer los 9 textos no recuperados (Figura 1) y los procedimientos PD-AJ-10 y PD-AJ-24 de la Secretaría de Seguridad | Felipe Soto | Acceso institucional de la Javeriana y solicitud a la Secretaría |
-| Leer a Coates y Wade (2007), la fuente teórica más cercana sobre cómo el lenguaje de las sentencias suaviza la violencia, oculta al agresor y desdibuja a la víctima, y consultar SciELO para los estudios en español y portugués | Felipe Soto | Siguiente ciclo de trabajo |
+| Conseguir y leer los 9 textos que no se pudieron descargar (Figura 1 del [estado del arte](01-estado-del-arte.md)) y los procedimientos de orientación y remisión de las casas de justicia de la Secretaría de Seguridad (PD-AJ-10 y PD-AJ-24) | Felipe Soto | Acceso institucional de la Javeriana y solicitud a la Secretaría |
+| Leer a Coates y Wade (2007), la fuente teórica más cercana a las tres fallas que busca corregir LEIRA, el agente de lenguaje restaurativo que prueba la Jurisdicción Especial para la Paz (eufemismo, supresión del agresor e invisibilización de la víctima), y consultar SciELO para los estudios en español y portugués | Felipe Soto | Siguiente ciclo de trabajo |
