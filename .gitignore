@@ -11,3 +11,6 @@ __pycache__/
 node_modules/
 .DS_Store
 Rplots.pdf
+
+# Material de trabajo interno (salidas de herramientas, notas)
+interno/
