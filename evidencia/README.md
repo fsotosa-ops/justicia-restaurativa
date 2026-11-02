@@ -10,22 +10,28 @@ La Figura 1 muestra el recorrido de la evidencia. Las cuatro literaturas de la b
 
 ```mermaid
 flowchart LR
-  AJ["Acceso a la justicia<br/>8 estudios"]
-  JR["Justicia restaurativa<br/>en lo penal<br/>21 estudios"]
-  IA["IA y derecho<br/>19 estudios"]
-  LJ["Lenguaje judicial<br/>3 estudios"]
-  NC["Normas colombianas<br/>14 normas"]
-
-  H1["H1. Comprensión<br/>reformular"]
-  H2["H2. Orientación<br/>reformular"]
-  H3["H3. Derivación<br/>reformular"]
-  H4["H4. Eficiencia<br/>se sostiene, con un límite"]
-  H5["H5. Resultados<br/>reformular"]
-  H6["H6. Gobernanza<br/>se sostiene"]
-
-  LEV["Mapa del Leviatán<br/>(láminas BPMN)"]
-  VAC["Vacío en la literatura<br/>(estado del arte, sección 6)"]
-
+  subgraph LIT["Literaturas y normas"]
+    direction TB
+    AJ["Acceso a la justicia<br/>8 estudios"]
+    JR["Justicia restaurativa en lo penal<br/>21 estudios"]
+    IA["IA y derecho<br/>19 estudios"]
+    NC["Normas colombianas<br/>14 normas"]
+    LJ["Lenguaje judicial<br/>3 estudios"]
+  end
+  subgraph HIP["Hipótesis del equipo y veredicto"]
+    direction TB
+    H1["H1. Comprensión<br/>reformular"]
+    H2["H2. Orientación<br/>reformular"]
+    H3["H3. Derivación<br/>reformular"]
+    H4["H4. Eficiencia<br/>se sostiene, con un límite"]
+    H5["H5. Resultados<br/>reformular"]
+    H6["H6. Gobernanza<br/>se sostiene"]
+  end
+  subgraph PRO["Otros productos"]
+    direction TB
+    LEV["Mapa del Leviatán<br/>(láminas BPMN)"]
+    VAC["Vacío en la literatura<br/>(estado del arte, sección 6)"]
+  end
   AJ -- 6 --> H1
   AJ -- 3 --> H2
   AJ -- 1 --> H3
@@ -41,9 +47,8 @@ flowchart LR
   NC -- 3 --> H4
   NC -- 1 --> H5
   NC -- 7 --> H6
-  NC --> LEV
-  LJ --> VAC
-
+  NC -.-> LEV
+  LJ -.-> VAC
   classDef lit fill:#e3edf9,stroke:#2a78d6,color:#0b0b0b
   classDef ref fill:#fde6dc,stroke:#c4501c,color:#0b0b0b
   classDef sost fill:#dff3ea,stroke:#1baf7a,color:#0b0b0b
@@ -52,9 +57,12 @@ flowchart LR
   class H1,H2,H3,H5 ref
   class H4,H6 sost
   class LEV,VAC prod
+  style LIT fill:#ffffff,stroke:#dcdad4
+  style HIP fill:#ffffff,stroke:#dcdad4
+  style PRO fill:#ffffff,stroke:#dcdad4
 ```
 
-*Nota:* en naranja, las hipótesis que hay que reformular; en verde, las que se sostienen. Un mismo texto puede aportar a más de una hipótesis, por lo que las flechas suman más que los textos. Los enunciados de las hipótesis y su veredicto están en la Tabla 3 del [estado del arte](../docs/01-estado-del-arte.md). *Fuente:* Elaboración propia con datos de [`matriz.csv`](matriz.csv).
+*Nota:* en naranja, las hipótesis que hay que reformular; en verde, las que se sostienen; la línea punteada une las normas y el lenguaje judicial con lo que sustentan fuera de las hipótesis. Un mismo texto puede aportar a más de una hipótesis, por lo que las flechas suman más que los textos. Los enunciados de las hipótesis y su veredicto están en la Tabla 3 del [estado del arte](../docs/01-estado-del-arte.md). *Fuente:* Elaboración propia con datos de [`matriz.csv`](matriz.csv).
 
 ## Cuánta evidencia hay para cada hipótesis
 
